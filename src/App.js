@@ -1,5 +1,5 @@
 import './Styles/App.scss';
-// import './Components/Header/Header'
+import Header from './Components/Header/Header'
 import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
 import Portfolio from './Components/Portfolio/Portfolio';
@@ -10,13 +10,14 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <>
-      <Menu/>
+      <Header/>
+      {/* <Menu/> */}
       <Home/>
-      <Technology/>
-      <Footer/>
+      {/* <Technology/> */}
+      {/* <Footer/> */}
 
 
-      <Portfolio/>
+      {/* <Portfolio/> */}
     </>
   );
 }
