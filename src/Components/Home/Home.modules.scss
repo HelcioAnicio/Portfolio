@@ -1,4 +1,66 @@
+@import '../.././Styles/index.scss';
 
-h6 {
-    color: red;
+.ContainerText {
+    padding: 20px 15px;
+    background-image: url(../../assets/desktop.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 350px;
+    height: 570px;
+    animation: desktop 3s normal;
+
+    @keyframes desktop {
+        0% {
+            background-size: 100px;
+            background-position: center 30%;
+        }
+        // 50% {background-size: 300px;}
+        100% {
+            background-size: 350px;
+            background-position:center bottom;
+        }
+    }
+
+        & > h1 {
+            color: $light;
+            font: 900 2rem 'Martel', serif ;
+
+        }
+
+        & > p {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+            color: $light;
+            font: 200 1rem/25px 'Assistant', sans-serif;
+
+
+                & > span {
+                    font: 500 1rem/25px 'Assistant', sans-serif;
+                    color: $white;
+                }
+        }
+
+        & > button {
+            margin-top: 30px;
+            width: 170px;
+            padding: 10px 10px;
+            border-radius: 7px;
+            border: none;
+            background-color: $white;
+            color: $background-dark;
+            cursor: pointer;
+
+                &:hover {
+                    background-color: $extra;
+                    color:$white;
+                    transition: .5s;
+                }
+        }
+
+
+
 }
+
+
+
