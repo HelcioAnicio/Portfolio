@@ -1,0 +1,26 @@
+@import '../.././Styles/index.scss';
+
+
+.ContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: $background-light;
+    // opacity: .6;
+
+        .MenuHamburger > svg {
+            cursor: pointer;
+            font-size: 30px;
+            color: $white;
+            // opacity: 1;
+        }
+
+        .HeaderIcons > svg {
+            margin-right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: $white;
+
+
+        }
+}
