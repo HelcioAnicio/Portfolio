@@ -1,4 +1,86 @@
+@import '../.././Styles/index.scss';
 
-h6 {
-    color: red;
+    .SectionTech {
+        padding: 0 10px 20px 10px;
+        text-align: center;
+        background-color: $background-second;
+        
+        .DivContainer {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+            flex-wrap: wrap;
+            height: 250px;
+            max-width: 350px;
+            
+                    .React {
+                        position: relative;
+                        top: -45px;
+                            
+                            & svg {
+                                padding: 10px;
+                                font-size: 90px;
+                                background-color: #5ED3F3;
+                                color: #ffff;
+                                border-radius: 20px;
+                            
+                            }
+                    } 
+                    
+                    .Javascript {
+                        position: relative;
+                        top: -45px;
+                            
+                            & svg {
+                                padding: 10px;
+                                font-size: 90px;
+                                background-color: #F7DF1E;
+                                color: white;
+                                border-radius: 20px;
+                            }
+                    } 
+                    
+                    .Scss {
+                        position: relative;
+                        top: -45px;
+        
+                            & svg {
+                                padding: 10px;
+                                font-size: 90px;
+                                background-color: #C66394;
+                                color: white;
+                                border-radius: 20px;
+                            }
+                    }
+        
+                    .Html {
+                        position: relative;
+                        top: -45px;
+                            
+                            & svg {
+                                padding: 10px;
+                                font-size: 90px;
+                                background-color: #DD4B25;
+                                color: white;
+                                border-radius: 20px;
+                            }
+                    }
+
+                & > div {
+                    width: 100px;
+                    height: 100px;
+                }
+        
+            }
+
+
+            
+   
+            
+            p {
+                color: white;
+                font: 300 1rem 'Assistant', sans-serif;
+                margin-top: 10px;
+            }
 }
