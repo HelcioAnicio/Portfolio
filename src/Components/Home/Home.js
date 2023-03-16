@@ -10,11 +10,11 @@ function Home () {
                     I have knowledge in several technologies, and several projects that show a little of my work.
                     If you are in need of a quality, professional and updated page, contact me using the button below.
                 </p>
-                <button>Make your budget!</button>
+                <a href="https://wa.me/31991973835"> <button>Make your budget!</button> </a>
             </div>
-            <div className="CellPhone">
+            {/* <div className="CellPhone">
 
-            </div>
+            </div> */}
         </>
     )
 }
