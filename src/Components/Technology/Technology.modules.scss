@@ -11,11 +11,15 @@
             justify-content: center;
             align-content: space-between;
             flex-wrap: wrap;
+            gap: 15%;
             height: 250px;
-            max-width: 350px;
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid green;
             
                     .React {
                         position: relative;
+                        flex: 1 1 120px;
                         top: -45px;
                             
                             & svg {
@@ -30,6 +34,7 @@
                     
                     .Javascript {
                         position: relative;
+                        flex: 1 1 120px;
                         top: -45px;
                             
                             & svg {
@@ -43,6 +48,7 @@
                     
                     .Scss {
                         position: relative;
+                        flex: 1 1 120px;
                         top: -45px;
         
                             & svg {
@@ -56,6 +62,35 @@
         
                     .Html {
                         position: relative;
+                        flex: 1 1 120px;
+                        top: -45px;
+                            
+                            & svg {
+                                padding: 10px;
+                                font-size: 90px;
+                                background-color: #DD4B25;
+                                color: white;
+                                border-radius: 20px;
+                            }
+                    }
+
+                    .Css {
+                        position: relative;
+                        flex: 1 1 120px;
+                        top: -45px;
+                            
+                            & svg {
+                                padding: 10px;
+                                font-size: 90px;
+                                background-color: #DD4B25;
+                                color: white;
+                                border-radius: 20px;
+                            }
+                    }
+
+                    .Firebase {
+                        position: relative;
+                        flex: 1 1 120px;
                         top: -45px;
                             
                             & svg {

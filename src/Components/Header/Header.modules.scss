@@ -1,13 +1,23 @@
 @import '../.././Styles/index.scss';
 
 
-.ContainerHeader {
+#ContainerHeader {
     display: flex;
     justify-content: right;
     padding: 10px 15px;
     position: relative;
 
-        .DivPages {
+        .DivMenu {
+            cursor: pointer;
+
+            & svg {
+                color: white;
+                font-size: 2.5rem;
+            }
+
+        }
+
+        #DivPages {
             display: none;
             justify-content: space-between;
             width: 80%;
@@ -18,17 +28,69 @@
                 }
         }
         
-        .MenuHamburger {
-
-            & svg {
-                color: white;
-                font-size: 2.5rem;
-            }
-
+        #ContainerHeader.active #DivPages {
+            display: flex;
         }
-        
-
-        // .OpenMenu {
-
-        // }
 }
+
+
+@media screen and (min-width:600px) {
+    .DivMenu {
+        display: none;
+    }
+
+    #DivPages {
+        display: block;
+    }
+    
+}
+
+
+
+        
+        // .Menu {
+        //     background-color: rgba($color: #000000, $alpha: .95);
+        //     backdrop-filter: blur(30px);
+        //     position: absolute;
+        //     z-index: 5;
+        //     top: -50%;
+        //     left: 50%;
+        //     transform: translateX(-10%);
+        //     transform: translateY(-50%);
+        //     width: 100vw;
+        //     height: 100vh;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: space-evenly;
+        //     flex-wrap: wrap;
+        //     text-align: left;
+        //     padding: 10% 0;
+        //     display: none;
+        
+        //         & div {
+        //             padding-inline: 10% ;
+        //             width: 100%;
+        //             display: flex;
+        //             justify-content: right;
+        
+        //             & svg {
+        //                 cursor: pointer;
+        //                 font-size: 30px;
+        //                 color: white;
+                        
+        //             }
+        
+        //         }
+        
+        //         & li {
+        //             list-style: none;
+                    
+        //             & a {
+        //                 text-decoration: none;
+        //                 color: white;
+        //                 font-size: 1.5rem;
+        //             }
+        //         }
+        //     }
+        

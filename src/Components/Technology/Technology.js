@@ -42,9 +42,9 @@ function Technology () {
                             <p>Html5</p>
                         </div>
                     </div>
-                    <div className="Css3">
+                    <div className="Css">
                         <div>
-
+                            <FaHtml5/>
                         </div>
                         <div>
                             <p>Css3</p>
@@ -52,7 +52,7 @@ function Technology () {
                     </div>
                     <div className="Firebase">
                         <div>
-
+                            <FaHtml5/>
                         </div>
                         <div>
                             <p>Firebase</p>
