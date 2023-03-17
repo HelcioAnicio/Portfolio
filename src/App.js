@@ -2,17 +2,17 @@ import './Styles/App.scss';
 import Header from './Components/Header/Header'
 import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
-import Portfolio from './Components/Portfolio/Portfolio';
+// import Portfolio from './Components/Portfolio/Portfolio';
 import Technology from './Components/Technology/Technology';
-import Footer from './Components/Footer/Footer';
+// import Footer from './Components/Footer/Footer';
 // import { useState } from 'react';
 
 function App() {
   return (
     <>
       <Header/>
-      {/* <Menu/> */}
       <Home/>
+      <Menu/>
       <Technology/>
       {/* <Footer/> */}
 
