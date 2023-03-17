@@ -1,9 +1,21 @@
 import './Menu.modules.scss'
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 function Menu () {
     return (
         <>
-        <h6>Menu</h6>
+            <ul className='Menu'>
+                <div>
+                    <GiHamburgerMenu/>
+                </div>
+                <li><a href="https://google.com">Home</a></li>
+                <li><a href="https://google.com">About Me</a></li>
+                <li><a href="https://google.com">Technology</a></li>
+                <li><a href="https://google.com">Portfolio</a></li>
+                <li><a href="https://google.com">Talk to me</a></li> 
+
+            </ul>
         </>
     )
 }

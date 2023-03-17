@@ -1,22 +1,31 @@
-import './Home.modules.scss'
+import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import './Home.modules.scss';
+import Photo  from '../../assets/profile.png';
 
 function Home () {
     return (
         <>
-            <div className="ContainerText">
-                <h1>Helcio Anicio</h1>
-                <p>
-                Hello,<span>I'm a Front-end developer</span>, I work as a freelancer creating web pages. <br />
-                    I have knowledge in several technologies, and several projects that show a little of my work.
-                    If you are in need of a quality, professional and updated page, contact me using the button below.
-                </p>
-                <a href="https://wa.me/31991973835"> <button>Make your budget!</button> </a>
-            </div>
-            {/* <div className="CellPhone">
-
-            </div> */}
+            <section className="ContainerText">
+                <div className='BoxContent'>
+                    <div className='Picture'>
+                        <img src={Photo} alt="profile"/> 
+                    </div>
+                    <h1>Helcio Anicio</h1>
+                    <p>Desenvolvedor Front-end</p>
+                    <div className='DivIcons'>
+                        <a href="https://wa.me/31991973835">
+                        <FaWhatsapp/>
+                        </a>
+                        <a href="https://wa.me/31991973835">
+                        <FaLinkedin/>
+                        </a>
+                        <a href="https://wa.me/31991973835">
+                        <FaInstagram/>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
-
 export default Home;

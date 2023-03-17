@@ -2,84 +2,56 @@
 
 .ContainerText {
     padding: 20px 15px;
-    background-image: url(../../assets/desktop.png);
-    background-repeat: no-repeat;
-    background-position: center 85%;
-    background-size: 350px;
-    height: 650px;
-    animation: desktop 3s normal;
+    height: 550px;
+    display: flex;
+    justify-content: center;
 
-    @keyframes desktop {
-        0% {
-            background-size: 100px;
-            background-position: center 30%;
-        }
-        // 50% {background-size: 300px;}
-        100% {
-            background-size: 350px;
-            background-position:center bottom;
-        }
-    }
+        .BoxContent {
+            text-align: center;
 
-        & > h1 {
-            color: $light;
-            font: 900 2rem 'Martel', serif ;
-
-        }
-
-        & > p {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 20px;
-            color: $light;
-            font: 200 1rem/25px 'Assistant', sans-serif;
-            
-                & > span {
-                    font: 500 1rem/25px 'Assistant', sans-serif;
-                    color: $white;
-                }
-        }
-
-        &  button {
-            margin-top: 30px;
-            width: 170px;
-            padding: 10px 10px;
-            border-radius: 7px;
-            border: none;
-            background-color: $white;
-            color: $background-dark;
-            cursor: pointer;
-            animation: shine 1s ease-out;
-            animation-fill-mode: backwards;
-
-            @keyframes shine {
-                0% {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-
-                100% {
-                    opacity: 1;
-                    transform: translateY(0px);
+            .Picture {
+                margin: 0 auto;
+                width: 250px;
+                height: 250px;
+                background-color: rgba(150, 143, 143, 0.4);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                border-radius: 175px;
+                
+                img {
+                    width: 100%;
                 }
             }
 
-                &:hover {
-                    transform: translateY(-3px);
-                    box-shadow: 0 10px 20px rgba(255, 255, 255  , 0.2);
-                    background-color: $extra;
-                    color:$white;
-                    transition: .5s;
-                }
+            h1 {
+                color: white;
+                margin-block: 10px;
+            }
 
-                &:active {
-                    transform: translateY(-1px);
-                    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-                }
+            p {
+                color: white;
+                margin-block: 10px;
+
+            }
+
+            .DivIcons {
+                width: 60%;
+                max-width: 300px;
+                margin-inline: auto;
+                margin-block: 20px;
+                display: flex;
+                justify-content: space-between;
+
+                    svg {
+                        color: white;
+                        font-size: 1.5rem;
+
+                        &:hover {
+                            font-size: 2rem;   
+                        }
+                    }
+            }
         }
-
-
-
 }
 
 
