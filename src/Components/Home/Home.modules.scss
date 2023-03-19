@@ -1,8 +1,8 @@
 @import '../.././Styles/index.scss';
 
 .ContainerText {
-    padding: 20px 15px;
-    height: 550px;
+    padding: 20px 15px 0 15px;
+    height: 90vh;
     display: flex;
     justify-content: center;
 
@@ -11,8 +11,8 @@
 
             .Picture {
                 margin: 0 auto;
-                width: 250px;
-                height: 250px;
+                width: 200px;
+                height: 200px;
                 background-color: rgba(150, 143, 143, 0.4);
                 -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
@@ -26,11 +26,15 @@
             h1 {
                 color: white;
                 margin-block: 10px;
+                font: 700 2rem 'Libre Baskerville', serif;;
+                
+
             }
 
             p {
                 color: white;
                 margin-block: 10px;
+                font: 400 1rem 'Open Sans', sans-serif;
 
             }
 
@@ -38,7 +42,7 @@
                 width: 60%;
                 max-width: 300px;
                 margin-inline: auto;
-                margin-block: 20px;
+                margin-top: 20px;
                 display: flex;
                 justify-content: space-between;
 
