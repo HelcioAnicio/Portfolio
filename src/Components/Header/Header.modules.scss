@@ -1,96 +1,139 @@
 @import '../.././Styles/index.scss';
 
+@keyframes Animation{
+    0% {
+        transform: translateY(-50%);
+    }
+}
+
+
+
 
 #ContainerHeader {
     display: flex;
     justify-content: right;
-    padding: 10px 15px;
+    padding: 5px 15px;
     position: relative;
 
-        .DivMenu {
-            cursor: pointer;
-
+    .DivMenu {
+        
+        & button {
+            background-color: transparent;
+            border: none;
+            width: 60px;
+            height: 60px;
+            
             & svg {
                 color: white;
                 font-size: 2.5rem;
-            }
-
-        }
-
-        #DivPages {
-            display: none;
-            justify-content: space-between;
-            width: 80%;
-            margin: 0 auto;
-
-                & h3 {
-                    color: white;
+                cursor: pointer;
+                &:hover {
+                    font-size: 2.7rem;
+                    // position: relative;
                 }
+            }
         }
-        
-        #ContainerHeader.active #DivPages {
-            display: flex;
-        }
+    }
+
+    #DivPages {
+        display: none;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
+            & li {
+                color: white;
+            }
+    }
 }
 
+.MobileMenu {
+
+    .Menu {
+        background-color: rgba($color: #303133, $alpha: .99);
+        backdrop-filter: blur(30px);
+        position: absolute;
+        z-index: 1000;
+        overflow-y: hidden;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: left;
+        padding: 3% 0 10% 0;
+        animation: Animation 0.7s ease-out;
+    
+            & div {
+                padding-inline: 10% ;
+                width: 100%;
+                display: flex;
+                justify-content: right;
+    
+                & .ButtonClose {
+                    background-color: transparent;
+                    border: none;        
+
+                    & > svg {
+                        cursor: pointer;
+                        box-sizing: content-box;
+                        font-size: 40px;
+                        color: white;
+                        border-radius: 30px;
+                        padding: 10px;
+                        &:hover {
+                            box-shadow: 0px 5px 30px 0px #ffffff;
+                            // filter: drop-shadow(0px 24px 29px 4px #ffffff);
+                            position: relative;
+                            top: -3px;
+                        }
+                        
+                    }
+                }
+    
+            }
+    
+            & li {
+                list-style: none;
+                
+                & a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
+                    font: 400 1rem 'Open Sans', sans-serif;
+
+                    
+                    &:hover {
+                        border-bottom: 3px solid #ffffff;
+                        position: relative;
+                        top: -5px;
+
+                    }
+                }
+            }
+        }
+}
 
 @media screen and (min-width:600px) {
     .DivMenu {
         display: none;
     }
 
-    #DivPages {
-        display: block;
-    }
+ #ContainerHeader {
+    
+     #DivPages {
+         display: flex
+     }
+ }
     
 }
 
 
 
-        
-        // .Menu {
-        //     background-color: rgba($color: #000000, $alpha: .95);
-        //     backdrop-filter: blur(30px);
-        //     position: absolute;
-        //     z-index: 5;
-        //     top: -50%;
-        //     left: 50%;
-        //     transform: translateX(-10%);
-        //     transform: translateY(-50%);
-        //     width: 100vw;
-        //     height: 100vh;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        //     justify-content: space-evenly;
-        //     flex-wrap: wrap;
-        //     text-align: left;
-        //     padding: 10% 0;
-        //     display: none;
-        
-        //         & div {
-        //             padding-inline: 10% ;
-        //             width: 100%;
-        //             display: flex;
-        //             justify-content: right;
-        
-        //             & svg {
-        //                 cursor: pointer;
-        //                 font-size: 30px;
-        //                 color: white;
-                        
-        //             }
-        
-        //         }
-        
-        //         & li {
-        //             list-style: none;
-                    
-        //             & a {
-        //                 text-decoration: none;
-        //                 color: white;
-        //                 font-size: 1.5rem;
-        //             }
-        //         }
-        //     }
         
