@@ -1,7 +1,7 @@
 @import '../.././Styles/index.scss';
 
     .SectionTech {
-        padding: 0 10px 20px 10px;
+        padding: 30px 10px 70px 10px;
         text-align: center;
         // background-color: $background-second;
 
@@ -11,8 +11,6 @@
             text-align: center;
             margin-bottom: 30px;
             font: 700 2rem 'Libre Baskerville', serif;
-            position: relative;
-            top: -45px;
         }
         
         .DivContainer {
@@ -36,15 +34,13 @@
 
                 & p {
                     color: white;
-                    font: 300 1rem 'Assistant', sans-serif;
+                    font: 400 1.2rem 'Assistant', sans-serif;
                     margin: 5px;
                 }
-            }            
+            }          
+              
                 .React {
-                    position: relative;
                     flex: 1 1 120px;
-                    top: -45px;
-
                         
                         & svg {
                             padding: 10px;
@@ -57,10 +53,8 @@
                 } 
                 
                 .Javascript {
-                    position: relative;
                     flex: 1 1 120px;
-                    top: -45px;
-                        
+
                         & svg {
                             padding: 10px;
                             font-size: 90px;
@@ -71,10 +65,8 @@
                 } 
                 
                 .Scss {
-                    position: relative;
                     flex: 1 1 120px;
-                    top: -45px;
-    
+
                         & svg {
                             padding: 10px;
                             font-size: 90px;
@@ -85,10 +77,8 @@
                 }
     
                 .Html {
-                    position: relative;
                     flex: 1 1 120px;
-                    top: -45px;
-                        
+
                         & svg {
                             padding: 10px;
                             font-size: 90px;
@@ -99,10 +89,8 @@
                 }
 
                 .Node {
-                    position: relative;
                     flex: 1 1 120px;
-                    top: -45px;
-                        
+
                         & svg {
                             padding: 10px;
                             font-size: 90px;
@@ -113,10 +101,8 @@
                 }
 
                 .Firebase {
-                    position: relative;
                     flex: 1 1 120px;
-                    top: -45px;
-                        
+
                         & svg {
                             padding: 10px;
                             font-size: 90px;
