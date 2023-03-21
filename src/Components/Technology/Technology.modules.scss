@@ -30,6 +30,10 @@
                 height: 100px; 
                 margin-bottom: 60px;
 
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
                 & p {
                     color: white;
                     font: 300 1rem 'Assistant', sans-serif;

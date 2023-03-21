@@ -1,4 +1,50 @@
+@import '../../Styles/index.scss';
 
-h6 {
-    color: red;
+.SectionContainer {
+    padding: 30px 15px;
+    background-color: black;
+    width: 100%;
+
+    .DivContent {
+        margin: 0 auto;
+        border: 1px solid green;
+        display: flex;
+        align-content: space-between;
+
+
+        .Form {
+            background-color: white;
+            // flex: 1 1 100%;
+            width: 100%;
+            max-width: 500px;
+            height: 200px;
+
+            .DivImage {
+                background-image: url(../../assets/Form/Desktop.png);
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                // border: 1px solid green;
+                // display: flex;
+                height: 50%;
+                width: 110%;
+            }
+
+            .DivInformation {
+                color: white;
+                width: 50%;
+                height: 100px;
+                background-color: green;
+
+                & > p {
+                    color: white;
+                }
+
+
+            }
+
+        }
+
+    }
+
 }

@@ -11,7 +11,7 @@ function Portfolio () {
         <>
             <section className="SectionContainer">
                 <div className="DivContent">
-                    <div className="">
+                    <div className="Form">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
@@ -20,7 +20,18 @@ function Portfolio () {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="Url">
+                        <div className="DivImage">
+                            <img src="" alt="" />
+                        </div>
+                        <div className="DivInformation">
+                            <h3>Contact Form</h3>
+                            <p>Este projeto é formulário de contato, um canal de comunicação que conecta clientes e a mim. Por meio dele, as pessoas disponibilizam seus dados, como primeiro nome, ultimo nome, e-mail e senha caso fosse necessario um login. </p>
+
+                        </div>
+                    </div>
+
+                    <div className="FAQ">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
@@ -29,7 +40,7 @@ function Portfolio () {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="Rating">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
@@ -38,7 +49,7 @@ function Portfolio () {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="QRCode">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
@@ -47,7 +58,7 @@ function Portfolio () {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="Cars">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
@@ -56,7 +67,7 @@ function Portfolio () {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="SocialTree">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
@@ -65,7 +76,7 @@ function Portfolio () {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="Soon">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
@@ -74,16 +85,7 @@ function Portfolio () {
                         </div>
                     </div>
 
-                    <div className="">
-                        <div className="DivImage">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="DivInformation">
-
-                        </div>
-                    </div>
-
-                    <div className="">
+                    <div className="Wait">
                         <div className="DivImage">
                             <img src="" alt="" />
                         </div>
