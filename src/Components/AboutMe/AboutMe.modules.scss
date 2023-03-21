@@ -3,7 +3,6 @@
 
 .ContainerAbout {
     padding: 20px 5% 50px 5%;
-    margin-bottom:100px;
     height:max-content;
     background-color: rgba($color: #3b3b3b, $alpha: .4);
     backdrop-filter: blur(10px);
@@ -17,7 +16,6 @@
         
         & h2 {
             color: white;
-            font-size: 2rem;
             text-align: center;
             margin-bottom: 30px;
             font: 700 2rem 'Libre Baskerville', serif;
@@ -25,8 +23,11 @@
 
         & p {
             color: white;
+            font: 400 1rem 'Open Sans', sans-serif;
+
 
             & span {
+                font: 400 1rem 'Open Sans', sans-serif;
                 color: #C2A393;
             }
         }
