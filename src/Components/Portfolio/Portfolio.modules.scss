@@ -1,50 +1,177 @@
 @import '../../Styles/index.scss';
 
 .SectionContainer {
-    padding: 30px 15px;
-    background-color: black;
+    padding: 70px 15px;
+    // background-color: black;
     width: 100%;
+
+    h2 {
+        color: white;
+        text-align: center;
+        font: 700 2rem 'Libre Baskerville', serif;
+    }
 
     .DivContent {
         margin: 0 auto;
-        border: 1px solid green;
+        // border: 1px solid green;
         display: flex;
-        align-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        
 
-
-        .Form {
-            background-color: white;
+        .Form, .Url, .FAQ, .Rating, .QRCode, .Cars, .SocialTree, .Soon {
             // flex: 1 1 100%;
             width: 100%;
             max-width: 500px;
-            height: 200px;
+            height: max-content;
+            background-color: rgba($color: #3b3b3b, $alpha: .4);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;        
 
             .DivImage {
-                background-image: url(../../assets/Form/Desktop.png);
                 background-size: contain;
-                background-position: center center;
+                background-position: center 20px;
                 background-repeat: no-repeat;
-                // border: 1px solid green;
-                // display: flex;
-                height: 50%;
-                width: 110%;
+                // border: 1px solid red;
+                width: 100%;
+                height: 200px;
+                position: relative;
+
+            .DivImage:hover .DivButton{
+                display: flex;
+                background-color: rgba($color: #3b3b3b, $alpha: .4);
+                backdrop-filter: blur(5px);
+                color: white;
+                // border: 1px solid white;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+                position: absolute;
+                z-index: 5;
+                
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    svg {
+                        font-size: 4rem;
+                        padding: 3px;
+
+                        &:hover {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+
+
+                img {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    width: 60px;
+                    height: 110px;
+                }
             }
 
             .DivInformation {
                 color: white;
-                width: 50%;
-                height: 100px;
-                background-color: green;
+                width: 100%;
+                height: 50%;
+                padding: 10px 10px;
+                text-align: center;
 
-                & > p {
-                    color: white;
+                & > h3 {
+                    font: 700 1.3rem 'Open Sans', sans-serif;
+                    // margin-block: 10px;
                 }
 
+                & > p {
+                    font: 400 1rem 'Open Sans', sans-serif;
+                    margin-block: 10px;
+                }
+
+                .Tech {
+                    width: 100%;
+                    max-width: 300px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    svg {
+                        font-size: 2rem;
+                        margin-right: 10px;
+                        padding: 3px;
+
+                        &:hover {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .Form {
+            .DivImage {
+                background-image: url(../../assets/Form/Desktop.png);
+            }
+        }
+
+        .Url {
+            .DivImage {
+                background-image: url(../../assets/Url/Desktop.png);
+            }
+        }
+
+        .FAQ {
+            .DivImage {
+                background-image: url(../../assets/Faq/Desktop.png);
+            }
+        }
+
+        .Rating {
+            .DivImage {
+                background-image: url(../../assets/Rating/Desktop.png);
+            }
+        }
+
+        .QRCode {
+            .DivImage {
+                background-image: url(../../assets/QRcode/Desktop.png);
+            }
+        }
+
+        .Cars {
+            .DivImage {
+                background-image: url(../../assets/Cars/Desktop.png);
+            }
+        }
+
+        .SocialTree {
+            .DivImage {
+                background-image: url(../../assets/SocialTree/Desktop.png);
+            }
+        }
+
+        .Soon {
+            .DivImage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    color: white;
+                    font-size: 4rem;
+                }
 
             }
 
         }
-
     }
-
 }
