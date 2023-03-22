@@ -2,13 +2,13 @@
 
 .SectionContainer {
     padding: 70px 15px;
-    // background-color: black;
     width: 100%;
 
     h2 {
         color: white;
         text-align: center;
         font: 700 2rem 'Libre Baskerville', serif;
+        margin-bottom: 50px;
     }
 
     .DivContent {
@@ -22,13 +22,14 @@
         
 
         .Form, .Url, .FAQ, .Rating, .QRCode, .Cars, .SocialTree, .Soon {
-            // flex: 1 1 100%;
-            width: 100%;
-            max-width: 500px;
+            flex: 1 1 230px;
+            // width: 100%;
+            // max-width: 500px;
             height: max-content;
             background-color: rgba($color: #3b3b3b, $alpha: .4);
             backdrop-filter: blur(15px);
-            border-radius: 20px;        
+            border-radius: 20px;
+            padding: 10px 10px;  
 
             .DivImage {
                 background-size: contain;
@@ -39,7 +40,7 @@
                 height: 200px;
                 position: relative;
 
-            .DivImage:hover .DivButton{
+            .DivImage:hover+.DivButton{
                 display: flex;
                 background-color: rgba($color: #3b3b3b, $alpha: .4);
                 backdrop-filter: blur(5px);
@@ -82,7 +83,6 @@
                 color: white;
                 width: 100%;
                 height: 50%;
-                padding: 10px 10px;
                 text-align: center;
 
                 & > h3 {
@@ -99,9 +99,9 @@
                     width: 100%;
                     max-width: 300px;
                     height: 40px;
+                    margin-right: 30px;
                     display: flex;
                     align-items: center;
-                    justify-content: space-evenly;
 
                     svg {
                         font-size: 2rem;
@@ -168,10 +168,25 @@
                 svg {
                     color: white;
                     font-size: 4rem;
+                    animation: Rotate 1.5s infinite;
                 }
 
+                @keyframes Rotate {
+                    0% {
+                        rotate: 0deg;
+                    }
+
+                    100% {
+                        rotate: 360deg;
+                    } 
+                }
             }
 
+            .DivInformation {
+                h3 {
+                    margin-bottom: 50px;
+                }
+            }
         }
     }
 }

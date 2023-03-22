@@ -4,7 +4,7 @@ import Home from './Components/Home/Home';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Technology from './Components/Technology/Technology';
-// import Footer from './Components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
 // import { useState } from 'react';
 
 function App() {
@@ -15,9 +15,7 @@ function App() {
       <AboutMe/>
       <Technology/>
       <Portfolio/>
-      {/* <Footer/> */}
-
-
+      <Footer/>
     </>
   );
 }
