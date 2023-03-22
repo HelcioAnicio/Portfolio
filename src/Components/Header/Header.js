@@ -19,10 +19,10 @@ function Header () {
                 </div>
                 <ul id='DivPages'>
                     <li><a href="https://google.com">Home</a></li>
-                    <li><a href="https://google.com">About Me</a></li>
-                    <li><a href="#Tech">Technology</a></li>
-                    <li><a href="https://google.com">Portfolio</a></li>
-                    <li><a href="https://google.com">Talk to me</a></li> 
+                    <li><a href="https://google.com">Sobre mim</a></li>
+                    <li><a href="#Tech">Tecnologias</a></li>
+                    <li><a href="https://google.com">Portifolio</a></li>
+                    <li><a href="https://google.com">Fale comigo</a></li> 
                 </ul>
             </nav>
 			
@@ -44,10 +44,10 @@ function MenuMobile({setIsOpen}) {
                 </button>
             </div>
             <li><a href="https://google.com">Home</a></li>
-            <li><a href="https://google.com">About Me</a></li>
-            <li><a href="#Tech">Technology</a></li>
-            <li><a href="https://google.com">Portfolio</a></li>
-            <li><a href="https://google.com">Talk to me</a></li> 
+            <li><a href="https://google.com">Sobre mim</a></li>
+            <li><a href="#Tech">Tecnologias</a></li>
+            <li><a href="https://google.com">Portifólio</a></li>
+            <li><a href="https://google.com">Fale comigo</a></li> 
         </ul>
     </nav> 
     )
