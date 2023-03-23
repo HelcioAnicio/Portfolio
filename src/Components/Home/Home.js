@@ -16,10 +16,10 @@ function Home () {
                         <a href="https://wa.me/31991973835">
                         <FaWhatsapp/>
                         </a>
-                        <a href="https://wa.me/31991973835">
+                        <a href="https://www.linkedin.com/in/helcio-anicio/">
                         <FaLinkedin/>
                         </a>
-                        <a href="https://wa.me/31991973835">
+                        <a href="https://www.instagram.com/helcioanicio/">
                         <FaInstagram/>
                         </a>
                     </div>
