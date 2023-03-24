@@ -5,7 +5,6 @@ import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { initializeApp } from "firebase/app";
 import { collection, getFirestore, addDoc } from "firebase/firestore";
-// import firebase from 'firebase/app';
 
 // import { getAnalytics } from "firebase/analytics";
 
@@ -27,11 +26,8 @@ function Footer() {
         appId: "1:620380278249:web:20c93bbb7fd61189f10f78",
         measurementId: "G-GNJGLKREKY"
     };
-    // firebase.initializeApp(firebaseApp)
 
     const app = initializeApp(firebaseApp);
-    // firebase.firestore().settings({ debug: true });
-
     // const analytics = getAnalytics(app);
     const db = getFirestore(app);
     const userCollectionRef = collection(db, 'users');

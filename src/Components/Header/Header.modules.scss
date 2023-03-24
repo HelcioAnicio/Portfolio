@@ -6,9 +6,6 @@
     }
 }
 
-
-
-
 #ContainerHeader {
     display: flex;
     justify-content: right;
@@ -23,15 +20,16 @@
             width: 60px;
             height: 60px;
             
-            & svg {
-                color: white;
-                font-size: 2.5rem;
-                cursor: pointer;
-                &:hover {
-                    font-size: 2.7rem;
-                    // position: relative;
-                }
+        & svg {
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            
+            &:hover {
+                font-size: 2.7rem;
+                // position: relative;
             }
+        }
         }
     }
 
@@ -41,9 +39,9 @@
         width: 80%;
         margin: 0 auto;
 
-            & li {
-                color: white;
-            }
+        & li {
+            color: white;
+        }
     }
 }
 
@@ -87,9 +85,9 @@
                         color: white;
                         border-radius: 30px;
                         padding: 10px;
+
                         &:hover {
-                            box-shadow: 0px 5px 30px 0px #ffffff;
-                            // filter: drop-shadow(0px 24px 29px 4px #ffffff);
+                            box-shadow: 0px 3px 15px 0px #ffffff;
                             position: relative;
                             top: -3px;
                         }
@@ -105,7 +103,6 @@
                 & a {
                     text-decoration: none;
                     color: white;
-                    font-size: 1.5rem;
                     font: 400 1rem 'Open Sans', sans-serif;
 
                     
@@ -120,18 +117,55 @@
         }
 }
 
-@media screen and (min-width:600px) {
-    .DivMenu {
+
+@media screen and (min-width:375px) and (min-height:600px) {
+    .MobileMenu {
+        .Menu {
+            li {
+                a {
+                    font: 400 1.5rem 'Open Sans', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:650px) and (min-height:800px) {
+    .MobileMenu {
+        .Menu {
+            div {  
+                .ButtonClose {
+                    svg {
+                        font-size:80px;
+                        border-radius: 60px;
+                        padding: 20px;
+
+                        &:hover {
+                            box-shadow: 0px 3px 25px 0px #ffffff;
+                        }
+                    }
+                }
+            }
+
+            li {
+                a {
+                    font: 400 2.5rem 'Open Sans', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:900px) and (min-height:1000px) {
+   .DivMenu {
         display: none;
     }
-
- #ContainerHeader {
     
-     #DivPages {
+    #DivPages {
          display: flex
      }
- }
-    
+   
 }
 
 

@@ -26,14 +26,14 @@ function Portfolio () {
                     <div className="Form">
                         <div className="DivImage">
                             <img src={MobileForm} alt="Mobile" />
-                            <div className="DivButton">
+                            {/* <div className="DivButton">
                                 <a href="https://contact-form-two-xi.vercel.app/">
                                     <GiMagnifyingGlass title='Acesse o site' />
                                 </a>
                                 <a href="https://github.com/HelcioAnicio/Contact_form">
                                     <FaGithub title='Acesse o GitHub' />
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="DivInformation">
                             <h3>Formulário de contato</h3>
