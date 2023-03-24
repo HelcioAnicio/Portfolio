@@ -4,6 +4,7 @@
 body {
     background-image: url(.././assets/Background.jpg);
     background-attachment: fixed;
-    background-position: -100px -50px;
+    background-size: cover;
     backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
 }
