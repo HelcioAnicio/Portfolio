@@ -43,3 +43,9 @@ $light: rgb(215, 214, 214);
     font-size: 22px;
   }    
 }
+
+@media screen and (min-width:1000px) and (min-height:620px) {
+  html, body {
+    font-size: 25px;
+  }    
+}
