@@ -32,24 +32,24 @@
 }
 
 
-@media screen and (min-width:400px) and (min-height:750px) {
-    .ContainerAbout {
-        .DivText {
-            h2 {
-                font: 700 2rem 'Libre Baskerville', serif;
-            }
+// @media screen and (min-width:400px) and (min-height:750px) {
+//     .ContainerAbout {
+//         .DivText {
+//             h2 {
+//                 font: 700 1.8rem 'Libre Baskerville', serif;
+//             }
     
-            & p {
-                color: white;
-                font: 400 1rem 'Open Sans', sans-serif;
+//             & p {
+//                 color: white;
+//                 font: 400 1rem 'Open Sans', sans-serif;
     
     
-                & span {
-                    font: 400 1rem 'Open Sans', sans-serif;
-                    color: #C2A393;
-                }
-            }
-        }
-    }
+//                 & span {
+//                     font: 400 1rem 'Open Sans', sans-serif;
+//                     color: #C2A393;
+//                 }
+//             }
+//         }
+//     }
 
-}
+// }
