@@ -157,17 +157,25 @@
     }
 }
 
-@media screen and (min-width:900px) and (min-height:1000px) {
-   .DivMenu {
-        display: none;
-    }
+@media screen and (min-width:1000px) and (min-height:600px) {
+//    .DivMenu {
+//         display: none;
+//     }
     
-    #DivPages {
-         display: flex
-     }
-   
-}
+//     #DivPages {
+//          display: flex
+//     }
 
+    #ContainerHeader {
+        .DivMenu {
+            display: none;
+        }
+    
+        #DivPages {
+            display: flex;
+        }   
+    }
+}
 
 
         
