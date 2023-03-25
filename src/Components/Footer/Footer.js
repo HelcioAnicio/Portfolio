@@ -1,6 +1,8 @@
 import './Footer.modules.scss';
+// import Email from '.././Email/Email'
 import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 // import {AiFillExclamationCircle} from 'react-icons/ai'
+
 
 import { useState } from 'react';
 import { initializeApp } from "firebase/app";
@@ -13,18 +15,17 @@ function Footer() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [telephone, setTelephone] = useState('')
-    // const [proposal, setProposal] = useState('')
+    const [proposal, setProposal] = useState('')
     const [formSubmitted, setFormSubmitted] = useState(false)
 
-
     const firebaseApp = {
-        apiKey: "AIzaSyB8CF0qYveqNy67HZlHiM3C-vn6iWWMO6U",
-        authDomain: "portifolio-7ceba.firebaseapp.com",
-        projectId: "portifolio-7ceba",
-        storageBucket: "portifolio-7ceba.appspot.com",
-        messagingSenderId: "620380278249",
-        appId: "1:620380278249:web:20c93bbb7fd61189f10f78",
-        measurementId: "G-GNJGLKREKY"
+        apiKey: process.env.REACT_APP_API_KEY,
+        authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+        projectId: process.env.REACT_APP_PROJECT_ID,
+        storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+        messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+        appId: process.env.REACT_APP_APP_ID,
+        measurementId: process.env.REACT_APPMEASUREMENT_ID, 
     };
 
     const app = initializeApp(firebaseApp);
@@ -39,6 +40,7 @@ function Footer() {
                 Name:${name};
                 Email:${email};
                 telephone:${telephone}
+                Proposal:${proposal}
             `);
     
             try {
@@ -46,8 +48,9 @@ function Footer() {
                     name,
                     email,
                     telephone,
-                    // proposal,
+                    proposal,
                 });
+
                 console.log("Usuário cadastrado no Firebase:", user.id);
             } catch (error) {
                 console.error("Erro ao cadastrar usuário no Firebase:", error);
@@ -98,18 +101,16 @@ function Footer() {
                         />
                         {formSubmitted && telephone === '' && <div className="Error"><p>Por favor, coloque seu celular corretamente.</p></div>}
 
-                        {/* <textarea 
+                        <textarea 
                         name="Descrição" 
                         id="Description" 
                         cols="20" 
                         rows="20" 
-                        placeholder='Descrição do site (opcional)'>
                         onChange={(e) => setProposal(e.target.value)}
-                        </textarea> */}
+                        placeholder='Descrição do site (opcional)'>
+                        </textarea>
 
                         <button type="submit" className='button'>Enviar formulario</button>
-                        {/* <input type="submit" className='button' value="Enviar formulario" /> */}
-
                     </fieldset>
                 </form>
                 <div className='DivIcons'>
