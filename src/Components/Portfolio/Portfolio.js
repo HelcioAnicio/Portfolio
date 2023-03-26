@@ -19,7 +19,7 @@ import MobileSocialTree from '../../assets/SocialTree/mobile.png';
 function Portfolio () {
     return (
         <>
-            <section className="SectionContainer">
+            <section id='Portfolio' className="SectionContainer">
                 <h2>Portifólio</h2>
                 <div className="DivContent">
 

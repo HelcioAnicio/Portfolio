@@ -64,55 +64,57 @@ function Footer() {
     
     return (
         <>
-            <div className="DivForm">
-                <h3>Fale comigo!</h3>
-                <form onSubmit={cadastrarUsuario}>
-                    <fieldset>
-                        <legend>Formulário</legend>
+            <section id='Footer' className="DivForm">
+                <div className="DivContainer">
+                    <h3>Fale comigo!</h3>
+                    <form onSubmit={cadastrarUsuario}>
+                        <fieldset>
+                            <legend>Formulário</legend>
 
-                        <input  
-                        type="text"
-                        name="Name"
-                        placeholder="Seu nome"
-                        onChange={(e) => setName(e.target.value)}
-                        value={name}
-                        className={!name && formSubmitted ? 'messageError' : ''}
-                        />
-                        {!name && formSubmitted && <div className='Error'><p>Por favor, coloque o nome corretamente.</p></div>}
+                            <input  
+                            type="text"
+                            name="Name"
+                            placeholder="Seu nome"
+                            onChange={(e) => setName(e.target.value)}
+                            value={name}
+                            className={!name && formSubmitted ? 'messageError' : ''}
+                            />
+                            {!name && formSubmitted && <div className='Error'><p>Por favor, coloque o nome corretamente.</p></div>}
 
-                        <input  
-                        type="email"
-                        name="email" 
-                        placeholder="meuemail@meuemail.com" 
-                        onChange={(e) => setEmail(e.target.value)}
-                        value={email}
-                        className={!email && formSubmitted ? 'messageError' : 'inputValid'}
-                        />
-                        {formSubmitted && email === '' && <div className="Error"><p>Por favor, coloque seu email corretamente.</p></div>}
-                        
-                        <input  
-                        type="tel" 
-                        name="telephone"
-                        minLength={11}
-                        placeholder="(99) 99999-9999"
-                        onChange={(e) => setTelephone(e.target.value)}
-                        value={telephone}
-                        className={!telephone && formSubmitted ? 'messageError' : 'inputValid'}
-                        />
-                        {formSubmitted && telephone === '' && <div className="Error"><p>Por favor, coloque seu celular corretamente.</p></div>}
+                            <input  
+                            type="email"
+                            name="email" 
+                            placeholder="meuemail@meuemail.com" 
+                            onChange={(e) => setEmail(e.target.value)}
+                            value={email}
+                            className={!email && formSubmitted ? 'messageError' : 'inputValid'}
+                            />
+                            {formSubmitted && email === '' && <div className="Error"><p>Por favor, coloque seu email corretamente.</p></div>}
+                            
+                            <input  
+                            type="tel" 
+                            name="telephone"
+                            minLength={11}
+                            placeholder="(99) 99999-9999"
+                            onChange={(e) => setTelephone(e.target.value)}
+                            value={telephone}
+                            className={!telephone && formSubmitted ? 'messageError' : 'inputValid'}
+                            />
+                            {formSubmitted && telephone === '' && <div className="Error"><p>Por favor, coloque seu celular corretamente.</p></div>}
 
-                        <textarea 
-                        name="Descrição" 
-                        id="Description" 
-                        cols="20" 
-                        rows="20" 
-                        onChange={(e) => setProposal(e.target.value)}
-                        placeholder='Descrição do site (opcional)'>
-                        </textarea>
+                            <textarea 
+                            name="Descrição" 
+                            id="Description" 
+                            cols="20" 
+                            rows="20" 
+                            onChange={(e) => setProposal(e.target.value)}
+                            placeholder='Descrição do site (opcional)'>
+                            </textarea>
 
-                        <button type="submit" className='button'>Enviar formulario</button>
-                    </fieldset>
-                </form>
+                            <button type="submit" className='button'>Enviar formulario</button>
+                        </fieldset>
+                    </form> 
+                </div>
                 <div className='DivIcons'>
                     <a href="https://wa.me/31991973835">
                         <FaWhatsapp/>
@@ -124,7 +126,7 @@ function Footer() {
                         <FaInstagram/>
                     </a>
                 </div>
-            </div>
+            </section>
         </>
     );
 }

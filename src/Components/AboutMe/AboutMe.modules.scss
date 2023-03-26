@@ -32,24 +32,15 @@
 }
 
 
-// @media screen and (min-width:400px) and (min-height:750px) {
-//     .ContainerAbout {
-//         .DivText {
-//             h2 {
-//                 font: 700 1.8rem 'Libre Baskerville', serif;
-//             }
+@media screen and (min-width:1000px) and (min-height:590px) {
     
-//             & p {
-//                 color: white;
-//                 font: 400 1rem 'Open Sans', sans-serif;
-    
-    
-//                 & span {
-//                     font: 400 1rem 'Open Sans', sans-serif;
-//                     color: #C2A393;
-//                 }
-//             }
-//         }
-//     }
+    .ContainerAbout {
+        margin-top: 5%;
+        width: 75%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-// }
+}

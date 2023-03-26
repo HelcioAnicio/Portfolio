@@ -9,6 +9,7 @@ function Header () {
 	useEffect(() => {
 		isOpen ? document.body.style.overflowY = 'hidden' :  document.body.style.overflowY = 'scroll'
 	}, [isOpen])
+
     return (
         <>
             <nav id='ContainerHeader'>
@@ -18,16 +19,24 @@ function Header () {
                     </button>
                 </div>
                 <ul id='DivPages'>
-                    <li><a href="https://google.com">Home</a></li>
-                    <li><a href="https://google.com">Sobre mim</a></li>
-                    <li><a href="#Tech">Tecnologias</a></li>
-                    <li><a href="https://google.com">Portifolio</a></li>
-                    <li><a href="https://google.com">Fale comigo</a></li> 
+                    <li>
+                        <a href="#Home">Home</a>    
+                    </li>
+                    <li>
+                        <a href="#AboutMe">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a href="#Tech">Tecnologias</a>
+                    </li>
+                    <li>
+                        <a href="#Portfolio">Portifolio</a>
+                    </li>
+                    <li>
+                        <a href="#Footer">Fale comigo</a>
+                    </li> 
                 </ul>
             </nav>
-			
             {isOpen && <MenuMobile setIsOpen={setIsOpen} />}
-
         </>
     )
 }
@@ -43,11 +52,21 @@ function MenuMobile({setIsOpen}) {
                     <TfiClose/>
                 </button>
             </div>
-            <li><a href="https://google.com">Home</a></li>
-            <li><a href="https://google.com">Sobre mim</a></li>
-            <li><a href="#Tech">Tecnologias</a></li>
-            <li><a href="https://google.com">Portifólio</a></li>
-            <li><a href="https://google.com">Fale comigo</a></li> 
+            <li onClick={() => setIsOpen(false)}>
+                <a href="#Home">Home</a>
+            </li>
+            <li onClick={() => setIsOpen(false)}>
+                <a href="#AboutMe">Sobre mim</a>
+            </li>
+            <li onClick={() => setIsOpen(false)}>
+                <a href="#Tech">Tecnologias</a>
+            </li>
+            <li onClick={() => setIsOpen(false)}>
+                <a href="#Portfolio">Portifólio</a>
+            </li>
+            <li onClick={() => setIsOpen(false)}>
+                <a href="#Footer">Fale comigo</a>
+            </li> 
         </ul>
     </nav> 
     )

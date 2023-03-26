@@ -5,7 +5,7 @@ import Photo  from '../../assets/profile.png';
 function Home () {
     return (
         <>
-            <section id='Profile' className="ContainerText">
+            <section id='Home' className="ContainerText">
                 <div className='BoxContent'>
                     <div className='Picture'>
                         <img src={Photo} alt="profile"/> 

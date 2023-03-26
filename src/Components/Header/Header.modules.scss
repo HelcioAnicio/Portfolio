@@ -9,44 +9,27 @@
 #ContainerHeader {
     display: flex;
     justify-content: right;
-    padding: 5px 15px;
-    position: relative;
-
+    width: 100%;
+    height: 60px;
+    
     .DivMenu {
-        
-        & button {
-            background-color: transparent;
-            border: none;
-            width: 60px;
-            height: 60px;
-            
-        & svg {
+        svg {
             color: white;
             font-size: 2.5rem;
             cursor: pointer;
             
             &:hover {
                 font-size: 2.7rem;
-                // position: relative;
             }
         }
-        }
-    }
+    }     
 
     #DivPages {
         display: none;
-        justify-content: space-between;
-        width: 80%;
-        margin: 0 auto;
-
-        & li {
-            color: white;
-        }
     }
 }
 
 .MobileMenu {
-
     .Menu {
         background-color: rgba($color: #303133, $alpha: .99);
         backdrop-filter: blur(30px);
@@ -62,59 +45,41 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        text-align: left;
-        padding: 3% 0 10% 0;
-        animation: Animation 0.7s ease-out;
-    
-            & div {
-                padding-inline: 10% ;
-                width: 100%;
-                display: flex;
-                justify-content: right;
-    
-                & .ButtonClose {
-                    background-color: transparent;
-                    border: none;        
+        padding-inline: 10% ;
+        width: 100%;
+        display: flex;
+        cursor: pointer;
+        box-shadow: 0px 3px 15px 0px #ffffff;
+        position: relative;
+        top: -3px;
 
-                    & > svg {
-                        cursor: pointer;
-                        box-sizing: content-box;
-                        font-size: 40px;
-                        color: white;
-                        border-radius: 30px;
-                        padding: 10px;
-
-                        &:hover {
-                            box-shadow: 0px 3px 15px 0px #ffffff;
-                            position: relative;
-                            top: -3px;
-                        }
-                        
-                    }
-                }
-    
-            }
-    
-            & li {
-                list-style: none;
-                
-                & a {
-                    text-decoration: none;
-                    color: white;
-                    font: 400 1rem 'Open Sans', sans-serif;
-
-                    
-                    &:hover {
-                        border-bottom: 3px solid #ffffff;
-                        position: relative;
-                        top: -5px;
-
-                    }
-                }
+        svg {
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            
+            &:hover {
+                font-size: 2.7rem;
             }
         }
+    }    
+
+    
+    li {
+        list-style: none;
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font: 400 1rem 'Open Sans', sans-serif;
+
+            &:hover {
+                border-bottom: 3px solid #ffffff;
+                position: relative;
+                top: -5px;
+            }
+        }
+    }
 }
 
 
@@ -137,7 +102,6 @@
             div {  
                 .ButtonClose {
                     svg {
-                        font-size:80px;
                         border-radius: 60px;
                         padding: 20px;
 
@@ -150,30 +114,49 @@
 
             li {
                 a {
-                    font: 400 2.5rem 'Open Sans', sans-serif;
+                    font: 400 2rem 'Open Sans', sans-serif;
                 }
             }
         }
     }
 }
 
-@media screen and (min-width:1000px) and (min-height:600px) {
-//    .DivMenu {
-//         display: none;
-//     }
-    
-//     #DivPages {
-//          display: flex
-//     }
+
+
+@media screen and (min-width:1000px) and (min-height:590px) {
 
     #ContainerHeader {
+        height: 100px;
+
+
         .DivMenu {
             display: none;
         }
-    
+
         #DivPages {
+            padding: 5% 10%;
             display: flex;
-        }   
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font: 400 1.2rem 'Open Sans', sans-serif;
+                    padding: 5px;
+        
+                    &:hover {
+                        border-bottom: 3px solid #ffffff;
+                        position: relative;
+                        top: -5px;
+                    }
+                }
+            }
+        }
     }
 }
 

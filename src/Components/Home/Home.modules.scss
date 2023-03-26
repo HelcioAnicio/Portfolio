@@ -1,7 +1,7 @@
 @import '../.././Styles/index.scss';
 
 .ContainerText {
-    padding: 20px 15px 0 15px;
+    padding: 10% 15px 0 15px;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -93,4 +93,14 @@
     .ContainerText {
         height: 70vh;
     }
+}
+
+
+@media screen and (min-width:1000px) and (min-height:590px) {
+    .ContainerText {
+        padding: 5% 15px 0 15px;
+        height: 80vh;
+        width: 50%;
+    }
+
 }

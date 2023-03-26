@@ -8,3 +8,13 @@ body {
     backdrop-filter: blur(7px);
     background-repeat: no-repeat;
 }
+
+
+@media screen and (min-width:1000px) and (min-height:590px) {
+
+    .ContainerDesktop {
+        display: flex;
+        padding-right: 50px;
+    }
+
+}
