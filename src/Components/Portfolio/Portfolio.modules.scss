@@ -30,7 +30,7 @@
 
             .DivImage {
                 background-size: contain;
-                background-position: center 20px;
+                background-position: center center;
                 background-repeat: no-repeat;
                 width: 100%;
                 height: 200px;
@@ -44,7 +44,7 @@
                     height: 110px;
                 }
 
-                .DivButton{
+                .DivIconsDesktop{
                     visibility: hidden;
                 }
             }
@@ -62,7 +62,31 @@
 
                 & > h3 {
                     font: 700 1.3rem 'Open Sans', sans-serif;
-                    margin-block: 20px;
+                    margin: 40px 0 20px 0;
+
+                    .DivIconsMobile {
+                        color: white;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10%;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+        
+                            svg {
+                                font-size: 2.5rem;
+                                padding: 3px;
+        
+                                &:hover {
+                                    font-size: 3rem;
+                                }
+                            }
+                        }
+                    }
+
                 }
 
                 & > p {
@@ -166,7 +190,7 @@
 
 
 
-@media screen and (min-width:400px) and (min-height:750px) {
+@media screen and (min-width:360px) and (min-height:650px) {
     .SectionContainer {
         .DivContent {
             .Form, .Url, .FAQ, .Rating, .QRCode, .Cars, .SocialTree, .Soon {
@@ -174,8 +198,8 @@
                     height: 240px;
 
                     img {
-                        width: 75px;
-                        height: 150px;
+                        width: 70px;
+                        height: 130px;
                     }
                 }
             }
@@ -266,7 +290,7 @@
                         height: 250px;
                     }
 
-                    .DivButton{
+                    .DivIconsDesktop{
                         background-color: rgba($color: #3b3b3b, $alpha: .5);
                         backdrop-filter: blur(10px);
                         color: white;
@@ -298,7 +322,7 @@
                     }
                 }
 
-                .DivImage:hover .DivButton{
+                .DivImage:hover .DivIconsDesktop{
                     visibility: visible;
 
                 }
@@ -323,6 +347,10 @@
     
                     & > h3 {
                         font: 700 1.3rem 'Open Sans', sans-serif;
+
+                        .DivIconsMobile {
+                            display: none;
+                        }
                     }
     
                     & > p {
