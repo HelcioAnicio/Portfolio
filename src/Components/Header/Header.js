@@ -36,7 +36,9 @@ function Header () {
                     </li> 
                 </ul>
             </nav>
+
             {isOpen && <MenuMobile setIsOpen={setIsOpen} />}
+        
         </>
     )
 }
