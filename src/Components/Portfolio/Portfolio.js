@@ -78,10 +78,10 @@ function Portfolio () {
                             <h3>
                                 Encurtador de link
                                 <div className="DivIconsMobile">
-                                    <a href="https://contact-form-two-xi.vercel.app/">
+                                    <a href="https://url-shortener-seven-delta.vercel.app/">
                                         <GiMagnifyingGlass title='Acesse o site' />
                                     </a>
-                                    <a href="https://github.com/HelcioAnicio/Contact_form">
+                                    <a href="https://github.com/HelcioAnicio/url-shortener">
                                         <FaGithub title='Acesse o GitHub' />
                                     </a>
                                 </div>
@@ -114,10 +114,10 @@ function Portfolio () {
                             <h3>
                                 FAQ (Perguntas frequentes)
                                 <div className="DivIconsMobile">
-                                    <a href="https://contact-form-two-xi.vercel.app/">
+                                    <a href="https://faq-questions.vercel.app/">
                                         <GiMagnifyingGlass title='Acesse o site' />
                                     </a>
-                                    <a href="https://github.com/HelcioAnicio/Contact_form">
+                                    <a href="https://github.com/HelcioAnicio/FAQ_Questions">
                                         <FaGithub title='Acesse o GitHub' />
                                     </a>
                                 </div>
@@ -149,10 +149,10 @@ function Portfolio () {
                             <h3>
                                 Serviço de avaliação
                                 <div className="DivIconsMobile">
-                                    <a href="https://contact-form-two-xi.vercel.app/">
+                                    <a href="https://rating-feedback.vercel.app/">
                                         <GiMagnifyingGlass title='Acesse o site' />
                                     </a>
-                                    <a href="https://github.com/HelcioAnicio/Contact_form">
+                                    <a href="https://github.com/HelcioAnicio/Rating_feedback">
                                         <FaGithub title='Acesse o GitHub' />
                                     </a>
                                 </div>
@@ -184,10 +184,10 @@ function Portfolio () {
                             <h3>
                                 QR Code
                                 <div className="DivIconsMobile">
-                                    <a href="https://contact-form-two-xi.vercel.app/">
+                                    <a href="https://qr-code-kappa-blue.vercel.app/">
                                         <GiMagnifyingGlass title='Acesse o site' />
                                     </a>
-                                    <a href="https://github.com/HelcioAnicio/Contact_form">
+                                    <a href="https://github.com/HelcioAnicio/QRCode">
                                         <FaGithub title='Acesse o GitHub' />
                                     </a>
                                 </div>
@@ -218,10 +218,10 @@ function Portfolio () {
                             <h3>
                                 Informações de produtos
                                 <div className="DivIconsMobile">
-                                    <a href="https://contact-form-two-xi.vercel.app/">
+                                    <a href="https://product-informations.vercel.app/">
                                         <GiMagnifyingGlass title='Acesse o site' />
                                     </a>
-                                    <a href="https://github.com/HelcioAnicio/Contact_form">
+                                    <a href="https://github.com/HelcioAnicio/Product_informations">
                                         <FaGithub title='Acesse o GitHub' />
                                     </a>
                                 </div>
@@ -252,10 +252,10 @@ function Portfolio () {
                             <h3>
                                 SocialTree
                                 <div className="DivIconsMobile">
-                                    <a href="https://contact-form-two-xi.vercel.app/">
+                                    <a href="https://social-tree-beta.vercel.app/">
                                         <GiMagnifyingGlass title='Acesse o site' />
                                     </a>
-                                    <a href="https://github.com/HelcioAnicio/Contact_form">
+                                    <a href="https://github.com/HelcioAnicio/Social_tree">
                                         <FaGithub title='Acesse o GitHub' />
                                     </a>
                                 </div>
