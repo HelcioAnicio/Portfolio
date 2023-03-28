@@ -1,5 +1,4 @@
 import './Footer.modules.scss';
-// import Email from '.././Email/Email'
 import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 // import {AiFillExclamationCircle} from 'react-icons/ai'
 
