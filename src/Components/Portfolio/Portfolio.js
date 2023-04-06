@@ -9,11 +9,13 @@ import { AiOutlineLoading3Quarters, AiOutlineQuestionCircle } from 'react-icons/
 
 import MobileForm  from '../../assets/Form/mobile.png';
 import MobileUrl  from '../../assets/Url/mobile.png';
+import MobileCalculator from '../../assets/Calculator/mobile.png';
 import MobileFAQ  from '../../assets/Faq/mobile.png';
 import MobileRating  from '../../assets/Rating/mobile.png';
 import MobileQRCode  from '../../assets/QRcode/mobile.png';
 import MobileCars from '../../assets/Cars/mobile.png';
 import MobileSocialTree from '../../assets/SocialTree/mobile.png';
+
 
 
 function Portfolio () {
@@ -100,7 +102,7 @@ function Portfolio () {
 
                     <div className="Calculator">
                         <div className="DivImage">
-                            <img src={MobileFAQ} alt="Mobile" />
+                            <img src={MobileCalculator} alt="Mobile" />
                             <div className="DivIconsDesktop">
                                 <a href="https://calculator-helcioanicio.vercel.app/">
                                     <GiMagnifyingGlass title='Acesse o site' />
