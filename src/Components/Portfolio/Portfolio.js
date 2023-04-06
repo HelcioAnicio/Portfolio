@@ -98,6 +98,41 @@ function Portfolio () {
                         </div>
                     </div>
 
+                    <div className="Calculator">
+                        <div className="DivImage">
+                            <img src={MobileFAQ} alt="Mobile" />
+                            <div className="DivIconsDesktop">
+                                <a href="https://calculator-helcioanicio.vercel.app/">
+                                    <GiMagnifyingGlass title='Acesse o site' />
+                                </a>
+                                <a href="https://github.com/HelcioAnicio/calculator">
+                                    <FaGithub title='Acesse o GitHub' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="DivInformation">
+                            <h3>
+                                Calculadora
+                                <div className="DivIconsMobile">
+                                    <a href="https://calculator-helcioanicio.vercel.app/">
+                                        <GiMagnifyingGlass title='Acesse o site' />
+                                    </a>
+                                    <a href="https://github.com/HelcioAnicio/calculator">
+                                        <FaGithub title='Acesse o GitHub' />
+                                    </a>
+                                </div>
+                            </h3>
+                            <p>
+                                Nesse projeto você verá uma calculadora funcional, porém onde existe uma lógica desafiadora em JavaScript.
+                            </p>
+                            <div className="Tech">
+                                <TbBrandJavascript className='js'/>
+                                <FaHtml5 className='html'/>
+                                <IoLogoCss3 className='css'/>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="FAQ">
                         <div className="DivImage">
                             <img src={MobileFAQ} alt="Mobile" />
