@@ -10,6 +10,8 @@ import { AiOutlineLoading3Quarters, AiOutlineQuestionCircle } from 'react-icons/
 import MobileForm  from '../../assets/Form/mobile.png';
 import MobileUrl  from '../../assets/Url/mobile.png';
 import MobileCalculator from '../../assets/Calculator/mobile.png';
+import MobileToDoList from '../../assets/ToDoList/mobile.png';
+import MobileClock from '../../assets/Clock/mobile.png';
 import MobileFAQ  from '../../assets/Faq/mobile.png';
 import MobileRating  from '../../assets/Rating/mobile.png';
 import MobileQRCode  from '../../assets/QRcode/mobile.png';
@@ -130,6 +132,78 @@ function Portfolio () {
                             <div className="Tech">
                                 <TbBrandJavascript className='js'/>
                                 <FaHtml5 className='html'/>
+                                <IoLogoCss3 className='css'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="ToDoList">
+                        <div className="DivImage">
+                            <img src={MobileToDoList} alt="Mobile" />
+                            <div className="DivIconsDesktop">
+                                <a href="https://to-do-list-nine-kohl.vercel.app/">
+                                    <GiMagnifyingGlass title='Acesse o site' />
+                                </a>
+                                <a href="https://github.com/HelcioAnicio/ToDoList">
+                                    <FaGithub title='Acesse o GitHub' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="DivInformation">
+                            <h3>
+                                To Do List
+                                <div className="DivIconsMobile">
+                                    <a href="https://to-do-list-nine-kohl.vercel.app/">
+                                        <GiMagnifyingGlass title='Acesse o site' />
+                                    </a>
+                                    <a href="https://github.com/HelcioAnicio/ToDoList">
+                                        <FaGithub title='Acesse o GitHub' />
+                                    </a>
+                                </div>
+                            </h3>
+                            <p>
+                                Uma lista de tarefas, onde pode adicionar, marcar como concluido e tambem excluir caso tenha feito algo que queria. E tambem um botão para alterar o tema de cores.
+                            </p>
+                            <div className="Tech">
+                                <TbBrandJavascript className='js'/>
+                                <FaHtml5 className='html'/>
+                                <FaSass className='scss'/>
+                                <IoLogoCss3 className='css'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Clock">
+                        <div className="DivImage">
+                            <img src={MobileClock} alt="Mobile" />
+                            <div className="DivIconsDesktop">
+                                <a href="https://clock-teal-mu.vercel.app/">
+                                    <GiMagnifyingGlass title='Acesse o site' />
+                                </a>
+                                <a href="https://github.com/HelcioAnicio/Clock">
+                                    <FaGithub title='Acesse o GitHub' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="DivInformation">
+                            <h3>
+                                Clock
+                                <div className="DivIconsMobile">
+                                    <a href="https://clock-teal-mu.vercel.app/">
+                                        <GiMagnifyingGlass title='Acesse o site' />
+                                    </a>
+                                    <a href="https://github.com/HelcioAnicio/Clock">
+                                        <FaGithub title='Acesse o GitHub' />
+                                    </a>
+                                </div>
+                            </h3>
+                            <p>
+                                Um relógio digital, mostra as horas atualizadas a cada segundo.
+                            </p>
+                            <div className="Tech">
+                                <TbBrandJavascript className='js'/>
+                                <FaHtml5 className='html'/>
+                                <FaSass className='scss'/>
                                 <IoLogoCss3 className='css'/>
                             </div>
                         </div>
