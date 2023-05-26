@@ -22,5 +22,27 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-.png:Zone.Identifier
+# Files unnecessary
+src/assets/Calculator/mobile (1).png:Zone.Identifier
+src/assets/Calculator/mobile.png:Zone.Identifier
+src/assets/Cars/Desktop.png:Zone.Identifier
+src/assets/Cars/mobile.png:Zone.Identifier
+src/assets/Clock/mobile (1).png:Zone.Identifier
+src/assets/Clock/mobile (2).png:Zone.Identifier
+src/assets/Faq/Desktop.png:Zone.Identifier
+src/assets/Faq/mobile.png:Zone.Identifier
+src/assets/Form/Desktop_GIF.gif:Zone.Identifier
+src/assets/Form/Desktop.png:Zone.Identifier
+src/assets/Form/mobile.png:Zone.Identifier
+src/assets/QRcode/Desktop.png:Zone.Identifier
+src/assets/QRcode/mobile.png:Zone.Identifier
+src/assets/Rating/Desktop_GIF.gif:Zone.Identifier
+src/assets/Rating/Desktop.png:Zone.Identifier
+src/assets/Rating/mobile.png:Zone.Identifier
+src/assets/SocialTree/Desktop.png:Zone.Identifier
+src/assets/SocialTree/mobile.png:Zone.Identifier
+src/assets/ToDoList/mobile (1).png:Zone.Identifier
+src/assets/ToDoList/mobile (2).png:Zone.Identifier
+src/assets/Url/Desktop_GIF.gif:Zone.Identifier
+src/assets/Url/mobile (4).png:Zone.Identifier
+src/assets/Url/mobile (5).png:Zone.Identifier
