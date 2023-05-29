@@ -13,11 +13,10 @@ import MobileForm from "../../assets/Form/mobile.png";
 import MobileUrl from "../../assets/Url/mobile.png";
 import MobileCalculator from "../../assets/Calculator/mobile.png";
 import MobileToDoList from "../../assets/ToDoList/mobile.png";
+import MobileWeather from "../../assets/Weather/mobile.png";
 import MobileClock from "../../assets/Clock/mobile.png";
 import MobileFAQ from "../../assets/Faq/mobile.png";
 import MobileRating from "../../assets/Rating/mobile.png";
-import MobileQRCode from "../../assets/QRcode/mobile.png";
-import MobileCars from "../../assets/Cars/mobile.png";
 import MobileSocialTree from "../../assets/SocialTree/mobile.png";
 
 function Portfolio() {
@@ -135,6 +134,45 @@ function Portfolio() {
               <div className="Tech">
                 <TbBrandJavascript className="js" />
                 <FaHtml5 className="html" />
+                <IoLogoCss3 className="css" />
+              </div>
+            </div>
+          </div>
+
+          <div className="Weather">
+            <div className="DivImage">
+              <img src={MobileWeather} alt="Mobile" />
+              <div className="DivIconsDesktop">
+                <a href="https://weather-git-main-helcioanicio.vercel.app/">
+                  <GiMagnifyingGlass title="Acesse o site" />
+                </a>
+                <a href="https://github.com/HelcioAnicio/Weather">
+                  <FaGithub title="Acesse o GitHub" />
+                </a>
+              </div>
+            </div>
+            <div className="DivInformation">
+              <h3>
+                Previsão do tempo
+                <div className="DivIconsMobile">
+                  <a href="https://to-do-list-nine-kohl.vercel.app/">
+                    <GiMagnifyingGlass title="Acesse o site" />
+                  </a>
+                  <a href="https://github.com/HelcioAnicio/ToDoList">
+                    <FaGithub title="Acesse o GitHub" />
+                  </a>
+                </div>
+              </h3>
+              <p>
+                Nesse site você será capaz de realizar uma pesquisa de qualquer
+                cidade do mundo, um banco de dados de cidades bem grande. E
+                aparecerá a previsão do tempo naquele exato momento, com algumas
+                informações sobre a cidade.
+              </p>
+              <div className="Tech">
+                <TbBrandJavascript className="js" />
+                <FaHtml5 className="html" />
+                <FaSass className="scss" />
                 <IoLogoCss3 className="css" />
               </div>
             </div>
@@ -283,78 +321,6 @@ function Portfolio() {
               </p>
               <div className="Tech">
                 <TbBrandJavascript className="js" />
-                <FaHtml5 className="html" />
-                <IoLogoCss3 className="css" />
-              </div>
-            </div>
-          </div>
-
-          <div className="QRCode">
-            <div className="DivImage">
-              <img src={MobileQRCode} alt="Mobile" />
-              <div className="DivIconsDesktop">
-                <a href="https://qr-code-kappa-blue.vercel.app/">
-                  <GiMagnifyingGlass title="Acesse o site" />
-                </a>
-                <a href="https://github.com/HelcioAnicio/QRCode">
-                  <FaGithub title="Acesse o GitHub" />
-                </a>
-              </div>
-            </div>
-            <div className="DivInformation">
-              <h3>
-                QR Code
-                <div className="DivIconsMobile">
-                  <a href="https://qr-code-kappa-blue.vercel.app/">
-                    <GiMagnifyingGlass title="Acesse o site" />
-                  </a>
-                  <a href="https://github.com/HelcioAnicio/QRCode">
-                    <FaGithub title="Acesse o GitHub" />
-                  </a>
-                </div>
-              </h3>
-              <p>
-                Nesta página você receberá um QR Code, que pode ser utilizado
-                para o seu negócio ou qualquer outra coisa que você desejar.
-                Como exemplo ao fazer a leitura será direcionado para o meu
-                GitHub.
-              </p>
-              <div className="Tech">
-                <FaHtml5 className="html" />
-                <IoLogoCss3 className="css" />
-              </div>
-            </div>
-          </div>
-
-          <div className="Cars">
-            <div className="DivImage">
-              <img src={MobileCars} alt="Mobile" />
-              <div className="DivIconsDesktop">
-                <a href="https://product-informations.vercel.app/">
-                  <GiMagnifyingGlass title="Acesse o site" />
-                </a>
-                <a href="https://github.com/HelcioAnicio/Product_informations">
-                  <FaGithub title="Acesse o GitHub" />
-                </a>
-              </div>
-            </div>
-            <div className="DivInformation">
-              <h3>
-                Informações de produtos
-                <div className="DivIconsMobile">
-                  <a href="https://product-informations.vercel.app/">
-                    <GiMagnifyingGlass title="Acesse o site" />
-                  </a>
-                  <a href="https://github.com/HelcioAnicio/Product_informations">
-                    <FaGithub title="Acesse o GitHub" />
-                  </a>
-                </div>
-              </h3>
-              <p>
-                Este projeto é uma página com 3 colunas, informando sobre o
-                assunto. No meu projeto, escrevi sobre modelos de 3 carros.
-              </p>
-              <div className="Tech">
                 <FaHtml5 className="html" />
                 <IoLogoCss3 className="css" />
               </div>

@@ -129,6 +129,12 @@
       }
     }
 
+    .Weather {
+      .DivImage {
+        background-image: url(../../assets/Weather/Desktop.png);
+      }
+    }
+
     .ToDoList {
       .DivImage {
         background-image: url(../../assets/ToDoList/desktop.png);
@@ -150,18 +156,6 @@
     .Rating {
       .DivImage {
         background-image: url(../../assets/Rating/Desktop.png);
-      }
-    }
-
-    .QRCode {
-      .DivImage {
-        background-image: url(../../assets/QRcode/Desktop.png);
-      }
-    }
-
-    .Cars {
-      .DivImage {
-        background-image: url(../../assets/Cars/Desktop.png);
       }
     }
 
