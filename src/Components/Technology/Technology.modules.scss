@@ -63,6 +63,42 @@
                         }
                 } 
                 
+                .Tailwind {
+                    flex: 1 1 120px;
+
+                        & svg {
+                            padding: 10px;
+                            font-size: 5.5rem;
+                            background-color: #F0F2F4;
+                            color: #36B7F0;
+                            border-radius: 20px;
+                        }
+                }
+
+                .Node {
+                    flex: 1 1 120px;
+                    
+                    & svg {
+                            padding: 10px;
+                            font-size: 5.5rem;
+                            background-color: #050505;
+                            color: #679E62;
+                            border-radius: 20px;
+                        }
+                    }
+
+                .Firebase {
+                    flex: 1 1 120px;
+                    
+                    & svg {
+                        padding: 10px;
+                        font-size: 5.5rem;
+                        background-color: #F7F7F7;
+                        color: #F7C52C;
+                        border-radius: 20px;
+                    }
+                }
+                
                 .Scss {
                     flex: 1 1 120px;
 
@@ -83,30 +119,6 @@
                             font-size: 5.5rem;
                             background-color: #DD4B25;
                             color: white;
-                            border-radius: 20px;
-                        }
-                }
-
-                .Node {
-                    flex: 1 1 120px;
-
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #050505;
-                            color: #679E62;
-                            border-radius: 20px;
-                        }
-                }
-
-                .Firebase {
-                    flex: 1 1 120px;
-
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #F7F7F7;
-                            color: #F7C52C;
                             border-radius: 20px;
                         }
                 }
