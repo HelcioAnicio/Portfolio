@@ -15,9 +15,10 @@ import MobileCalculator from "../../assets/Calculator/mobile.png";
 import MobileToDoList from "../../assets/ToDoList/mobile.png";
 import MobileWeather from "../../assets/Weather/mobile.png";
 import MobileClock from "../../assets/Clock/mobile.png";
+import MobileMarvel from "../../assets/Marvel/mobile.png";
 import MobileFAQ from "../../assets/Faq/mobile.png";
 import MobileRating from "../../assets/Rating/mobile.png";
-import MobileSocialTree from "../../assets/SocialTree/mobile.png";
+import MobileStopWatch from "../../assets/StopWatch/mobile.png";
 
 function Portfolio() {
   return (
@@ -134,6 +135,44 @@ function Portfolio() {
               <div className="Tech">
                 <TbBrandJavascript className="js" />
                 <FaHtml5 className="html" />
+                <IoLogoCss3 className="css" />
+              </div>
+            </div>
+          </div>
+
+          <div className="Marvel">
+            <div className="DivImage">
+              <img src={MobileMarvel} alt="Mobile" />
+              <div className="DivIconsDesktop">
+                <a href="https://marvel-git-main-helcioanicio.vercel.app/">
+                  <GiMagnifyingGlass title="Acesse o site" />
+                </a>
+                <a href="https://github.com/HelcioAnicio/Marvel">
+                  <FaGithub title="Acesse o GitHub" />
+                </a>
+              </div>
+            </div>
+            <div className="DivInformation">
+              <h3>
+                Marvel
+                <div className="DivIconsMobile">
+                  <a href="https://marvel-git-main-helcioanicio.vercel.app/">
+                    <GiMagnifyingGlass title="Acesse o site" />
+                  </a>
+                  <a href="https://github.com/HelcioAnicio/Marvel">
+                    <FaGithub title="Acesse o GitHub" />
+                  </a>
+                </div>
+              </h3>
+              <p>
+              Este site foi criado para poder pesquisar qualquer personagem da Marvel, 
+              é possível ver fotos, descrições dos personagens, filmes, HQs 
+              e qualquer informação sobre o universo Marvel.
+              </p>
+              <div className="Tech">
+                <TbBrandJavascript className="js" />
+                <FaHtml5 className="html" />
+                <FaSass className="scss" />
                 <IoLogoCss3 className="css" />
               </div>
             </div>
@@ -327,36 +366,35 @@ function Portfolio() {
             </div>
           </div>
 
-          <div className="SocialTree">
+          <div className="StopWatch">
             <div className="DivImage">
-              <img src={MobileSocialTree} alt="Mobile" />
+              <img src={MobileStopWatch} alt="Mobile" />
               <div className="DivIconsDesktop">
-                <a href="https://social-tree-beta.vercel.app/">
+                <a href="https://https://stop-watch-khaki.vercel.app/">
                   <GiMagnifyingGlass title="Acesse o site" />
                 </a>
-                <a href="https://github.com/HelcioAnicio/Social_tree">
+                <a href="https://github.com/HelcioAnicio/StopWatch">
                   <FaGithub title="Acesse o GitHub" />
                 </a>
               </div>
             </div>
             <div className="DivInformation">
               <h3>
-                SocialTree
+                StopWatch
                 <div className="DivIconsMobile">
-                  <a href="https://social-tree-beta.vercel.app/">
-                    <GiMagnifyingGlass title="Acesse o site" />
-                  </a>
-                  <a href="https://github.com/HelcioAnicio/Social_tree">
-                    <FaGithub title="Acesse o GitHub" />
-                  </a>
-                </div>
+                <a href="https://stop-watch-git-main-helcioanicio.vercel.app/">
+                  <GiMagnifyingGlass title="Acesse o site" />
+                </a>
+                <a href="https://github.com/HelcioAnicio/StopWatch">
+                  <FaGithub title="Acesse o GitHub" />
+                </a>
+              </div>
               </h3>
               <p>
-                O SocialTree é uma ferramenta que agrupa diversos links em
-                apenas um. Serviço muito utilizado em marketing por empresas e
-                influenciadores que querem divulgar seus produtos e serviços.
+                Fiz este site capaz de cronometrar, parar, reiniciar e anotar abaixo dos botões. Aqui você pode “aproveitar” o tempo facilmente.
               </p>
               <div className="Tech">
+                <TbBrandJavascript className="js" />
                 <FaHtml5 className="html" />
                 <IoLogoCss3 className="css" />
               </div>
