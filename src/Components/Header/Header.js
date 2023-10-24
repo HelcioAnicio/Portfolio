@@ -1,7 +1,7 @@
 import './Header.modules.scss';
-import { GiHamburgerMenu } from "react-icons/gi";
-import { TfiClose } from "react-icons/tfi";
-import { useState, useEffect} from 'react';
+// import { GiHamburgerMenu } from "react-icons/gi";
+// import { TfiClose } from "react-icons/tfi";
+// import { useState, useEffect} from 'react';
 
 function Header () {
 	// const [isOpen, setIsOpen] = useState(false)
@@ -13,21 +13,21 @@ function Header () {
     return (
         <>
             <header className='container'>
-                <div>
-                    <a href="">dev.helcio</a>
+                <div className='divName'>
+                    <a href="https://google.com">dev.helcio</a>
                 </div>
-                <div>
-                    <h1>Seja bem vindo!</h1>
+                <div className='divText'>
+                    <h1>SEJA BEM VINDO!</h1>
                     <div>
-                        <p>&lt;ao meu portifólio&gt;</p>
-                        <h1>Bem vindo!</h1>
+                        <p>&lt;ao meu <br /> portifólio&gt;</p>
+                        <h2>BEM VINDO!</h2>
                     </div>
                 </div>
                 <nav>
-                    <a href="">Sobre mim</a>
-                    <a href="">Tecnologias</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Fale comigo</a>
+                    <a href="https://google.com">Sobre mim</a>
+                    <a href="https://google.com">Tecnologias</a>
+                    <a href="https://google.com">Portfolio</a>
+                    <a href="https://google.com">Fale comigo</a>
                 </nav>
             </header>
 
