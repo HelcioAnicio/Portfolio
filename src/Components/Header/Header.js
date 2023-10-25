@@ -19,7 +19,7 @@ function Header () {
                 <div className='divText'>
                     <h1>SEJA BEM VINDO!</h1>
                     <div>
-                        <p>&lt;ao meu <br /> portifólio&gt;</p>
+                        <p>&lt;ao meu<br />portifólio&gt;</p>
                         <h2>BEM VINDO!</h2>
                     </div>
                 </div>
@@ -29,6 +29,7 @@ function Header () {
                     <a href="https://google.com">Portfolio</a>
                     <a href="https://google.com">Fale comigo</a>
                 </nav>
+                <div className='divDesigner'></div>
             </header>
 
 

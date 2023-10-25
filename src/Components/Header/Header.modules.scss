@@ -7,10 +7,9 @@
 }
 
 header {
-  height: 400px;
+  height: 100vh;
   color: white;
-  border: 1px solid red;
-  padding: 15px;
+  padding: 15px 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -43,7 +42,7 @@ header {
     & div {
       display: flex;
       justify-content: center;
-      align-items: start;
+      margin: 0 auto;
 
       p {
         font-size: .9rem;
@@ -52,20 +51,24 @@ header {
       h2 {
         font-size: 1.7rem;
         color: $blue;
-        // width: 100%;
+        margin-top: -10px;
       }
     }
 
   }   
 
+  &:not(nav){
+    justify-content: flex-start;
+  }
+
   nav {
     height: max-content;
-    width: 90%;
-    max-width: 800px;
+    width: 70%;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // gap: 10px;
+    gap: 10px;
 
     a {
       text-decoration: none;
@@ -78,6 +81,11 @@ header {
     }
   }
 
+  .divDesigner {
+    height: 30%;
+    width: 100%;
+    border: 1px solid;
+  }
 }
 
 
