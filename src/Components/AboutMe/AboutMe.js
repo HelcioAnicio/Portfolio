@@ -17,9 +17,11 @@ function AboutMe () {
                     </figure>
                 </div>
                 <div className="divText">
-                    <h4>Olá! Meu nome é Helcio,</h4>
-                    <p>apaixonado por criar experiências digitais incríveis. Acredito que, para criar interfaces de usuário, é necessário estar sempre à frente do jogo. É por isso que me dedico a criar interfaces intuitivas e fáceis de usar, que possam ser facilmente adaptadas às necessidades específicas de cada cliente.
-                        Se você estiver procurando por um desenvolvedor para o seu negócio altamente qualificado e motivado, não hesite em entrar em contato comigo! Estou animado para discutir como ajudar a sua empresa a ter sucesso no mundo digital.
+                    <h4>OLÁ! MEU NOME É HELCIO,</h4>
+                    <p>estou no mercado de desenvolvimento a mais de 1 ano, super motivado em criar experiências digitais incríveis. 
+                        Me dedico a criar interfaces intuitivas e fáceis de usar, que possam ser facilmente adaptadas às necessidades específicas de cada cliente.
+                        <br /><br />
+                        Se você estiver procurando por um desenvolvedor para o seu negócio altamente qualificado e motivado, não hesite em entrar em contato comigo, por qualquer uma das minhas redes socias ou  preencha o formulário que entro em contato.
                     </p>
                 </div>
             </section>
