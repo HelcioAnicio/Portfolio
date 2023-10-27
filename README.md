@@ -1,7 +1,6 @@
 # Portfolio
 
-This website was a work which i wanted to practice more my skill with JS. I used for firsttime React.JS and i put all of this thnigs on this project. It's possible to interect by filling out the form. 
-
+This website was a work which i wanted to practice more my skill with JS. I used for firsttime React.JS and i put all of this thnigs on this project. It's possible to interect by filling out the form.
 
 ## Table of contents
 
@@ -18,12 +17,12 @@ This website was a work which i wanted to practice more my skill with JS. I used
 - [Acknowledgments](#acknowledgments)
 - [Building your project](#Building-your-project)
 
-
 ## Overview
 
 ### The challenge
 
 The users should be able to:
+
 - Show informations about me.
 - Put the technologies which i now work and use.
 - Show my all project i had done before, and to be easy to access just one click on icons.
@@ -31,8 +30,8 @@ The users should be able to:
 - View the optimal layout depending on their device's screen size.
 
 ### Screenshot
-- ![image](https://user-images.githubusercontent.com/117602073/230394196-60ca253d-bd00-42ec-a8ef-9c969403f3f8.png)
 
+- ![image](https://user-images.githubusercontent.com/117602073/230394196-60ca253d-bd00-42ec-a8ef-9c969403f3f8.png)
 
 ### Links
 
@@ -60,6 +59,7 @@ The users should be able to:
 ### What I learned
 
 How to use ternary conditional, all the conditional on react, and declare variables with useState.
+
 ```JS
 const firebaseApp = {
         apiKey: process.env.REACT_APP_API_KEY,
@@ -68,7 +68,7 @@ const firebaseApp = {
         storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
         messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
         appId: process.env.REACT_APP_APP_ID,
-        measurementId: process.env.REACT_APPMEASUREMENT_ID, 
+        measurementId: process.env.REACT_APPMEASUREMENT_ID,
     };
 
     const app = initializeApp(firebaseApp);
@@ -89,10 +89,9 @@ https://developer.mozilla.org/en-US/
 https://stackoverflow.com/
 https://www.youtube.com/watch?v=-nYNd6EuZHU&t=455s
 
-
 ## Author
 
-- Linkedin - https://www.linkedin.com/in/helcio-anicio/ 
+- Linkedin - https://www.linkedin.com/in/helcio-anicio/
 - Vercel - https://vercel.com/helcioanicio
 
 <!--
