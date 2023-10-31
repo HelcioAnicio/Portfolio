@@ -12,7 +12,7 @@ function Header () {
 
     return (
         <>
-            <header className='container'>
+            <header className='container' id='header'>
                 <div className='divName'>
                     <a href="https://google.com">dev.helcio</a>
                 </div>
@@ -24,10 +24,10 @@ function Header () {
                     </div>
                 </div>
                 <nav>
-                    <a href="https://google.com">Sobre mim</a>
-                    <a href="https://google.com">Tecnologias</a>
-                    <a href="https://google.com">Portfolio</a>
-                    <a href="https://google.com">Fale comigo</a>
+                    <a href="#aboutMe">Sobre mim</a>
+                    <a href="#Tech">Tecnologias</a>
+                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#Footer">Fale comigo</a>
                 </nav>
                 <div className='divDesigner'></div>
             </header>

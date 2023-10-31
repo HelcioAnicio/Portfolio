@@ -122,6 +122,18 @@
                             border-radius: 20px;
                         }
                 }
+                
+                .Git {
+                    flex: 1 1 120px;
+
+                        & svg {
+                            padding: 10px;
+                            font-size: 5.5rem;
+                            background-color: rgb(237, 237, 237);
+                            color: #E94D31;
+                            border-radius: 20px;
+                        }
+                }
         }
 }
 

@@ -9,7 +9,7 @@ function AboutMe () {
     return (
         <>
 
-            <section className='sectionContainer'>
+            <section className='sectionContainer' id='aboutMe'>
                 <h2>SOBRE MIM</h2>
                 <div className='divFigure'>
                     <figure className='figure'>
