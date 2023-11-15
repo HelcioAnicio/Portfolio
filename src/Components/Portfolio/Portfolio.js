@@ -26,6 +26,7 @@ function Portfolio() {
       <section id="Portfolio" className="SectionContainer">
         <h2>Portifólio</h2>
         <div className="DivContent">
+          
           <div className="Form">
             <div className="DivImage">
               <img src={MobileForm} alt="Mobile" />
