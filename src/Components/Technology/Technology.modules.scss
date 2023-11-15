@@ -1,142 +1,148 @@
 @import '../.././Styles/index.scss';
 
-    .SectionTech {
-        padding: 50px 10px 70px 10px;
-        text-align: center;
-        background-color: $purpleTechs;
-        opaci
+.SectionTech {
+    padding: 30px 5px 50px 5px;
+    text-align: center;
+    background: linear-gradient($purpleTechsBackground, $purpleTechsBackground),url(../../assets/Background.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 
-        & h2 {
-            color: white;
-            text-align: center;
-            margin-bottom: 50px;
-            font: 700 2rem 'Libre Baskerville', serif;
+    h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+        font: 700 2rem 'Libre Baskerville', serif;
+    }
+    
+    .DivContainer {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px 30px;
+        width: 90%;
+        max-width: 600px;
+
+        & > div {
+            width: 70px;
+            height: 70px; 
+            // margin-bottom: 3rem;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            & p {
+                color: white;
+                font: 400 1rem 'Assistant', sans-serif;
+                margin: 5px;
+            }
+        }        
+        
+        .React {
+            flex: 1 1 100px;
+                
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: #5ED3F3;
+                color: #ffff;
+                border-radius: 10px;
+            
+            }
+        } 
+        
+        .Javascript {
+            flex: 1 1 100px;
+
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: #F7DF1E;
+                color: white;
+                border-radius: 10px;
+            }
+        } 
+        
+        .Tailwind {
+            flex: 1 1 100px;
+
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: #F0F2F4;
+                color: #36B7F0;
+                border-radius: 10px;
+            }
+        }
+
+        .Node {
+            flex: 1 1 100px;
+            
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: #050505;
+                color: #679E62;
+                border-radius: 10px;
+            }
+        }
+
+        .Firebase {
+            flex: 1 1 100px;
+            
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: #F7F7F7;
+                color: #F7C52C;
+                border-radius: 10px;
+            }
         }
         
-        .DivContainer {
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-content: space-between;
-            flex-wrap: wrap;
-            gap: 15%;
-            width: 80%;
-            max-width: 600px;
+        .Scss {
+            flex: 1 1 100px;
 
-            & > div {
-                width: 100px;
-                height: 100px; 
-                margin-bottom: 5rem;
-
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
-
-                & p {
-                    color: white;
-                    font: 400 1.2rem 'Assistant', sans-serif;
-                    margin: 5px;
-                }
-            }          
-              
-                .React {
-                    flex: 1 1 120px;
-                        
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #5ED3F3;
-                            color: #ffff;
-                            border-radius: 20px;
-                        
-                        }
-                } 
-                
-                .Javascript {
-                    flex: 1 1 120px;
-
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #F7DF1E;
-                            color: white;
-                            border-radius: 20px;
-                        }
-                } 
-                
-                .Tailwind {
-                    flex: 1 1 120px;
-
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #F0F2F4;
-                            color: #36B7F0;
-                            border-radius: 20px;
-                        }
-                }
-
-                .Node {
-                    flex: 1 1 120px;
-                    
-                    & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #050505;
-                            color: #679E62;
-                            border-radius: 20px;
-                        }
-                    }
-
-                .Firebase {
-                    flex: 1 1 120px;
-                    
-                    & svg {
-                        padding: 10px;
-                        font-size: 5.5rem;
-                        background-color: #F7F7F7;
-                        color: #F7C52C;
-                        border-radius: 20px;
-                    }
-                }
-                
-                .Scss {
-                    flex: 1 1 120px;
-
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #C66394;
-                            color: white;
-                            border-radius: 20px;
-                        }
-                }
-    
-                .Html {
-                    flex: 1 1 120px;
-
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: #DD4B25;
-                            color: white;
-                            border-radius: 20px;
-                        }
-                }
-                
-                .Git {
-                    flex: 1 1 120px;
-
-                        & svg {
-                            padding: 10px;
-                            font-size: 5.5rem;
-                            background-color: rgb(237, 237, 237);
-                            color: #E94D31;
-                            border-radius: 20px;
-                        }
-                }
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: #C66394;
+                color: white;
+                border-radius: 10px;
+            }
         }
+
+        .Html {
+            flex: 1 1 100px;
+
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: #DD4B25;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+        
+        .Git {
+            flex: 1 1 100px;
+
+            & svg {
+                padding: 10px;
+                font-size: 4rem;
+                background-color: rgb(237, 237, 237);
+                color: #E94D31;
+                border-radius: 10px;
+            }
+        }
+    }
 }
+
+
 
 
 // @media screen and (min-width:1000px) and (min-height:590px) {
