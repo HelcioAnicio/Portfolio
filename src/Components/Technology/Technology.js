@@ -3,7 +3,7 @@ import { FaReact, FaHtml5, FaSass } from 'react-icons/fa';
 import { TbBrandJavascript } from "react-icons/tb";
 import { IoLogoFirebase, IoLogoNodejs } from 'react-icons/io5'
 import { SiTailwindcss } from 'react-icons/si'
-
+import { BsGit } from 'react-icons/bs'
 // import { IoLogoCss3 } from 'react-icons/io5'
 
 
@@ -62,6 +62,13 @@ function Technology () {
                             <FaHtml5/>
                         </div>
                         <p>Html5</p>
+                    </div>
+                    
+                    <div className="Git">
+                        <div>
+                            <BsGit/>
+                        </div>
+                        <p>Git</p>
                     </div>
 
                 </div>

@@ -1,6 +1,6 @@
 import './Styles/App.scss';
 import Header from './Components/Header/Header'
-import Home from './Components/Home/Home';
+// import Home from './Components/Home/Home';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Technology from './Components/Technology/Technology';
@@ -12,7 +12,7 @@ function App() {
     <>
         <Header/>
         <div className="ContainerDesktop">
-          <Home/>
+          {/* <Home/> */}
           <AboutMe/>      
         </div>  
         <Technology/>
