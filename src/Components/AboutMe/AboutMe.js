@@ -8,7 +8,6 @@ import Photo  from '../../assets/profile.png';
 function AboutMe () {
     return (
         <>
-
             <section className='sectionContainer' id='aboutMe'>
                 <h2>SOBRE MIM</h2>
                 <div className='divFigure'>
@@ -24,10 +23,6 @@ function AboutMe () {
                         Se você estiver procurando por um desenvolvedor para o seu negócio altamente qualificado e motivado, não hesite em entrar em contato comigo, por qualquer uma das minhas redes socias ou  preencha o formulário que entro em contato.
                     </p>
                 </div>
-            </section>
-
-
-            <section id='Home' className="">
             </section>
         </>
     )
