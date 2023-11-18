@@ -31,35 +31,6 @@ function Header () {
                 </nav>
                 <div className='divDesigner'></div>
             </header>
-
-
-            {/* <nav id='ContainerHeader'>
-                <div className='DivMenu'>
-                    <button onClick={() => setIsOpen(true)}>
-                        <GiHamburgerMenu className='Menu'/>
-                    </button>
-                </div>
-                <ul id='DivPages'>
-                    <li>
-                        <a href="#Home">Home</a>    
-                    </li>
-                    <li>
-                        <a href="#AboutMe">Sobre mim</a>
-                    </li>
-                    <li>
-                        <a href="#Tech">Tecnologias</a>
-                    </li>
-                    <li>
-                        <a href="#Portfolio">Portifolio</a>
-                    </li>
-                    <li>
-                        <a href="#Footer">Fale comigo</a>
-                    </li> 
-                </ul>
-            </nav>
-
-            {isOpen && <MenuMobile setIsOpen={setIsOpen} />}
-         */}
         </>
     )
 }
