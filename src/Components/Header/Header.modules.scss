@@ -9,15 +9,46 @@
 header {
   height: 100vh;
   color: white;
-  padding: 15px 10px;
+  padding: 10px 10px 10px 10px;
   display: flex;
   justify-content: center;
+  // align-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
+  position: relative;
+  border: 1px solid;
+
+  .divPurpleCode {
+    opacity: 0.4;
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../assets/purpleCode.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .line {
+    position: absolute;
+    // border: 1px solid;
+    // scale: 2;
+    top: -30px;
+    right: -60px;
+    width: 250px;
+    height: 150px;
+    background-image: url(../../assets/line.png);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   .divName {
+    z-index: 5;
     width: 100%;
-    padding: 15px 10px 5px 10px;
+    padding: 20px 10px 5px 0;
     
     a {
       text-decoration: none;
@@ -64,7 +95,7 @@ header {
   nav {
     height: max-content;
     width: 70%;
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -81,12 +112,19 @@ header {
     }
   }
 
-  .divDesigner {
-    height: 30%;
-    width: 100%;
-    border: 1px solid;
-    // background-image: url(../../assets/techNetwork.png);
-    // background-size: cover;
+  .divTechNetwork {
+    height: 100px;
+    width: calc(100% + 20px);
+    max-width: 500px;
+    background-image: url(../../assets/techNetwork.png);
+    background-size: cover;
+    background-position: -20px center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -10px;
+    bottom: 0;
+    // margin-top: -50px;
+    // border: 1px solid;
   }
 }
 

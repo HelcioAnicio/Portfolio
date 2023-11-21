@@ -13,6 +13,8 @@ function Header () {
     return (
         <>
             <header className='container' id='header'>
+                <div className="divPurpleCode"></div>
+                <div className="line"></div>
                 <div className='divName'>
                     <a href="https://google.com">dev.helcio</a>
                 </div>
@@ -29,7 +31,7 @@ function Header () {
                     <a href="#Portfolio">Portfolio</a>
                     <a href="#Footer">Fale comigo</a>
                 </nav>
-                <div className='divDesigner'></div>
+                <div className='divTechNetwork'></div>
             </header>
         </>
     )
