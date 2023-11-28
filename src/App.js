@@ -12,8 +12,7 @@ function App() {
     <>
         <Header/>
         <div className="ContainerDesktop">
-          {/* <Home/> */}
-          <AboutMe/>      
+          <AboutMe/> 
         </div>  
         <Technology/>
         <Portfolio/>

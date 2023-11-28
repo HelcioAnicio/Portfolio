@@ -65,7 +65,7 @@ function Footer() {
                     <h3>Fale comigo!</h3>
                     <form onSubmit={cadastrarUsuario}>
                         <fieldset>
-                            <legend>Formulário</legend>
+                            {/* <legend>Formulário</legend> */}
 
                             <input  
                             type="text"

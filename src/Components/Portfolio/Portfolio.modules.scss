@@ -1,11 +1,11 @@
 @import "../../Styles/index.scss";
 
 .SectionContainer {
-  padding: 70px 15px;
+  padding: 50px 15px 70px 15px;
   width: 100%;
 
   h2 {
-    color: white;
+    color: $blue;
     text-align: center;
     font: 700 2rem "Libre Baskerville", serif;
     margin-bottom: 50px;
