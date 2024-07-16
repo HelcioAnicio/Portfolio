@@ -1,0 +1,293 @@
+@import '../../Styles/index.scss';
+
+
+.DivForm {
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient( rgba($color: $purpleTechsBackground, $alpha: .7), $purpleTechsBackground),url(../../assets/dev-software.jpeg);
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 40px 0;
+    
+    h3 {
+        text-align: center;
+        color: $blue;
+        font: 700 2rem 'Libre Baskerville', serif;
+    }
+
+    form {
+        padding: 15px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 320px;
+        margin-top: 20px;
+        
+        fieldset {
+            background-color: rgba($color: $blue, $alpha: .3);
+            border-radius: 5px;
+            padding: 10px 5px 50px 5px;
+            border: none;
+
+
+            input[type=text],
+            input[type=email],
+            input[type=tel],
+            textarea {
+                box-sizing: border-box;
+                display: block;
+                font-size: 1rem;
+                border: 1px solid hsl(246, 25%, 77%);
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 0 auto;
+                margin-top: 15px;
+                width: 90%;                
+                outline: none;
+                    
+                &:focus{
+                    border: 2px solid hsl(154, 59%, 51%);
+                }
+            }
+
+            textarea {
+                height: 100px;
+                resize: none;
+            }
+
+            .messageError {
+                background-image: url(../../assets/icon-error.svg);
+                background-position: 98% center;
+                background-repeat: no-repeat;
+                border: 2px solid  hsl(0, 100%, 74%);
+
+                    &:focus {
+                        border: 2px solid  hsl(0, 100%, 74%) !important;                          
+                    }
+            }
+
+            .Error {
+                width: 90%;
+                margin: 0 auto;
+                
+                    p {
+                        text-align: right;
+                        color: hsl(0, 100%, 74%);
+                        font: 300 .7rem 'Open Sans', sans-serif;
+
+                    }
+            }
+
+            input[type=text]::placeholder, 
+            input[type=email]::placeholder, 
+            input[type=tel]::placeholder, 
+            textarea::placeholder {
+                color: hsl(248, 32%, 49%);
+                font: 400 .9rem 'Open Sans', sans-serif;
+            }
+
+
+            .button {
+                display: block;
+                margin: 0 auto;
+                margin-top: 50px;
+                width: 70%;
+                min-height: 30px;
+                font: 700 1rem 'Open Sans', sans-serif;
+                color: black;
+                background: #4FD1C5;
+                background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+                border: none;
+                border-radius: 1000px;
+                box-shadow: 6px 6px 18px rgba(79,209,197,.64);
+                transition: all 0.3s ease-in-out 0s;
+                cursor: pointer;
+                outline: none;
+                position: relative;
+                padding: 10px;
+            
+                &::before {
+                    content: '';
+                    border-radius: 1000px;
+                    // width: calc(60% + 12px);
+                    min-width: calc(100% + 12px);
+                    min-height: calc(40px + 12px);
+                    border: 6px solid #00FFCB;
+                    box-shadow: 0 0 30px rgba(0,255,203,.64);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: all .3s ease-in-out 0s;
+                }
+
+                &:hover, 
+                &:focus {
+                    color: #ffffff;
+                    transform: translateY(-6px);
+                }
+                
+                &:hover::before, 
+                &:focus::before {
+                    opacity: 1;
+                }
+                
+                &::after {
+                    content: '';
+                    width: 20px; 
+                    height: 20px;
+                    border-radius: 100%;
+                    border: 6px solid #00FFCB;
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    animation: ring 1.5s infinite;
+                }
+                
+                &:hover::after, 
+                &:focus::after {
+                    animation: none;
+                    display: none;
+                }
+                
+                @keyframes ring {
+                    0% {
+                    width: 30px;
+                    height: 30px;
+                    opacity: 1;
+                    }
+                    100% {
+                    width: 150px;
+                    height: 150px;
+                    opacity: 0;
+                    }
+                }
+            }           
+        }
+    }
+    
+    .DivIcons {
+        width: 50%;
+        max-width: 300px;
+        margin: 0 auto;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // border: 1px solid;
+
+        svg {
+            color: white;
+            font-size: 2.5rem;
+            padding: 5px;
+
+            &:hover {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:760px) and (min-height:900px) {
+    .DivForm {
+        form {
+            max-width: 450px;
+
+            fieldset {
+                height: 570px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .button {
+                    min-height: 50px;
+                    font: 700 1rem 'Open Sans', sans-serif;
+
+                    &::before {
+                        min-height: calc(50px + 12px);
+                    }
+                    
+                    @keyframes ring {
+                        0% {
+                        width: 30px;
+                        height: 30px;
+                        opacity: 1;
+                        }
+                        100% {
+                        width: 180px;
+                        height: 180px;
+                        opacity: 0;
+                        }
+                    }
+                }           
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1000px) and (min-height:590px) {
+    .DivForm {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 5%;
+
+        .DivContainer {
+            width: 60%;
+            height: 100%;
+
+
+            h3 {
+                // border: 1px solid white;
+                width: 100%;
+                height: 10%;
+            }
+
+            form {
+                max-width: 500px;
+                // border: 1px solid red;
+                height: 80%;
+
+                fieldset {
+                    height: 570px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    .button {
+                        min-height: 50px;
+                        font: 700 1rem 'Open Sans', sans-serif;
+
+                        &::before {
+                            min-height: calc(50px + 12px);
+                        }
+                        
+                        @keyframes ring {
+                            0% {
+                            width: 30px;
+                            height: 30px;
+                            opacity: 1;
+                            }
+                            100% {
+                            width: 180px;
+                            height: 180px;
+                            opacity: 0;
+                            }
+                        }
+                    }           
+                }
+            }
+        }
+
+        .DivIcons {
+            width: 50%;
+        }
+    }
+}

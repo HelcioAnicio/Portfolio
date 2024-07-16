@@ -1,0 +1,16 @@
+@import "./index.scss";
+
+body {
+  background-color: $purple;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) and (min-height: 590px) {
+  .ContainerDesktop {
+    display: flex;
+    padding-right: 50px;
+  }
+}

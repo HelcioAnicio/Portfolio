@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+$white: rgb(255, 249, 243);
+$details: rgb(190, 178, 200);
+$background-dark: rgb(33, 33, 33);
+$background-second: rgb(71, 71, 71);
+$background-light: rgb(93, 94, 96);
+$extra: rgb(141, 141, 146);
+$light: rgb(215, 214, 214);
+
+$purpleBackground: rgb(39, 2, 70);
+$purpleAboutMe: rgb(43, 23, 85);
+$purpleTechsBackground: rgba(81, 27, 125, 0.7);
+$purple: rgb(62, 0, 112);
+$blue: rgb(60, 185, 207);
+$cyan: rgb(139, 207, 219);
+$gray: rgb(99, 123, 128);
+
+@media screen and (min-width: 370px) and (min-height: 700px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 760px) and (min-height: 900px) {
+  html,
+  body {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 590px) {
+  html,
+  body {
+    font-size: 24px;
+  }
+}

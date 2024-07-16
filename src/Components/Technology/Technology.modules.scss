@@ -1,0 +1,191 @@
+@import "../.././Styles/index.scss";
+
+.SectionTech {
+  padding: 30px 5px 50px 5px;
+  text-align: center;
+  background: linear-gradient($purpleTechsBackground, $purpleTechsBackground),
+    url(../../assets/Background.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+
+  h2 {
+    color: $blue;
+    text-align: center;
+    margin-bottom: 40px;
+    font: 700 2rem "Libre Baskerville", serif;
+  }
+
+  .DivContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+    width: 90%;
+    max-width: 600px;
+
+    & > div {
+      width: 70px;
+      height: 70px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      & p {
+        color: white;
+        font: 400 1rem "Assistant", sans-serif;
+        margin: 5px;
+      }
+    }
+
+    .React {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: #5ed3f3;
+        color: #ffff;
+        border-radius: 10px;
+      }
+    }
+
+    .Typescript {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: rgb(47, 116, 192);
+        color: #ffff;
+        border-radius: 10px;
+      }
+    }
+
+    .Javascript {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: #f7df1e;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+
+    .Tailwind {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: #f0f2f4;
+        color: #36b7f0;
+        border-radius: 10px;
+      }
+    }
+
+    .Firebase {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: #f7f7f7;
+        color: #f7c52c;
+        border-radius: 10px;
+      }
+    }
+
+    .Postgree {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: rgb(49, 100, 140);
+        color: white;
+        border-radius: 10px;
+      }
+    }
+
+    .Prisma {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: white;
+        color: rgb(11, 35, 49);
+        border-radius: 10px;
+      }
+    }
+
+    .Node {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: #050505;
+        color: #679e62;
+        border-radius: 10px;
+      }
+    }
+
+    .Sass {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: #c66394;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+
+    .Html {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: #dd4b25;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+
+    .Git {
+      flex: 1 1 50px;
+
+      & svg {
+        padding: 10px;
+        font-size: 3rem;
+        background-color: rgb(237, 237, 237);
+        color: #e94d31;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 590px) {
+  .DivContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px 50px;
+    width: 90%;
+    max-width: 800px;
+  }
+}
