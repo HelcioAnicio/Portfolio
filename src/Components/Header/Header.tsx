@@ -1,17 +1,6 @@
 import "./Header.modules.scss";
-// import { GiHamburgerMenu } from "react-icons/gi";
-// import { TfiClose } from "react-icons/tfi";
-// import { useState, useEffect} from 'react';
-// import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;500&display=swap');
-// import 'https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;500&display=swap'
 
 function Header() {
-  // const [isOpen, setIsOpen] = useState(false)
-
-  // useEffect(() => {
-  // 	isOpen ? document.body.style.overflowY = 'hidden' :  document.body.style.overflowY = 'scroll'
-  // }, [isOpen])
-
   return (
     <>
       <header
@@ -45,32 +34,3 @@ function Header() {
   );
 }
 export default Header;
-
-// function MenuMobile({setIsOpen}) {
-//     return (
-//         <nav className='MobileMenu'>
-//             <ul className='Menu'>
-//                 <div>
-//                     <button className='ButtonClose' onClick={() => setIsOpen(false)}>
-//                         <TfiClose/>
-//                     </button>
-//                 </div>
-//                 <li onClick={() => setIsOpen(false)}>
-//                     <a href="#Home">Home</a>
-//                 </li>
-//                 <li onClick={() => setIsOpen(false)}>
-//                     <a href="#AboutMe">Sobre mim</a>
-//                 </li>
-//                 <li onClick={() => setIsOpen(false)}>
-//                     <a href="#Tech">Tecnologias</a>
-//                 </li>
-//                 <li onClick={() => setIsOpen(false)}>
-//                     <a href="#Portfolio">Portifólio</a>
-//                 </li>
-//                 <li onClick={() => setIsOpen(false)}>
-//                     <a href="#Footer">Fale comigo</a>
-//                 </li>
-//             </ul>
-//         </nav>
-//     )
-// }

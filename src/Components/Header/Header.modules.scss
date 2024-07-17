@@ -7,11 +7,14 @@
 }
 
 header {
-  height: 85vh;
+  height: 100vh;
+  width: 100%;
   color: white;
   padding: 10px 10px 0 10px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
   position: relative;
@@ -46,7 +49,7 @@ header {
     z-index: 5;
     width: 100%;
     padding: 20px 10px 5px 0;
-    
+
     a {
       text-decoration: none;
       list-style: none;
@@ -75,7 +78,7 @@ header {
       margin: 0 auto;
 
       p {
-        font: 400 0.75rem 'Inconsolata', monospace;
+        font: 400 0.75rem "Inconsolata", monospace;
       }
 
       h2 {
@@ -84,8 +87,7 @@ header {
         margin-top: -10px;
       }
     }
-
-  }   
+  }
 
   nav {
     height: max-content;
@@ -108,13 +110,23 @@ header {
       border: 2px solid $cyan;
       border-radius: 20px;
       cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: $white;
+        color: $purple;
+        font-weight: 700;
+        transition: all 0.5s;
+      }
     }
   }
 
   .divTechNetwork {
     height: 100px;
     width: calc(100% + 60px);
+    width: 100%;
     max-width: 600px;
+    margin-right: auto;
     background-image: url(../../assets/techNetwork.png);
     background-size: cover;
     background-position: -20px center;
@@ -125,8 +137,6 @@ header {
   }
 }
 
-
-
 @media screen and (min-width: 350px) and (min-height: 600px) {
   header {
     .divText {
@@ -134,82 +144,38 @@ header {
     }
 
     .divTechNetwork {
-      left: -20px
+      left: -20px;
+      height: 150px;
     }
   }
 }
 
-@media screen and (min-width:74px) and (min-height:900px) {
-  header{
-    .divText{
+@media screen and (min-width: 740px) and (min-height: 800px) {
+  header {
+    padding-bottom: 20px;
+
+    nav {
+      max-width: 750px;
+      gap: 20px 30px;
+
+      a {
+        padding: 10px;
+      }
+    }
+    .divText {
       transform: scale(2);
     }
+    .divTechNetwork {
+      left: -40px;
+      height: 200px;
+    }
   }
 }
 
-
-// @media screen and (min-width: 650px) and (min-height: 800px) {
-//   .MobileMenu {
-//     .Menu {
-//       div {
-//         .ButtonClose {
-//           width: 120px;
-//           height: 120px;
-
-//           svg {
-//             font-size: 5rem;
-//             border-radius: 60px;
-//             padding: 20px;
-
-//             &:hover {
-//               // box-shadow: 0px 3px 25px 0px #ffffff;
-//               font-size: 5.2rem;
-//             }
-//           }
-//         }
-//       }
-
-//       li {
-//         a {
-//           font: 400 2rem "Open Sans", sans-serif;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 1000px) and (min-height: 590px) {
-//   #ContainerHeader {
-//     // height: 80px;
-//     height: max-content;
-
-//     .DivMenu {
-//       display: none;
-//     }
-
-//     #DivPages {
-//       padding: 0 10%;
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       width: 100%;
-
-//       li {
-//         list-style: none;
-
-//         a {
-//           text-decoration: none;
-//           color: white;
-//           font: 400 1.2rem "Open Sans", sans-serif;
-//           padding: 5px;
-
-//           &:hover {
-//             border-bottom: 3px solid #ffffff;
-//             position: relative;
-//             top: -5px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width: 1000px) and (min-height: 600px) {
+  header {
+    .divText {
+      transform: scale(3);
+    }
+  }
+}
