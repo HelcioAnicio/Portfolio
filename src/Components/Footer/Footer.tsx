@@ -26,6 +26,13 @@ function Footer() {
   const db = getFirestore(app);
   const userCollectionRef = collection(db, "users");
 
+  const cleanForm = () => {
+    // setName = "";
+    // setEmail = "";
+    // setTelephone = "";
+    // setProposal = "";
+  };
+
   const cadastrarUsuario = async (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (name && email && telephone) {
@@ -43,7 +50,7 @@ function Footer() {
           telephone,
           proposal,
         });
-
+        cleanForm();
         console.log("Usuário cadastrado no Firebase:", user.id);
       } catch (error) {
         console.error("Erro ao cadastrar usuário no Firebase:", error);
@@ -124,17 +131,26 @@ function Footer() {
             </fieldset>
           </form>
         </div>
-        <div className='DivIcons'>
-          <a href='https://wa.me/31991973835'>
-            <FaWhatsapp />
-          </a>
-          <a href='https://www.linkedin.com/in/helcio-anicio/'>
-            <FaLinkedin />
-          </a>
-          <a href='https://www.instagram.com/helcioanicio/'>
-            <FaInstagram />
-          </a>
-        </div>
+        <ul className='DivIcons'>
+          <li>
+            <a href='https://wa.me/31991973835'>
+              <FaWhatsapp />
+            </a>
+            <p>WhatsApp</p>
+          </li>
+          <li>
+            <a href='https://www.linkedin.com/in/helcio-anicio/'>
+              <FaLinkedin />
+            </a>
+            <p>Linkedin</p>
+          </li>
+          <li>
+            <a href='https://www.instagram.com/helcioanicio/'>
+              <FaInstagram />
+            </a>
+            <p>Instagram</p>
+          </li>
+        </ul>
       </section>
     </>
   );
