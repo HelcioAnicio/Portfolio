@@ -1,4 +1,3 @@
-import React from "react";
 import "./Technology.modules.scss";
 import { FaReact, FaHtml5, FaSass } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
