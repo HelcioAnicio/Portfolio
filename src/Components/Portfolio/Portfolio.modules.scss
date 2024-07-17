@@ -70,6 +70,7 @@
           justify-content: center;
           align-items: center;
           gap: 10%;
+          margin-top: 10px;
 
           a {
             text-decoration: none;
@@ -78,9 +79,11 @@
             svg {
               font-size: 2.5rem;
               padding: 3px;
+              transition: all 0.5s;
 
               &:hover {
-                font-size: 3rem;
+                scale: 1.5;
+                transition: all 0.5s;
               }
             }
           }
@@ -98,14 +101,16 @@
         padding-block: 10px;
         display: flex;
         justify-content: center;
-        align-content: space-evenly;
+        gap: 10px;
 
         svg {
           font-size: 2rem;
           padding: 3px;
+          transition: all 0.5s;
 
           &:hover {
-            font-size: 2.5rem;
+            scale: 1.5;
+            transition: all 0.5s;
           }
         }
       }
@@ -135,24 +140,6 @@
       }
     }
 
-    .Weather {
-      .DivImage {
-        background-image: url(../../assets/Weather/Desktop.png);
-      }
-    }
-
-    .ToDoList {
-      .DivImage {
-        background-image: url(../../assets/ToDoList/desktop.png);
-      }
-    }
-
-    .Clock {
-      .DivImage {
-        background-image: url(../../assets/Clock/Desktop.png);
-      }
-    }
-
     .FAQ {
       .DivImage {
         background-image: url(../../assets/Faq/Desktop.png);
@@ -162,12 +149,6 @@
     .Rating {
       .DivImage {
         background-image: url(../../assets/Rating/Desktop.png);
-      }
-    }
-
-    .StopWatch {
-      .DivImage {
-        background-image: url(../../assets/StopWatch/Desktop.png);
       }
     }
 
@@ -324,9 +305,11 @@
               svg {
                 font-size: 4rem;
                 padding: 3px;
+                transition: all 0.5ms;
 
                 &:hover {
-                  font-size: 5rem;
+                  scale: 1.2;
+                  transition: all 0.5s;
                 }
               }
             }
