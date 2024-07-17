@@ -10,9 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className='ContainerDesktop'>
-        <AboutMe />
-      </div>
+      <AboutMe />
       <Technology />
       <Portfolio />
       <Footer />
