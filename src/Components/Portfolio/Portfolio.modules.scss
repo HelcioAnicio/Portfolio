@@ -21,6 +21,7 @@
 
     & > div {
       flex: 1 1 230px;
+      max-width: 600px;
       height: max-content;
       background-color: rgba($color: #3b3b3b, $alpha: 0.4);
       backdrop-filter: blur(15px);
@@ -38,7 +39,7 @@
         img {
           position: absolute;
           bottom: 10px;
-          left: 10px;
+          left: 10%;
           width: 60px;
           height: 110px;
         }
@@ -116,15 +117,42 @@
       }
     }
 
+    .Url {
+      .DivImage {
+        background-image: url(../../assets/Url/Desktop.png);
+      }
+    }
+
     .Form {
       .DivImage {
         background-image: url(../../assets/Form/Desktop.png);
       }
     }
 
-    .Url {
+    .WebSiteDigital {
       .DivImage {
-        background-image: url(../../assets/Url/Desktop.png);
+        background-image: url(../../assets/WebSite-Digital/Desktop.png);
+      }
+    }
+    .MonguilhoDental {
+      .DivImage {
+        background-image: url(../../assets/Monguilho-Dental/Desktop.png);
+      }
+    }
+    .MarketingDigital {
+      .DivImage {
+        background-image: url(../../assets/Marketing-Digital/Desktop.png);
+      }
+    }
+    .Dental-clinic {
+      .DivImage {
+        background-image: url(../../assets/Dental-clinic/Desktop.png);
+      }
+    }
+
+    .Car-seller {
+      .DivImage {
+        background-image: url(../../assets/Car-seller/Desktop.png);
       }
     }
 
@@ -137,6 +165,23 @@
     .Marvel {
       .DivImage {
         background-image: url(../../assets/Marvel/Desktop.png);
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: "Pausado";
+          width: 100%;
+          height: 100px;
+          position: absolute;
+          background-color: rgba(128, 128, 128, 0.9);
+          text-align: center;
+          vertical-align: middle;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          font-size: 3rem;
+          z-index: 4;
+        }
       }
     }
 
@@ -213,6 +258,7 @@
           background-position: center center;
           width: 50%;
           height: 100%;
+          min-height: 470px;
 
           img {
             top: 60%;
@@ -261,25 +307,33 @@
 @media screen and (min-width: 1000px) and (min-height: 520px) {
   .SectionContainer {
     .DivContent {
+      flex-direction: row;
+
+      &:last-child {
+        justify-content: center;
+      }
+
       & > div {
+        flex: 1 1 500px;
         min-height: 450px;
         max-width: 800px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        border: 1px solid gray;
 
         .DivImage {
           background-position: center center;
           width: 50%;
-          height: 100%;
+          height: 200px;
 
           img {
             top: 60%;
             left: 0;
             transform: translateY(-50%);
             bottom: initial;
-            width: 130px;
-            height: 250px;
+            width: 90px;
+            height: 180px;
           }
 
           .DivIconsDesktop {

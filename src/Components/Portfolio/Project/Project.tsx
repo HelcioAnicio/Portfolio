@@ -33,10 +33,14 @@ export const Project: React.FC<Project> = ({
             alt='Mobile'
           />
           <div className='DivIconsDesktop'>
-            <a href={vercel}>
+            <a
+              href={vercel}
+              target='_blank'>
               <GiMagnifyingGlass title='Acesse o site' />
             </a>
-            <a href={github}>
+            <a
+              href={github}
+              target='_blank'>
               <FaGithub title='Acesse o GitHub' />
             </a>
           </div>
@@ -45,10 +49,14 @@ export const Project: React.FC<Project> = ({
           <h3>
             {nameProject}
             <div className='DivIconsMobile'>
-              <a href={vercel}>
+              <a
+                href={vercel}
+                target='_blank'>
                 <GiMagnifyingGlass title='Acesse o site' />
               </a>
-              <a href={github}>
+              <a
+                href={github}
+                target='_blank'>
                 <FaGithub title='Acesse o GitHub' />
               </a>
             </div>
