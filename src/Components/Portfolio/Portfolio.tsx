@@ -1,6 +1,6 @@
 import "./Portfolio.modules.scss";
 import { FaHtml5, FaSass, FaReact } from "react-icons/fa";
-import { TbBrandJavascript } from "react-icons/tb";
+import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoCss3, IoLogoFirebase, IoLogoNodejs } from "react-icons/io5";
 import {
   AiOutlineLoading3Quarters,
@@ -19,7 +19,12 @@ import MobileMarvel from "../../assets/Marvel/mobile.png";
 import MobileFAQ from "../../assets/Faq/mobile.png";
 import MobileRating from "../../assets/Rating/mobile.png";
 import { Project } from "./Project/Project";
-import { SiTailwindcss } from "react-icons/si";
+import {
+  SiPrisma,
+  SiSupabase,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 function Portfolio() {
   return (
@@ -29,6 +34,25 @@ function Portfolio() {
         className='SectionContainer'>
         <h2>Portifólio</h2>
         <div className='DivContent'>
+          <Project
+            style='EcommerceFsw'
+            img={MobileUrl}
+            vercel={"https://url-shortener-seven-delta.vercel.app/"}
+            github={"https://github.com/HelcioAnicio/url-shortener"}
+            nameProject='Ecommerce'
+            descriptionProject='O Encurtador de URL é uma ferramenta grátis para encurtar links
+                de redes sociais do Instagram, Facebook, YouTube, Twitter,
+                Linked In, Pinterest e sites com autoridade na Internet.'
+            techIcons={[
+              FaReact,
+              SiTypescript,
+              SiPrisma,
+              TbBrandNextjs,
+              SiSupabase,
+              SiTailwindcss,
+            ]}
+          />
+
           <Project
             style='Url'
             img={MobileUrl}
