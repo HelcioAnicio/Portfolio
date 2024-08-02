@@ -30,12 +30,11 @@ The users should be able to:
 - View the optimal layout depending on their device's screen size.
 
 ### Screenshot
+![Macbook-Air-127 0 0 1](https://github.com/user-attachments/assets/1b4e9d63-05a7-41ab-8087-7c4b2a56bbf7)
 
-- ![image](https://user-images.githubusercontent.com/117602073/230394196-60ca253d-bd00-42ec-a8ef-9c969403f3f8.png)
 
 ### Links
-
-- https://portfolio-helcioanicio.vercel.app/
+- [https://portfolio-helcioanicio.vercel.app/](https://portfolio-helcioanicios-projects.vercel.app/)
 
 ## My process
 
