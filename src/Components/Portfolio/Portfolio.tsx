@@ -2,10 +2,17 @@ import "./Portfolio.modules.scss";
 import { FaHtml5, FaSass, FaReact } from "react-icons/fa";
 import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoCss3, IoLogoFirebase, IoLogoNodejs } from "react-icons/io5";
+import { BsStripe } from "react-icons/bs";
 import {
   AiOutlineLoading3Quarters,
   AiOutlineQuestionCircle,
 } from "react-icons/ai";
+import {
+  SiPrisma,
+  SiSupabase,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 import MobileForm from "../../assets/Form/mobile.png";
 import MobileMarketingDigital from "../../assets/Marketing-Digital/mobile.png";
@@ -18,13 +25,8 @@ import MobileCalculator from "../../assets/Calculator/mobile.png";
 import MobileMarvel from "../../assets/Marvel/mobile.png";
 import MobileFAQ from "../../assets/Faq/mobile.png";
 import MobileRating from "../../assets/Rating/mobile.png";
+import MobileEcommerce from "../../assets/EcommerceFSW/mobile.png";
 import { Project } from "./Project/Project";
-import {
-  SiPrisma,
-  SiSupabase,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
 
 function Portfolio() {
   return (
@@ -36,13 +38,13 @@ function Portfolio() {
         <div className='DivContent'>
           <Project
             style='EcommerceFsw'
-            img={MobileUrl}
-            vercel={"https://url-shortener-seven-delta.vercel.app/"}
-            github={"https://github.com/HelcioAnicio/url-shortener"}
-            nameProject='Ecommerce'
-            descriptionProject='O Encurtador de URL é uma ferramenta grátis para encurtar links
-                de redes sociais do Instagram, Facebook, YouTube, Twitter,
-                Linked In, Pinterest e sites com autoridade na Internet.'
+            img={MobileEcommerce}
+            vercel={
+              "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/"
+            }
+            github={"https://github.com/HelcioAnicio/Ecommerce-FSW"}
+            nameProject='Ecommerce FSW'
+            descriptionProject='O site oferece login simplificado com contas do Google, navegação por categorias de produtos e opções de descontos. Os usuários podem gerenciar seu carrinho de compras, incluindo adicionar, remover e modificar itens. O pagamento é seguro e eficiente através da integração com a API do Stripe, com suporte a webhooks para processar eventos de pagamento.'
             techIcons={[
               FaReact,
               SiTypescript,
@@ -50,6 +52,7 @@ function Portfolio() {
               TbBrandNextjs,
               SiSupabase,
               SiTailwindcss,
+              BsStripe,
             ]}
           />
 
