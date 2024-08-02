@@ -1,10 +1,15 @@
 import "./Technology.modules.scss";
 import { FaReact, FaHtml5, FaSass } from "react-icons/fa";
-import { TbBrandJavascript } from "react-icons/tb";
+import {
+  TbBrandJavascript,
+  TbBrandNextjs,
+  TbBrandSupabase,
+} from "react-icons/tb";
 import { IoLogoFirebase, IoLogoNodejs } from "react-icons/io5";
 import {
   SiPostgresql,
   SiPrisma,
+  SiShadcnui,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -17,6 +22,11 @@ function Technology() {
       icon: <FaReact />,
       text: "React",
     },
+    Next: {
+      icon: <TbBrandNextjs />,
+      text: "Next",
+    },
+
     typescript: {
       icon: <SiTypescript />,
       text: "Typescript",
@@ -24,10 +34,6 @@ function Technology() {
     javaScript: {
       icon: <TbBrandJavascript />,
       text: "Javascript",
-    },
-    tailwind: {
-      icon: <SiTailwindcss />,
-      text: "Tailwind",
     },
     postgree: {
       icon: <SiPostgresql />,
@@ -41,9 +47,21 @@ function Technology() {
       icon: <IoLogoFirebase />,
       text: "Firebase",
     },
+    supabase: {
+      icon: <TbBrandSupabase />,
+      text: "Supabase",
+    },
     node: {
       icon: <IoLogoNodejs />,
       text: "Node",
+    },
+    shadcn: {
+      icon: <SiShadcnui />,
+      text: "Shadcn",
+    },
+    tailwind: {
+      icon: <SiTailwindcss />,
+      text: "Tailwind",
     },
     sass: {
       icon: <FaSass />,
@@ -67,12 +85,13 @@ function Technology() {
         <h2>Tecnologias</h2>
         <div className='DivContainer'>
           {Object.entries(techs).map(([key, { icon, text }]) => (
-            <div
+            <button
               key={key}
-              className={text}>
+              className={text}
+              data-text={text}>
               <div>{icon}</div>
               <p>{text}</p>
-            </div>
+            </button>
           ))}
         </div>
       </section>
