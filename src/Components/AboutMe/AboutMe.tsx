@@ -23,12 +23,14 @@ function AboutMe() {
           </figure>
         </div>
         <div className='divText'>
-          <h4>OLÁ! MEU NOME É HELCIO,</h4>
+          <h4>Olá! Meu nome é Helcio Anicio,</h4>
           <p>
             estou no mercado de desenvolvimento a mais de {calcYears} anos,
-            super motivado em criar experiências digitais incríveis. Me dedico a
-            criar interfaces intuitivas e fáceis de usar, que possam ser
-            facilmente adaptadas às necessidades específicas de cada cliente.
+            dedicado a aprender, criar, trabalhar e fazer a diferença. Ao longo
+            da minha carreira aprendi várias <a href='#Tech'>Tecnologias</a>{" "}
+            como você pode ver abaixo clicando no link. Sempre com alegria pois
+            adoro trabalhar nesta area, diversos projetos pessoais para
+            aprimorar minhas habilidades e experiencia profissional.
             <br />
             <br />
             Se você estiver procurando por um desenvolvedor para o seu negócio

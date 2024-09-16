@@ -7,12 +7,12 @@
   flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
-  background-color: $purpleBackground;
+  background-color: $details;
   color: white;
   padding: 15px 0 85px 0;
 
   h2 {
-    color: $blue;
+    color: $white;
     text-align: center;
     margin: 20px 0 30px 0;
   }
@@ -23,24 +23,24 @@
     .figure {
       width: 200px;
       height: 200px;
-      background-color: $purpleAboutMe;
+      background-color: $background;
       border-radius: 50%;
       position: relative;
       margin: 0 auto;
 
       img {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0;
-        width: 115%;
+        width: 100%;
       }
     }
   }
 
   .divText {
-    background-color: $purpleAboutMe;
+    background-color: $background;
     border-radius: 10px;
     padding: 30px 10px;
     max-width: 600px;
@@ -49,10 +49,15 @@
     h4 {
       margin-bottom: 5px;
       font-size: 1rem;
+      text-transform: uppercase;
     }
 
     p {
       font-family: "Inconsolata", monospace;
+
+      a {
+        color: inherit;
+      }
     }
   }
 }

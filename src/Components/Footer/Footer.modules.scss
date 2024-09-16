@@ -3,10 +3,7 @@
 .DivForm {
   box-sizing: border-box;
   width: 100%;
-  background: linear-gradient(
-      rgba($color: $purpleTechsBackground, $alpha: 0.7),
-      $purpleTechsBackground
-    ),
+  background: linear-gradient($background-light, $details-light),
     url(../../assets/dev-software.jpeg);
   background-position: 80% center;
   background-repeat: no-repeat;
@@ -15,7 +12,7 @@
 
   h3 {
     text-align: center;
-    color: $blue;
+    color: $white;
     font: 700 2rem "Libre Baskerville", serif;
   }
 
@@ -27,7 +24,7 @@
     margin-top: 20px;
 
     fieldset {
-      background-color: rgba($color: $blue, $alpha: 0.3);
+      background-color: rgba($color: $terciary, $alpha: 0.7);
       border-radius: 5px;
       padding: 10px 5px 50px 5px;
       border: none;
@@ -95,16 +92,12 @@
         width: 70%;
         min-height: 30px;
         font: 700 1rem "Open Sans", sans-serif;
-        color: black;
-        background: #4fd1c5;
-        background: linear-gradient(
-          90deg,
-          rgba(129, 230, 217, 1) 0%,
-          rgba(79, 209, 197, 1) 100%
-        );
+        color: $secundary;
+        background: $details;
+        background: linear-gradient(90deg, $details, $primary);
         border: none;
         border-radius: 1000px;
-        box-shadow: 6px 6px 18px rgba(79, 209, 197, 0.64);
+        box-shadow: 6px 6px 18px $details;
         transition: all 0.3s ease-in-out 0s;
         cursor: pointer;
         outline: none;
@@ -117,8 +110,8 @@
           // width: calc(60% + 12px);
           min-width: calc(100% + 12px);
           min-height: calc(40px + 12px);
-          border: 6px solid #00ffcb;
-          box-shadow: 0 0 30px rgba(0, 255, 203, 0.64);
+          border: 6px solid $details;
+          box-shadow: 0 0 30px $details;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -143,7 +136,7 @@
           width: 20px;
           height: 20px;
           border-radius: 100%;
-          border: 6px solid #00ffcb;
+          border: 6px solid $details;
           position: absolute;
           z-index: 1;
           top: 50%;
@@ -207,7 +200,6 @@
 
       &:hover p,
       &:hover svg {
-        color: $cyan;
         scale: 1.2;
         transition: all 0.2s;
       }

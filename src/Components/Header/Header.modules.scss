@@ -54,7 +54,7 @@ header {
       text-decoration: none;
       list-style: none;
       color: white;
-      background-color: $cyan;
+      background-color: $details;
       border-radius: 40px;
       padding: 0 15px;
       cursor: pointer;
@@ -83,7 +83,7 @@ header {
 
       h2 {
         font-size: 1.7rem;
-        color: $blue;
+        color: $details;
         margin-top: -10px;
       }
     }
@@ -114,7 +114,7 @@ header {
 
       &:hover {
         background-color: $white;
-        color: $purple;
+        color: $details;
         font-weight: 700;
         transition: all 0.5s;
       }

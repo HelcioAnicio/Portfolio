@@ -3,7 +3,7 @@
 .SectionTech {
   padding: 30px 5px 50px 5px;
   text-align: center;
-  background: linear-gradient($purpleTechsBackground, $purpleTechsBackground),
+  background: linear-gradient($background-light, $details-light),
     url(../../assets/Background.jpg);
   background-size: cover;
   background-position: 0 0;
@@ -12,7 +12,7 @@
   width: 100%;
 
   h2 {
-    color: $blue;
+    color: $white;
     text-align: center;
     margin-bottom: 40px;
     font: 700 2rem "Libre Baskerville", serif;
