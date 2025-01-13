@@ -82,6 +82,15 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      animation: {
+        'animate-scroll': 'animate-scroll 10s linear infinite',
+      },
+      keyframes: {
+        'animate-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-104%)' },
+        },
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
