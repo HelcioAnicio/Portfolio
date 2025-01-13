@@ -13,9 +13,9 @@ body {
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
+    --popover-foreground: 210, 10%, 15%;
     --primary: 220.9 39.3% 11%;
-    --primary-foreground: 210 20% 98%;
+    --primary-foreground: 45, 85%, 55%;
     --secondary: 220 14.3% 95.9%;
     --secondary-foreground: 220.9 39.3% 11%;
     --muted: 220 14.3% 95.9%;
@@ -35,23 +35,23 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
+    --background: 210, 10%, 15%; /* Dark Gray */
+    --foreground: 210, 15%, 95%; /* Also White */
+    --card: 210, 5%, 40%; /* Light Gray */
+    --card-foreground: 210, 15%, 95%; /* White */
+    --popover: 224 71.4% 4.1%; /* Dark Gray */
+    --popover-foreground: 45, 85%, 55%; /* Gold */
+    --primary: 210, 10%, 15%; /* Same background */
+    --primary-foreground: 45, 85%, 55%; /* Gold */
+    --secondary: 210, 8%, 25%; /* More light than background and dark than card */
+    --secondary-foreground: 210, 15%, 95%; /* Also White */
+    --muted: 45, 80%, 70%; /* light gold */
+    --muted-foreground: 210, 15%, 95%; /* Also White */
+    --accent: 45, 80%, 70%; /* light gold */
+    --accent-foreground: 210, 15%, 95%; /* Also White */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
+    --border: 210, 5%, 40%;
     --input: 215 27.9% 16.9%;
     --ring: 216 12.2% 83.9%;
     --chart-1: 220 70% 50%;
