@@ -147,33 +147,21 @@ export const ListProjects = () => {
               <CarouselItem className='lg:basis-1/3'>
                 <div className='flex flex-col w-full max-w-lg p-4 items-center'>
                   <div className='w-full h-60 flex items-center justify-center animate-spin'>
-                    <AiOutlineLoading3Quarters
-                      size={64}
-                      className='text-white'
-                    />
+                    <AiOutlineLoading3Quarters size={64} />
                   </div>
                   <div className='text-center'>
-                    <h3 className='text-white text-lg mt-4'>Em breve</h3>
+                    <h3 className=' text-lg mt-4'>Em breve</h3>
                     <div className='flex gap-2 mt-4'>
-                      <AiOutlineQuestionCircle
-                        className='text-white'
-                        size='24'
-                      />
-                      <AiOutlineQuestionCircle
-                        className='text-white'
-                        size='24'
-                      />
-                      <AiOutlineQuestionCircle
-                        className='text-white'
-                        size='24'
-                      />
+                      <AiOutlineQuestionCircle size='24' />
+                      <AiOutlineQuestionCircle size='24' />
+                      <AiOutlineQuestionCircle size='24' />
                     </div>
                   </div>
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className='h-full rounded-sm ' />
+            <CarouselNext className='h-full rounded-sm' />
           </Carousel>
         </CardContent>
       </Card>
