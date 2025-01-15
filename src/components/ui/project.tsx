@@ -68,8 +68,8 @@ export const Project: React.FC<Project> = ({
             {descriptionProject}
           </p>
         </div>
-        <DialogTrigger className='mt-4 mr-auto'>
-          <Button> Mais detalhes </Button>
+        <DialogTrigger className='mt-4 mr-auto px-3 py-2 text-primary-foreground bg-primary rounded-md'>
+          Mais detalhes
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>

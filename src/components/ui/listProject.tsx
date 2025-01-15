@@ -1,6 +1,6 @@
 import MobileMarketingDigital from '../../../public/marketingDigital/mobile.png';
 import MobileMonguilhoDental from '../../../public/monguilhoDental/mobile.png';
-import MobileWebSiteDigital from '../../../public/websiteDigital/mobile.png';
+// import MobileWebSiteDigital from '../../../public/websiteDigital/mobile.png';
 import MobileCarSeller from '../../../public/carSeller/mobile.png';
 import MobileUrl from '../../../public/url/mobile.png';
 import MobileFAQ from '../../../public/faq/mobile.png';
@@ -11,7 +11,7 @@ import DesktopEcommerce from '../../../public/ecommerceFsw/desktop.png';
 import DesktopUrl from '../../../public/url/desktop.png';
 import DesktopMarketing from '../../../public/marketingDigital/desktop.png';
 import DesktopMonguilho from '../../../public/monguilhoDental/desktop.png';
-import DesktopWebSite from '../../../public/websiteDigital/desktop.png';
+// import DesktopWebSite from '../../../public/websiteDigital/desktop.png';
 import DesktopCarSeller from '../../../public/carSeller/desktop.png';
 import DesktopFaq from '../../../public/faq/desktop.png';
 import { FaHtml5, FaReact } from 'react-icons/fa';
@@ -140,7 +140,7 @@ export const ListProjects = () => {
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
+              {/* <CarouselItem className='lg:basis-1/3'>
                 <Project
                   backgroundUrl={DesktopWebSite}
                   img={MobileWebSiteDigital}
@@ -150,7 +150,7 @@ export const ListProjects = () => {
                   descriptionProject='Web site que mostra planos para assinatura, informações sobre a empresa e tambem icons que levara você diretamente para as redes sociais.'
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
-              </CarouselItem>
+              </CarouselItem> */}
               <CarouselItem className='lg:basis-1/3'>
                 <Project
                   backgroundUrl={DesktopCarSeller}
