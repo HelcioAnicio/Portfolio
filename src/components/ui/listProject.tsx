@@ -5,7 +5,9 @@ import MobileCarSeller from '../../../public/carSeller/mobile.png';
 import MobileUrl from '../../../public/url/mobile.png';
 import MobileFAQ from '../../../public/faq/mobile.png';
 import MobileEcommerce from '../../../public/ecommerceFsw/mobile.png';
-import DesktopImage from '../../../public/ecommerceFsw/desktop.png';
+import MobileAgroFinance from '../../../public/agroFinance/mobile.png';
+import DesktopAgroFinance from '../../../public/agroFinance/desktop.png';
+import DesktopEcommerce from '../../../public/ecommerceFsw/desktop.png';
 import DesktopUrl from '../../../public/url/desktop.png';
 import DesktopMarketing from '../../../public/marketingDigital/desktop.png';
 import DesktopMonguilho from '../../../public/monguilhoDental/desktop.png';
@@ -21,7 +23,9 @@ import {
   AiOutlineQuestionCircle,
 } from 'react-icons/ai';
 import {
+  SiPostgresql,
   SiPrisma,
+  SiShadcnui,
   SiSupabase,
   SiTailwindcss,
   SiTypescript,
@@ -36,15 +40,20 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 import { Project } from './project';
+import { GitHubRepos } from '@/components/ui/repository';
+import { Separator } from '@radix-ui/react-separator';
 
 export const ListProjects = () => {
   return (
     <>
-      <Card className='w-full max-w-2xl m-auto '>
-        <CardHeader>
-          <CardTitle className='text-center text-2xl text-primary-foreground'>
-            Pricipais Projetos
+      <Card className='m-auto'>
+        <CardHeader className='px-0'>
+          <CardTitle className='text-2xl text-primary-foreground flex gap-1 items-center sm:py-10 py-5 w-full justify-center'>
+            <Separator className='bg-primary-foreground w-full my-4 h-0.5' />
+            <p className='min-w-max '>Pricipais Projetos</p>
+            <Separator className='bg-primary-foreground w-full h-0.5 my-4' />
           </CardTitle>
+          <GitHubRepos />
         </CardHeader>
         <CardContent className='p-1 pb-5'>
           <Carousel
@@ -53,9 +62,31 @@ export const ListProjects = () => {
               loop: true,
             }}>
             <CarouselContent>
+              <CarouselItem className='lg:basis-1/3  '>
+                <Project
+                  backgroundUrl={DesktopAgroFinance}
+                  img={MobileAgroFinance}
+                  vercel={'https://agro-finance-real.vercel.app/'}
+                  github={'https://github.com/HelcioAnicio/AgroFinance'}
+                  nameProject='Em construção'
+                  descriptionProject='Esse é sistema SAAS chamado inicialmente AgroFinance, objetivo ter total controle do animais da fazenda. Dentro desse sistema é possivel gerenciar animais, e o financeiro da fazendo tudo de forma automatizada.'
+                  techIcons={[
+                    TbBrandNextjs,
+                    FaReact,
+                    SiTypescript,
+                    SiPrisma,
+                    SiSupabase,
+                    SiPostgresql,
+                    SiTailwindcss,
+                    SiShadcnui,
+                    BsStripe,
+                  ]}
+                />
+              </CarouselItem>
+
               <CarouselItem className='lg:basis-1/3'>
                 <Project
-                  backgroundUrl={DesktopImage}
+                  backgroundUrl={DesktopEcommerce}
                   img={MobileEcommerce}
                   vercel={
                     'https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/'
@@ -160,8 +191,8 @@ export const ListProjects = () => {
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className='h-full rounded-sm ' />
-            <CarouselNext className='h-full rounded-sm' />
+            <CarouselPrevious className='' />
+            <CarouselNext className='' />
           </Carousel>
         </CardContent>
       </Card>

@@ -83,7 +83,7 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       animation: {
-        'animate-scroll': 'animate-scroll 10s linear infinite',
+        'animate-scroll': 'animate-scroll 15s linear infinite',
       },
       keyframes: {
         'animate-scroll': {

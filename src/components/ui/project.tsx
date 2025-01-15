@@ -83,7 +83,7 @@ export const Project: React.FC<Project> = ({
                   <Icon
                     key={index}
                     title={`${Icon.name}= Tecnologie's name`}
-                    className='text-white text-lg'
+                    className='text-lg'
                   />
                 ))}
               </div>

@@ -13,6 +13,8 @@ import {
   SiTypescript,
 } from 'react-icons/si';
 import { BsGit } from 'react-icons/bs';
+import { Separator } from '@radix-ui/react-separator';
+import { Card } from './card';
 
 export const Technology = () => {
   function getTechnologyStyle(text: string) {
@@ -68,10 +70,15 @@ export const Technology = () => {
   ];
 
   return (
-    <>
-      <h2 className='text-primary-foreground text-2xl font-bolds mb-10 '>
-        Tecnologias
-      </h2>
+    <Card className='w-full'>
+      <div className='flex flex-1 basis-3/6 gap-1 items-center py-10'>
+        <Separator className='bg-primary-foreground w-full my-4 h-0.5' />
+        <h2 className='min-w-max text-2xl text-primary-foreground'>
+          Tecnologias
+        </h2>
+        <Separator className='bg-primary-foreground w-full h-0.5 my-4' />
+      </div>
+
       <div className='flex overflow-hidden space-x-16 group py-5 '>
         <div className='flex gap-16 animate-animate-scroll group-hover:paused'>
           {techs.map(({ icon, text }, index) => (
@@ -108,6 +115,6 @@ export const Technology = () => {
           ))}
         </div>
       </div>
-    </>
+    </Card>
   );
 };
