@@ -1,17 +1,22 @@
 import MobileMarketingDigital from '../../../public/marketingDigital/mobile.png';
 import MobileMonguilhoDental from '../../../public/monguilhoDental/mobile.png';
-// import MobileWebSiteDigital from '../../../public/websiteDigital/mobile.png';
 import MobileCarSeller from '../../../public/carSeller/mobile.png';
 import MobileUrl from '../../../public/url/mobile.png';
 import MobileFAQ from '../../../public/faq/mobile.png';
 import MobileEcommerce from '../../../public/ecommerceFsw/mobile.png';
 import MobileAgroFinance from '../../../public/agroFinance/mobile.png';
+import MobileGfAdvogados from '../../../public/gfAdvogados/mobile.png';
+import MobileFernandoSantana from '../../../public/fernandoSantana/mobile.png';
+import MobileBarberDev from '../../../public/barberDev/mobile.png';
+
 import DesktopAgroFinance from '../../../public/agroFinance/desktop.png';
 import DesktopEcommerce from '../../../public/ecommerceFsw/desktop.png';
 import DesktopUrl from '../../../public/url/desktop.png';
 import DesktopMarketing from '../../../public/marketingDigital/desktop.png';
+import DesktopGfAdvogados from '../../../public/gfAdvogados/desktop.png';
+import DesktopFernandoSantana from '../../../public/fernandoSantana/desktop.png';
+import DesktopBarberDev from '../../../public/barberDev/desktop.png';
 import DesktopMonguilho from '../../../public/monguilhoDental/desktop.png';
-// import DesktopWebSite from '../../../public/websiteDigital/desktop.png';
 import DesktopCarSeller from '../../../public/carSeller/desktop.png';
 import DesktopFaq from '../../../public/faq/desktop.png';
 import { FaHtml5, FaReact } from 'react-icons/fa';
@@ -42,6 +47,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Project } from './project';
 import { GitHubRepos } from '@/components/ui/repository';
 import { Separator } from '@radix-ui/react-separator';
+import Autoplay from 'embla-carousel-autoplay';
 
 export const ListProjects = () => {
   return (
@@ -57,6 +63,11 @@ export const ListProjects = () => {
         </CardHeader>
         <CardContent className='p-1 pb-5'>
           <Carousel
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
             opts={{
               align: 'start',
               loop: true,
@@ -118,6 +129,46 @@ export const ListProjects = () => {
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
+              <CarouselItem className='lg:basis-1/3'>
+                <Project
+                  backgroundUrl={DesktopBarberDev}
+                  img={MobileBarberDev}
+                  vercel={
+                    'https://dev-barber-ex-helcioanicios-projects.vercel.app/'
+                  }
+                  github={'https://github.com/HelcioAnicio/devBarberEx'}
+                  nameProject='Barber Dev'
+                  descriptionProject='Este projeto é um website para uma barbearia, mostrando o designer e também um campo para agendamento como exemplo.'
+                  techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
+                />
+              </CarouselItem>
+              <CarouselItem className='lg:basis-1/3'>
+                <Project
+                  backgroundUrl={DesktopFernandoSantana}
+                  img={MobileFernandoSantana}
+                  vercel={''}
+                  github={
+                    'https://github.com/HelcioAnicio/website-FernandoSantanaLawyers'
+                  }
+                  nameProject='Fernando Advogados'
+                  descriptionProject='Um grupo de advocacia, mostrando um designer intuitivo, objetivo. Foco na demonstração dos serviços e também de conquistas da empresa.'
+                  techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
+                />
+              </CarouselItem>
+              <CarouselItem className='lg:basis-1/3'>
+                <Project
+                  backgroundUrl={DesktopGfAdvogados}
+                  img={MobileGfAdvogados}
+                  vercel={
+                    'https://gf-advogados-helcioanicios-projects.vercel.app/'
+                  }
+                  github={'https://github.com/HelcioAnicio/MarketingDigital'}
+                  nameProject='Marketing Digital'
+                  descriptionProject='Empresa consolidada, de um advocacia, mostrando a equipe e todos os serviços prestados no meio juridico, e claro mostrando os feedbacks e clientes atendidos.'
+                  techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
+                />
+              </CarouselItem>
+
               <CarouselItem className='lg:basis-1/3'>
                 <Project
                   backgroundUrl={DesktopMarketing}

@@ -88,17 +88,21 @@ export const Project: React.FC<Project> = ({
                 ))}
               </div>
               <div className='flex mt-4'>
-                <Link
-                  href={vercel}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='mr-4'>
-                  <Button
-                    title='Ver site'
-                    className='hover:bg-card'>
-                    Ver Site <Globe />
-                  </Button>
-                </Link>
+                {vercel !== '' && (
+                  <>
+                    <Link
+                      href={vercel}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='mr-4'>
+                      <Button
+                        title='Ver site'
+                        className='hover:bg-card'>
+                        Ver Site <Globe />
+                      </Button>
+                    </Link>
+                  </>
+                )}
                 <Link
                   href={github}
                   target='_blank'
