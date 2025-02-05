@@ -24,9 +24,38 @@ import Link from 'next/link';
 import { GrCode, GrUserManager } from 'react-icons/gr';
 import { LiaLaptopCodeSolid } from 'react-icons/lia';
 import { MdOutlineContactPhone } from 'react-icons/md';
+import { useEffect } from 'react';
 
 export const Header = () => {
   const { setTheme } = useTheme();
+
+  useEffect(() => {
+    function offsetAnchor() {
+      if (location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY + 245);
+      }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach((el) => {
+      el.addEventListener('click', function () {
+        window.setTimeout(function () {
+          offsetAnchor();
+        }, 0);
+      });
+    });
+
+    window.setTimeout(offsetAnchor, 0);
+
+    return () => {
+      document.querySelectorAll('a[href^="#"]').forEach((el) => {
+        el.removeEventListener('click', function () {
+          window.setTimeout(function () {
+            offsetAnchor();
+          }, 0);
+        });
+      });
+    };
+  }, []);
   return (
     <header className='sticky top-0 z-50 bg-background h-20'>
       <Card className='flex items-center justify-between p-5 bg-background rounded-t-none h-16'>

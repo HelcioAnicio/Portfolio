@@ -10,7 +10,9 @@ import { Button } from './button';
 
 export const Footer = () => {
   return (
-    <footer className='pb-10'>
+    <footer
+      className='py-20'
+      id='footer'>
       <div>
         <h3 className='text-2xl text-primary-foreground text-center py-5'>
           Fale comigo

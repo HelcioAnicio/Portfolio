@@ -10,23 +10,24 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className='flex flex-col space-y-20 sm:items-center overflow-hidden'>
+      <main className='flex flex-col sm:items-center overflow-hidden'>
         <section
           id='home'
-          // className='mt-20'
-        >
+          className='w-full max-w-3xl pt-20'>
           <CardImage />
         </section>
-        <section id='aboutMe'>
+        <section
+          id='aboutMe'
+          className='w-full max-w-3xl pt-20'>
           <CardAboutMe />
         </section>
         <section
-          className='w-full max-w-3xl mt-20'
+          className='w-full max-w-3xl pt-20'
           id='projects'>
           <ListProjects />
         </section>
         <section
-          className='py-10 w-full mx-auto max-w-3xl'
+          className='pt-20 w-full mx-auto max-w-3xl'
           id='technology'>
           <Technology />
         </section>

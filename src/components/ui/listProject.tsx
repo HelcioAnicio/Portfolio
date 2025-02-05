@@ -52,7 +52,7 @@ import Autoplay from 'embla-carousel-autoplay';
 export const ListProjects = () => {
   return (
     <>
-      <Card className='m-auto'>
+      <Card className='mx-auto scroll-smooth'>
         <CardHeader className='px-0'>
           <CardTitle className='text-2xl text-primary-foreground flex gap-1 items-center sm:py-10 py-5 w-full justify-center'>
             <Separator className='bg-primary-foreground w-full my-4 h-0.5' />
