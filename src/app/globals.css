@@ -15,7 +15,7 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 210, 10%, 15%;
     --primary: 220.9 39.3% 11%;
-    --primary-foreground: 45, 85%, 55%;
+    --primary-foreground: 45, 80%, 70%;
     --secondary: 220 14.3% 95.9%;
     --secondary-foreground: 220.9 39.3% 11%;
     --muted: 220 14.3% 95.9%;
@@ -35,15 +35,16 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 210, 10%, 15%; /* Dark Gray */
+    --background: 0, 0%, 0%; /* Dark Gray */
     --foreground: 210, 15%, 95%; /* Also White */
     --card: 210, 5%, 40%; /* Light Gray */
     --card-foreground: 210, 15%, 95%; /* White */
     --popover: 224 71.4% 4.1%; /* Dark Gray */
-    --popover-foreground: 45, 85%, 55%; /* Gold */
+    --popover-foreground: 45, 80%, 70%; /* Gold */
     --primary: 210, 10%, 15%; /* Same background */
-    --primary-foreground: 45, 85%, 55%; /* Gold */
-    --secondary: 210, 8%, 25%; /* More light than background and dark than card */
+    --primary-foreground: 45, 80%, 70%; /* Gold */
+    --secondary:
+      210, 8%, 25%; /* More light than background and dark than card */
     --secondary-foreground: 210, 15%, 95%; /* Also White */
     --muted: 45, 80%, 70%; /* light gold */
     --muted-foreground: 210, 15%, 95%; /* Also White */
@@ -74,5 +75,29 @@ body {
 @layer utilities {
   .paused {
     animation-play-state: paused;
+  }
+}
+
+@layer components {
+  @media (min-width: 1250px) {
+    /* :root {
+      --scale-factor: 1.8;
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    li,
+    a {
+      font-size: calc(1rem * var(--scale-factor));
+    } */
+    body,
+    html {
+      font-size: 20px;
+    }
   }
 }
