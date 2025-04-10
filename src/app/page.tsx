@@ -11,7 +11,10 @@ export default function Home() {
     <>
       <Header />
       <main className="mx-auto flex max-w-5xl flex-col overflow-hidden sm:items-center">
-        <section id="home" className="h-dvh w-full max-w-5xl sm:pt-20">
+        <section
+          id="home"
+          className="h-[calc(100vh-64px)] w-full max-w-5xl border pt-16"
+        >
           <CardImage />
         </section>
         <section id="aboutMe" className="w-full max-w-3xl pt-20">

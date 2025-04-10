@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export const CardImage = () => {
   return (
-    <Card className="flex w-full flex-col items-baseline justify-between border-none bg-transparent shadow-none sm:gap-7 sm:p-2">
+    <Card className="flex h-full w-full flex-col border-none bg-transparent py-0 shadow-none sm:justify-evenly sm:gap-7 sm:px-2">
       <CardHeader className="flex flex-wrap gap-10 px-2 sm:flex-row sm:items-center">
         <Image className="w-44 sm:w-80" src={Profile} alt="Profile Picture" />
         <CardTitle className="flex flex-col gap-2 text-4xl text-primary-foreground">
