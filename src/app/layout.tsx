@@ -20,11 +20,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const fonts = {
-  libreFranklin: libreFranklin.variable,
-  limelight: limelight.variable,
-  geistMono: geistMono.variable,
-};
+// export const fonts = {
+//   libreFranklin: libreFranklin.variable,
+//   limelight: limelight.variable,
+//   geistMono: geistMono.variable,
+// };
 
 export const metadata: Metadata = {
   title: "Portfolio",
