@@ -82,7 +82,7 @@ body {
   @media (min-width: 1250px) {
     /* :root {
       --scale-factor: 1.8;
-    }
+    } */
     p,
     h1,
     h2,
@@ -93,11 +93,11 @@ body {
     span,
     li,
     a {
-      font-size: calc(1rem * var(--scale-factor));
-    } */
-    body,
-    html {
-      /* font-size: 20px; */
+      font-size: 25px;
     }
+    /* body,
+    html {
+      font-size: 20px;
+    } */
   }
 }

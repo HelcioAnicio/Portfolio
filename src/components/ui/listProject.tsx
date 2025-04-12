@@ -1,32 +1,32 @@
-import MobileMarketingDigital from '../../../public/marketingDigital/mobile.png';
-import MobileMonguilhoDental from '../../../public/monguilhoDental/mobile.png';
-import MobileCarSeller from '../../../public/carSeller/mobile.png';
-import MobileUrl from '../../../public/url/mobile.png';
-import MobileFAQ from '../../../public/faq/mobile.png';
-import MobileEcommerce from '../../../public/ecommerceFsw/mobile.png';
-import MobileAgroFinance from '../../../public/agroFinance/mobile.png';
-import MobileGfAdvogados from '../../../public/gfAdvogados/mobile.png';
-import MobileFernandoSantana from '../../../public/fernandoSantana/mobile.png';
-import MobileBarberDev from '../../../public/barberDev/mobile.png';
+import MobileMarketingDigital from "../../../public/marketingDigital/mobile.png";
+import MobileMonguilhoDental from "../../../public/monguilhoDental/mobile.png";
+import MobileCarSeller from "../../../public/carSeller/mobile.png";
+import MobileUrl from "../../../public/url/mobile.png";
+import MobileFAQ from "../../../public/faq/mobile.png";
+import MobileEcommerce from "../../../public/ecommerceFsw/mobile.png";
+import MobileAgroFinance from "../../../public/agroFinance/mobile.png";
+import MobileGfAdvogados from "../../../public/gfAdvogados/mobile.png";
+import MobileFernandoSantana from "../../../public/fernandoSantana/mobile.png";
+import MobileBarberDev from "../../../public/barberDev/mobile.png";
 
-import DesktopAgroFinance from '../../../public/agroFinance/desktop.png';
-import DesktopEcommerce from '../../../public/ecommerceFsw/desktop.png';
-import DesktopUrl from '../../../public/url/desktop.png';
-import DesktopMarketing from '../../../public/marketingDigital/desktop.png';
-import DesktopGfAdvogados from '../../../public/gfAdvogados/desktop.png';
-import DesktopFernandoSantana from '../../../public/fernandoSantana/desktop.png';
-import DesktopBarberDev from '../../../public/barberDev/desktop.png';
-import DesktopMonguilho from '../../../public/monguilhoDental/desktop.png';
-import DesktopCarSeller from '../../../public/carSeller/desktop.png';
-import DesktopFaq from '../../../public/faq/desktop.png';
-import { FaHtml5, FaReact } from 'react-icons/fa';
-import { TbBrandJavascript, TbBrandNextjs } from 'react-icons/tb';
-import { IoLogoCss3 } from 'react-icons/io5';
-import { BsStripe } from 'react-icons/bs';
+import DesktopAgroFinance from "../../../public/agroFinance/desktop.png";
+import DesktopEcommerce from "../../../public/ecommerceFsw/desktop.png";
+import DesktopUrl from "../../../public/url/desktop.png";
+import DesktopMarketing from "../../../public/marketingDigital/desktop.png";
+import DesktopGfAdvogados from "../../../public/gfAdvogados/desktop.png";
+import DesktopFernandoSantana from "../../../public/fernandoSantana/desktop.png";
+import DesktopBarberDev from "../../../public/barberDev/desktop.png";
+import DesktopMonguilho from "../../../public/monguilhoDental/desktop.png";
+import DesktopCarSeller from "../../../public/carSeller/desktop.png";
+import DesktopFaq from "../../../public/faq/desktop.png";
+import { FaHtml5, FaReact } from "react-icons/fa";
+import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
+import { IoLogoCss3 } from "react-icons/io5";
+import { BsStripe } from "react-icons/bs";
 import {
   AiOutlineLoading3Quarters,
   AiOutlineQuestionCircle,
-} from 'react-icons/ai';
+} from "react-icons/ai";
 import {
   SiPostgresql,
   SiPrisma,
@@ -34,34 +34,33 @@ import {
   SiSupabase,
   SiTailwindcss,
   SiTypescript,
-} from 'react-icons/si';
+} from "react-icons/si";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+} from "@/components/ui/carousel";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { FaRegWindowRestore } from "react-icons/fa6";
 
-import { Project } from './project';
-import { GitHubRepos } from '@/components/ui/repository';
-import { Separator } from '@radix-ui/react-separator';
-import Autoplay from 'embla-carousel-autoplay';
+import { Project } from "./project";
+// import { GitHubRepos } from "@/components/ui/repository";
+import Autoplay from "embla-carousel-autoplay";
 
 export const ListProjects = () => {
   return (
     <>
-      <Card className='mx-auto scroll-smooth'>
-        <CardHeader className='px-0'>
-          <CardTitle className='text-2xl text-primary-foreground flex gap-1 items-center sm:py-10 py-5 w-full justify-center'>
-            <Separator className='bg-primary-foreground w-full my-4 h-0.5' />
-            <p className='min-w-max '>Pricipais Projetos</p>
-            <Separator className='bg-primary-foreground w-full h-0.5 my-4' />
+      <Card className="bg-mome mx-auto scroll-smooth">
+        <CardHeader>
+          <CardTitle className="flex w-full items-center gap-1 py-5 text-2xl text-primary-foreground sm:py-10">
+            <FaRegWindowRestore />
+            <p className="min-w-max"> Pricipais Projetos</p>
           </CardTitle>
-          <GitHubRepos />
+          {/* <GitHubRepos /> */}
         </CardHeader>
-        <CardContent className='p-1 pb-5'>
+        <CardContent className="p-1 pb-5">
           <Carousel
             plugins={[
               Autoplay({
@@ -69,18 +68,19 @@ export const ListProjects = () => {
               }),
             ]}
             opts={{
-              align: 'start',
+              align: "start",
               loop: true,
-            }}>
+            }}
+          >
             <CarouselContent>
-              <CarouselItem className='lg:basis-1/3  '>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopAgroFinance}
                   img={MobileAgroFinance}
-                  vercel={'https://agro-finance-real.vercel.app/'}
-                  github={'https://github.com/HelcioAnicio/AgroFinance'}
-                  nameProject='Em construção'
-                  descriptionProject='Esse é sistema SAAS chamado inicialmente AgroFinance, objetivo ter total controle do animais da fazenda. Dentro desse sistema é possivel gerenciar animais, e o financeiro da fazendo tudo de forma automatizada.'
+                  vercel={"https://agro-finance-real.vercel.app/"}
+                  github={"https://github.com/HelcioAnicio/AgroFinance"}
+                  nameProject="Em construção"
+                  descriptionProject="Esse é sistema SAAS chamado inicialmente AgroFinance, objetivo ter total controle do animais da fazenda. Dentro desse sistema é possivel gerenciar animais, e o financeiro da fazendo tudo de forma automatizada."
                   techIcons={[
                     TbBrandNextjs,
                     FaReact,
@@ -95,16 +95,16 @@ export const ListProjects = () => {
                 />
               </CarouselItem>
 
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopEcommerce}
                   img={MobileEcommerce}
                   vercel={
-                    'https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/'
+                    "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/"
                   }
-                  github={'https://github.com/HelcioAnicio/Ecommerce-FSW'}
-                  nameProject='Ecommerce FSW'
-                  descriptionProject='O site oferece login simplificado com contas do Google, navegação por categorias de produtos e opções de descontos. Os usuários podem gerenciar seu carrinho de compras, incluindo adicionar, remover e modificar itens. O pagamento é seguro e eficiente através da integração com a API do Stripe, com suporte a webhooks para processar eventos de pagamento.'
+                  github={"https://github.com/HelcioAnicio/Ecommerce-FSW"}
+                  nameProject="Ecommerce FSW"
+                  descriptionProject="O site oferece login simplificado com contas do Google, navegação por categorias de produtos e opções de descontos. Os usuários podem gerenciar seu carrinho de compras, incluindo adicionar, remover e modificar itens. O pagamento é seguro e eficiente através da integração com a API do Stripe, com suporte a webhooks para processar eventos de pagamento."
                   techIcons={[
                     FaReact,
                     SiTypescript,
@@ -116,78 +116,78 @@ export const ListProjects = () => {
                   ]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopUrl}
                   img={MobileUrl}
-                  vercel={'https://url-shortener-seven-delta.vercel.app/'}
-                  github={'https://github.com/HelcioAnicio/url-shortener'}
-                  nameProject='Encurtador de Links'
-                  descriptionProject='O Encurtador de URL é uma ferramenta grátis para encurtar links
+                  vercel={"https://url-shortener-seven-delta.vercel.app/"}
+                  github={"https://github.com/HelcioAnicio/url-shortener"}
+                  nameProject="Encurtador de Links"
+                  descriptionProject="O Encurtador de URL é uma ferramenta grátis para encurtar links
                 de redes sociais do Instagram, Facebook, YouTube, Twitter,
-                Linked In, Pinterest e sites com autoridade na Internet.'
+                Linked In, Pinterest e sites com autoridade na Internet."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopBarberDev}
                   img={MobileBarberDev}
                   vercel={
-                    'https://dev-barber-ex-helcioanicios-projects.vercel.app/'
+                    "https://dev-barber-ex-helcioanicios-projects.vercel.app/"
                   }
-                  github={'https://github.com/HelcioAnicio/devBarberEx'}
-                  nameProject='Barber Dev'
-                  descriptionProject='Este projeto é um website para uma barbearia, mostrando o designer e também um campo para agendamento como exemplo.'
+                  github={"https://github.com/HelcioAnicio/devBarberEx"}
+                  nameProject="Barber Dev"
+                  descriptionProject="Este projeto é um website para uma barbearia, mostrando o designer e também um campo para agendamento como exemplo."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopFernandoSantana}
                   img={MobileFernandoSantana}
-                  vercel={''}
+                  vercel={""}
                   github={
-                    'https://github.com/HelcioAnicio/website-FernandoSantanaLawyers'
+                    "https://github.com/HelcioAnicio/website-FernandoSantanaLawyers"
                   }
-                  nameProject='Fernando Advogados'
-                  descriptionProject='Um grupo de advocacia, mostrando um designer intuitivo, objetivo. Foco na demonstração dos serviços e também de conquistas da empresa.'
+                  nameProject="Fernando Advogados"
+                  descriptionProject="Um grupo de advocacia, mostrando um designer intuitivo, objetivo. Foco na demonstração dos serviços e também de conquistas da empresa."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopGfAdvogados}
                   img={MobileGfAdvogados}
                   vercel={
-                    'https://gf-advogados-helcioanicios-projects.vercel.app/'
+                    "https://gf-advogados-helcioanicios-projects.vercel.app/"
                   }
-                  github={'https://github.com/HelcioAnicio/MarketingDigital'}
-                  nameProject='Marketing Digital'
-                  descriptionProject='Empresa consolidada, de um advocacia, mostrando a equipe e todos os serviços prestados no meio juridico, e claro mostrando os feedbacks e clientes atendidos.'
+                  github={"https://github.com/HelcioAnicio/MarketingDigital"}
+                  nameProject="Marketing Digital"
+                  descriptionProject="Empresa consolidada, de um advocacia, mostrando a equipe e todos os serviços prestados no meio juridico, e claro mostrando os feedbacks e clientes atendidos."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
 
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopMarketing}
                   img={MobileMarketingDigital}
-                  vercel={'https://marketing-digital-eight.vercel.app/'}
-                  github={'https://github.com/HelcioAnicio/MarketingDigital'}
-                  nameProject='Marketing Digital'
-                  descriptionProject='Empresa de marketing digital, mostra os serviços, cards de orçamento e redes sociais, além de conter um form ao final para realizar contato.'
+                  vercel={"https://marketing-digital-eight.vercel.app/"}
+                  github={"https://github.com/HelcioAnicio/MarketingDigital"}
+                  nameProject="Marketing Digital"
+                  descriptionProject="Empresa de marketing digital, mostra os serviços, cards de orçamento e redes sociais, além de conter um form ao final para realizar contato."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopMonguilho}
                   img={MobileMonguilhoDental}
-                  vercel={'https://monguilho-dental.vercel.app/'}
-                  github={'https://github.com/HelcioAnicio/MonguilhoDental'}
-                  nameProject='Monguilho Dental - Clinica'
-                  descriptionProject='Esse site mostra uma clinica dentária, mostrando os serviços, dados e informações da clinica.'
+                  vercel={"https://monguilho-dental.vercel.app/"}
+                  github={"https://github.com/HelcioAnicio/MonguilhoDental"}
+                  nameProject="Monguilho Dental - Clinica"
+                  descriptionProject="Esse site mostra uma clinica dentária, mostrando os serviços, dados e informações da clinica."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
@@ -202,48 +202,48 @@ export const ListProjects = () => {
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem> */}
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopCarSeller}
                   img={MobileCarSeller}
-                  vercel={'https://car-seller-eta.vercel.app/'}
-                  github={'https://github.com/HelcioAnicio/Car-seller'}
-                  nameProject='Vendas de veiculos'
-                  descriptionProject='Aqui você conseguirá ver uma concessionária de carros, com preços, fotos, preços e outras coisas sobre os carros.'
+                  vercel={"https://car-seller-eta.vercel.app/"}
+                  github={"https://github.com/HelcioAnicio/Car-seller"}
+                  nameProject="Vendas de veiculos"
+                  descriptionProject="Aqui você conseguirá ver uma concessionária de carros, com preços, fotos, preços e outras coisas sobre os carros."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
+              <CarouselItem className="lg:basis-1/3">
                 <Project
                   backgroundUrl={DesktopFaq}
                   img={MobileFAQ}
-                  vercel={'https://faq-questions.vercel.app/'}
-                  github={'https://github.com/HelcioAnicio/FAQ_Questions'}
-                  nameProject='FAQ (Perguntas frequentes)'
-                  descriptionProject='Frequently Asked Questions é um site onde você vai encontrar
+                  vercel={"https://faq-questions.vercel.app/"}
+                  github={"https://github.com/HelcioAnicio/FAQ_Questions"}
+                  nameProject="FAQ (Perguntas frequentes)"
+                  descriptionProject="Frequently Asked Questions é um site onde você vai encontrar
             algumas perguntas e respostas mais frequentes realizadas sobre
-            mim.'
+            mim."
                   techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
                 />
               </CarouselItem>
-              <CarouselItem className='lg:basis-1/3'>
-                <div className='flex flex-col w-full max-w-lg p-4 items-center'>
-                  <div className='w-full h-60 flex items-center justify-center animate-spin'>
+              <CarouselItem className="lg:basis-1/3">
+                <div className="flex w-full max-w-lg flex-col items-center p-4">
+                  <div className="flex h-60 w-full animate-spin items-center justify-center">
                     <AiOutlineLoading3Quarters size={64} />
                   </div>
-                  <div className='text-center'>
-                    <h3 className=' text-lg mt-4'>Em breve</h3>
-                    <div className='flex gap-2 mt-4'>
-                      <AiOutlineQuestionCircle size='24' />
-                      <AiOutlineQuestionCircle size='24' />
-                      <AiOutlineQuestionCircle size='24' />
+                  <div className="text-center">
+                    <h3 className="mt-4 text-lg">Em breve</h3>
+                    <div className="mt-4 flex gap-2">
+                      <AiOutlineQuestionCircle size="24" />
+                      <AiOutlineQuestionCircle size="24" />
+                      <AiOutlineQuestionCircle size="24" />
                     </div>
                   </div>
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className='' />
-            <CarouselNext className='' />
+            <CarouselPrevious className="" />
+            <CarouselNext className="" />
           </Carousel>
         </CardContent>
       </Card>
