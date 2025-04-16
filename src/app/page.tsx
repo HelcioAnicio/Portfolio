@@ -11,19 +11,16 @@ export default function Home() {
     <>
       <Header />
       <main className="mx-auto flex max-w-5xl flex-col gap-20 overflow-hidden sm:items-center">
-        <section
-          id="home"
-          className="h-[calc(100vh-64px)] w-full max-w-5xl pt-16"
-        >
+        <section id="home" className="h-[calc(100vh-64px)] w-full max-w-5xl">
           <CardImage />
         </section>
         {/* <section id="aboutMe" className="w-full max-w-3xl pt-20">
           <CardAboutMe />
         </section> */}
-        <section className="w-full max-w-5xl pt-16" id="projects">
+        <section className="h-screen w-full max-w-5xl" id="projects">
           <ListProjects />
         </section>
-        <section className="mx-auto w-full max-w-5xl pt-16" id="technology">
+        <section className="mx-auto w-full max-w-5xl" id="technology">
           <Technology />
         </section>
       </main>

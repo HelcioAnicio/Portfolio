@@ -21,40 +21,12 @@ import {
 import { Menu } from "lucide-react";
 import { Card } from "./card";
 import Link from "next/link";
-import { useEffect } from "react";
 
 export const Header = () => {
   const { setTheme } = useTheme();
 
-  useEffect(() => {
-    function offsetAnchor() {
-      if (location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY + 245);
-      }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach((el) => {
-      el.addEventListener("click", function () {
-        window.setTimeout(function () {
-          offsetAnchor();
-        }, 0);
-      });
-    });
-
-    window.setTimeout(offsetAnchor, 0);
-
-    return () => {
-      document.querySelectorAll('a[href^="#"]').forEach((el) => {
-        el.removeEventListener("click", function () {
-          window.setTimeout(function () {
-            offsetAnchor();
-          }, 0);
-        });
-      });
-    };
-  }, []);
   return (
-    <header className="sticky top-0 z-50 h-20 bg-background">
+    <header className="h-20 border-none bg-background shadow-none">
       <Card className="h-16 rounded-t-none bg-background p-5">
         <div className="m-auto flex max-w-5xl items-center justify-between">
           <h1>
