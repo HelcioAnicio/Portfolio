@@ -20,7 +20,7 @@ export default function Home() {
         <section className="h-screen w-full max-w-5xl" id="projects">
           <ListProjects />
         </section>
-        <section className="mx-auto w-full max-w-5xl px-1" id="technology">
+        <section className="mx-auto w-full max-w-5xl" id="technology">
           <Technology />
         </section>
       </main>
