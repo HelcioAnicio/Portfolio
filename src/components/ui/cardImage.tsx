@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export const CardImage = () => {
   return (
-    <Card className="flex h-full w-full flex-col items-center border-none bg-transparent py-0 shadow-none sm:justify-evenly sm:px-2 lg:flex-row lg:justify-between">
+    <Card className="flex h-full w-full flex-col items-center justify-center border-none bg-transparent py-0 shadow-none sm:justify-evenly sm:gap-16 sm:px-2 lg:flex-row lg:justify-between">
       <CardHeader>
         <CardTitle className="flex w-full flex-col gap-2 text-primary-foreground lg:items-start">
           <Image
@@ -59,7 +59,7 @@ export const CardImage = () => {
         <p className={`text-5xl font-normal text-foreground lg:text-7xl`}>
           Eu sou <span className="font-bold lg:text-7xl">Helcio</span>
         </p>
-        <p>
+        <p className="m-auto w-4/5 sm:m-0">
           Trabalho há 3 anos como desenvolvedor web e mobile, fazendo projetos
           freelancer e prestando serviço para empresas também! Ajudando a
           aumentar o alcance e profissionalizando negócios. <br />
