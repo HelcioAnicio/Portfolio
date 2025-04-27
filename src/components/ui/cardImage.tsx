@@ -59,7 +59,7 @@ export const CardImage = () => {
         <p className={`text-5xl font-normal text-foreground lg:text-7xl`}>
           Eu sou <span className="font-bold lg:text-7xl">Helcio</span>
         </p>
-        <p className="m-auto w-4/5 sm:m-0">
+        <p className="m-auto w-4/5 lg:m-0">
           Trabalho há 3 anos como desenvolvedor web e mobile, fazendo projetos
           freelancer e prestando serviço para empresas também! Ajudando a
           aumentar o alcance e profissionalizando negócios. <br />

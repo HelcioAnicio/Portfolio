@@ -55,7 +55,7 @@ export const ListProjects = () => {
       <CardHeader>
         <CardTitle className="flex w-full items-center gap-1 py-5 text-2xl text-primary-foreground sm:py-10">
           <FaRegWindowRestore className="text-foreground" />
-          <p className="min-w-max text-foreground"> Pricipais Projetos</p>
+          <h2 className="min-w-max text-foreground"> Pricipais Projetos</h2>
         </CardTitle>
         {/* <GitHubRepos /> */}
       </CardHeader>
