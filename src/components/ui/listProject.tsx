@@ -8,9 +8,11 @@ import MobileAgroFinance from "../../../public/agroFinance/mobile.png";
 import MobileGfAdvogados from "../../../public/gfAdvogados/mobile.png";
 import MobileFernandoSantana from "../../../public/fernandoSantana/mobile.png";
 import MobileBarberDev from "../../../public/barberDev/mobile.png";
+import MobileLessaDiplomas from "../../../public/lessaDiplomas/mobile.png";
 
 import DesktopAgroFinance from "../../../public/agroFinance/desktop.png";
 import DesktopEcommerce from "../../../public/ecommerceFsw/desktop.png";
+import DesktopLessaDiplomas from "../../../public/lessaDiplomas/desktop.png";
 import DesktopUrl from "../../../public/url/desktop.png";
 import DesktopMarketing from "../../../public/marketingDigital/desktop.png";
 import DesktopGfAdvogados from "../../../public/gfAdvogados/desktop.png";
@@ -96,6 +98,19 @@ export const ListProjects = () => {
 
             <CarouselItem className="lg:basis-1/3">
               <Project
+                backgroundUrl={DesktopLessaDiplomas}
+                img={MobileLessaDiplomas}
+                vercel={
+                  "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/"
+                }
+                github={"https://github.com/HelcioAnicio/Ecommerce-FSW"}
+                nameProject="Advogado Lessa Diplomas"
+                descriptionProject="Apresentação de um propósito de ajudar pessoas com diplomas no exterior a validar no Brasil e exercer a profissão. O site é uma vitrine para mostrar os serviços prestados."
+                techIcons={[FaReact, SiTypescript, SiTailwindcss]}
+              />
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/3">
+              <Project
                 backgroundUrl={DesktopEcommerce}
                 img={MobileEcommerce}
                 vercel={
@@ -162,7 +177,7 @@ export const ListProjects = () => {
                   "https://gf-advogados-helcioanicios-projects.vercel.app/"
                 }
                 github={"https://github.com/HelcioAnicio/MarketingDigital"}
-                nameProject="Marketing Digital"
+                nameProject="GF Advogados"
                 descriptionProject="Empresa consolidada, de um advocacia, mostrando a equipe e todos os serviços prestados no meio juridico, e claro mostrando os feedbacks e clientes atendidos."
                 techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
               />

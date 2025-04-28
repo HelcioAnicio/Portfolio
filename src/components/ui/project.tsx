@@ -75,7 +75,7 @@ export const Project: React.FC<Project> = ({
         <DialogTrigger className="mr-auto mt-4 rounded-md bg-primary px-3 py-2 text-primary-foreground hover:bg-secondary">
           Mais detalhes
         </DialogTrigger>
-        <DialogContent className="flex h-1/2 flex-col items-start justify-evenly gap-10">
+        <DialogContent className="min-h-1/2 flex h-max flex-col items-start justify-evenly gap-10">
           <DialogHeader>
             <DialogTitle className="text-3xl font-bold text-primary-foreground">
               {nameProject}
