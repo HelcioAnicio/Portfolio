@@ -101,9 +101,9 @@ export const ListProjects = () => {
                 backgroundUrl={DesktopLessaDiplomas}
                 img={MobileLessaDiplomas}
                 vercel={
-                  "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/"
+                  "https://www.advogadolessa-diplomas.com.br"
                 }
-                github={"https://github.com/HelcioAnicio/Ecommerce-FSW"}
+                github={"https://github.com/HelcioAnicio/Fl-AdvogadosDiplomas"}
                 nameProject="Advogado Lessa Diplomas"
                 descriptionProject="Apresentação de um propósito de ajudar pessoas com diplomas no exterior a validar no Brasil e exercer a profissão. O site é uma vitrine para mostrar os serviços prestados."
                 techIcons={[FaReact, SiTypescript, SiTailwindcss]}
