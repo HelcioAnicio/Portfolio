@@ -27,7 +27,7 @@ export const CardImage = () => {
                 target="_blank"
                 download
               >
-                <Button className="bg-primary-foreground text-background underline underline-offset-4">
+                <Button className="bg-primary-foreground text-background underline underline-offset-4 hover:bg-amber-300">
                   Curriculo <PiReadCvLogoFill />
                 </Button>
               </Link>
@@ -37,7 +37,7 @@ export const CardImage = () => {
                 href={"https://wa.me/message/B6KSMFVGOIKTI1"}
                 target="_blank"
               >
-                <Button className="bg-primary-foreground text-background">
+                <Button className="bg-primary-foreground text-background hover:bg-amber-300">
                   <IoLogoWhatsapp />
                 </Button>
               </Link>
@@ -47,7 +47,7 @@ export const CardImage = () => {
                 href={"https://www.linkedin.com/in/helcio-anicio/"}
                 target="_blank"
               >
-                <Button className="bg-primary-foreground text-background">
+                <Button className="bg-primary-foreground text-background hover:bg-amber-300">
                   <FaLinkedinIn />
                 </Button>
               </Link>
