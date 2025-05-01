@@ -97,6 +97,17 @@ export const ListProjects = () => {
 
             <CarouselItem className="lg:basis-1/3">
               <Project
+                backgroundUrl={DesktopLessaDiplomas}
+                img={MobileLessaDiplomas}
+                vercel={"https://www.advogadolessa-diplomas.com.br"}
+                github={"https://github.com/HelcioAnicio/Fl-AdvogadosDiplomas"}
+                nameProject="Advogado Lessa Diplomas"
+                descriptionProject="Apresentação de um propósito de ajudar pessoas com diplomas no exterior a validar no Brasil e exercer a profissão. O site é uma vitrine para mostrar os serviços prestados."
+                techIcons={[FaReact, SiTypescript, SiTailwindcss]}
+              />
+            </CarouselItem>
+            <CarouselItem className="lg:basis-1/3">
+              <Project
                 backgroundUrl={DesktopEcommerce}
                 img={MobileEcommerce}
                 vercel={
