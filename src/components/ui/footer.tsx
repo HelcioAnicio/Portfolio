@@ -15,7 +15,10 @@ export const Footer = () => {
       <div>
         <div className="flex w-full items-center gap-1 py-5 pl-10 text-2xl text-primary-foreground sm:py-10">
           <FaRegWindowRestore className="text-foreground" />
-          <h2 className="min-w-max text-foreground"> Fale comigo</h2>
+          <h2 className="min-w-max text-2xl font-bold text-foreground">
+            {" "}
+            Fale comigo
+          </h2>
         </div>
 
         <ul className="mb-5 flex h-44 flex-wrap items-center justify-center gap-2">

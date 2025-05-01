@@ -17,7 +17,7 @@ export default function Home() {
         {/* <section id="aboutMe" className="w-full max-w-3xl pt-20">
           <CardAboutMe />
         </section> */}
-        <section className="h-screen w-full max-w-5xl" id="projects">
+        <section className="w-full max-w-5xl" id="projects">
           <ListProjects />
         </section>
         <section className="mx-auto w-full max-w-5xl" id="technology">

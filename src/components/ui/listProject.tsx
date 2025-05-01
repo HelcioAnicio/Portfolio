@@ -52,7 +52,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 export const ListProjects = () => {
   return (
-    <Card className="bg-nome mx-auto h-dvh w-full max-w-5xl scroll-smooth border-none">
+    <Card className="bg-nome mx-auto w-full max-w-5xl scroll-smooth border-none">
       <CardHeader>
         <CardTitle className="flex w-full items-center gap-1 py-5 text-2xl text-primary-foreground sm:py-10">
           <FaRegWindowRestore className="text-foreground" />

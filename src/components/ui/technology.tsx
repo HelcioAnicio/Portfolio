@@ -13,7 +13,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
-import { Card } from "./card";
+import { Card, CardHeader, CardTitle } from "./card";
 
 export const Technology = () => {
   function getTechnologyStyle(text: string) {
@@ -69,13 +69,15 @@ export const Technology = () => {
   ];
 
   return (
-    <Card className="w-full border-popover-foreground bg-background px-1">
-      <div className="flex w-full items-center gap-1 py-5 pl-10 text-2xl text-primary-foreground sm:py-10">
-        <FaRegWindowRestore className="text-foreground" />
-        <h2 className="min-w-max text-foreground"> Tecnologias</h2>
-      </div>
+    <Card className="w-full border-none bg-background">
+      <CardHeader>
+        <CardTitle className="flex w-full items-center gap-1 py-5 text-2xl text-primary-foreground sm:py-10">
+          <FaRegWindowRestore className="text-foreground" />
+          <h2 className="min-w-max text-foreground"> Tecnologias</h2>
+        </CardTitle>
+      </CardHeader>
 
-      <div className="group z-10 flex space-x-16 overflow-hidden py-5">
+      <div className="group z-10 flex space-x-16 overflow-hidden rounded-md border border-popover-foreground px-1 py-5">
         <div className="flex animate-animate-scroll gap-16 group-hover:paused">
           {techs.map(({ icon, text }, index) => (
             <div
