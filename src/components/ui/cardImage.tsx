@@ -56,7 +56,9 @@ export const CardImage = () => {
         </CardTitle>
       </CardHeader>
       <CardContent className="mx-auto space-y-6 px-1 text-center font-light sm:w-4/5 lg:mx-0 lg:space-y-10 lg:text-start">
-        <p className={`text-5xl font-normal text-foreground lg:text-7xl`}>
+        <p
+          className={`text-4xl font-normal text-foreground sm:text-5xl lg:text-7xl`}
+        >
           Eu sou <span className="font-bold lg:text-7xl">Helcio</span>
         </p>
         <p className="m-auto w-4/5 lg:m-0">

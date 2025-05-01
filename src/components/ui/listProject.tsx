@@ -1,25 +1,23 @@
 import MobileMarketingDigital from "../../../public/marketingDigital/mobile.png";
 import MobileMonguilhoDental from "../../../public/monguilhoDental/mobile.png";
-import MobileCarSeller from "../../../public/carSeller/mobile.png";
 import MobileUrl from "../../../public/url/mobile.png";
 import MobileFAQ from "../../../public/faq/mobile.png";
 import MobileEcommerce from "../../../public/ecommerceFsw/mobile.png";
 import MobileAgroFinance from "../../../public/agroFinance/mobile.png";
 import MobileGfAdvogados from "../../../public/gfAdvogados/mobile.png";
-import MobileFernandoSantana from "../../../public/fernandoSantana/mobile.png";
 import MobileBarberDev from "../../../public/barberDev/mobile.png";
 import MobileLessaDiplomas from "../../../public/lessaDiplomas/mobile.png";
+import MobileUnipromotora from "../../../public/unipromotora/mobile.png";
 
 import DesktopAgroFinance from "../../../public/agroFinance/desktop.png";
 import DesktopEcommerce from "../../../public/ecommerceFsw/desktop.png";
 import DesktopLessaDiplomas from "../../../public/lessaDiplomas/desktop.png";
+import DesktopUnipromotora from "../../../public/unipromotora/desktop.png";
 import DesktopUrl from "../../../public/url/desktop.png";
 import DesktopMarketing from "../../../public/marketingDigital/desktop.png";
 import DesktopGfAdvogados from "../../../public/gfAdvogados/desktop.png";
-import DesktopFernandoSantana from "../../../public/fernandoSantana/desktop.png";
 import DesktopBarberDev from "../../../public/barberDev/desktop.png";
 import DesktopMonguilho from "../../../public/monguilhoDental/desktop.png";
-import DesktopCarSeller from "../../../public/carSeller/desktop.png";
 import DesktopFaq from "../../../public/faq/desktop.png";
 import { FaHtml5, FaReact } from "react-icons/fa";
 import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
@@ -30,6 +28,7 @@ import {
   AiOutlineQuestionCircle,
 } from "react-icons/ai";
 import {
+  SiAxios,
   SiPostgresql,
   SiPrisma,
   SiShadcnui,
@@ -80,7 +79,7 @@ export const ListProjects = () => {
                 img={MobileAgroFinance}
                 vercel={"https://agro-finance-real.vercel.app/"}
                 github={"https://github.com/HelcioAnicio/AgroFinance"}
-                nameProject="Em construção"
+                nameProject="Em construção ..."
                 descriptionProject="Esse é sistema SAAS chamado inicialmente AgroFinance, objetivo ter total controle do animais da fazenda. Dentro desse sistema é possivel gerenciar animais, e o financeiro da fazendo tudo de forma automatizada."
                 techIcons={[
                   TbBrandNextjs,
@@ -96,19 +95,6 @@ export const ListProjects = () => {
               />
             </CarouselItem>
 
-            <CarouselItem className="lg:basis-1/3">
-              <Project
-                backgroundUrl={DesktopLessaDiplomas}
-                img={MobileLessaDiplomas}
-                vercel={
-                  "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/"
-                }
-                github={"https://github.com/HelcioAnicio/Ecommerce-FSW"}
-                nameProject="Advogado Lessa Diplomas"
-                descriptionProject="Apresentação de um propósito de ajudar pessoas com diplomas no exterior a validar no Brasil e exercer a profissão. O site é uma vitrine para mostrar os serviços prestados."
-                techIcons={[FaReact, SiTypescript, SiTailwindcss]}
-              />
-            </CarouselItem>
             <CarouselItem className="lg:basis-1/3">
               <Project
                 backgroundUrl={DesktopEcommerce}
@@ -130,19 +116,35 @@ export const ListProjects = () => {
                 ]}
               />
             </CarouselItem>
+
             <CarouselItem className="lg:basis-1/3">
               <Project
-                backgroundUrl={DesktopUrl}
-                img={MobileUrl}
-                vercel={"https://url-shortener-seven-delta.vercel.app/"}
-                github={"https://github.com/HelcioAnicio/url-shortener"}
-                nameProject="Encurtador de Links"
-                descriptionProject="O Encurtador de URL é uma ferramenta grátis para encurtar links
-                de redes sociais do Instagram, Facebook, YouTube, Twitter,
-                Linked In, Pinterest e sites com autoridade na Internet."
-                techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
+                backgroundUrl={DesktopLessaDiplomas}
+                img={MobileLessaDiplomas}
+                vercel={
+                  "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/"
+                }
+                github={"https://github.com/HelcioAnicio/Ecommerce-FSW"}
+                nameProject="Revalidação de Diplomas"
+                descriptionProject="Apresentação de um propósito de ajudar pessoas com diplomas no exterior a validar no Brasil e exercer a profissão. O site é uma vitrine para mostrar os serviços prestados."
+                techIcons={[FaReact, SiTypescript, SiTailwindcss]}
               />
             </CarouselItem>
+
+            <CarouselItem className="lg:basis-1/3">
+              <Project
+                backgroundUrl={DesktopUnipromotora}
+                img={MobileUnipromotora}
+                vercel={
+                  "https://unipromotora-helcioanicios-projects.vercel.app/"
+                }
+                github={"https://github.com/HelcioAnicio/Unipromotora"}
+                nameProject="Unipromotora"
+                descriptionProject="Site institucional para mostrar os serviços de empréstimos prestados pela empresa, com um formulário de contato com integração a um CRM e automatização com whatsapp para facilitar a comunicação com os clientes."
+                techIcons={[FaReact, SiTypescript, SiTailwindcss, SiAxios]}
+              />
+            </CarouselItem>
+
             <CarouselItem className="lg:basis-1/3">
               <Project
                 backgroundUrl={DesktopBarberDev}
@@ -153,19 +155,6 @@ export const ListProjects = () => {
                 github={"https://github.com/HelcioAnicio/devBarberEx"}
                 nameProject="Barber Dev"
                 descriptionProject="Este projeto é um website para uma barbearia, mostrando o designer e também um campo para agendamento como exemplo."
-                techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
-              />
-            </CarouselItem>
-            <CarouselItem className="lg:basis-1/3">
-              <Project
-                backgroundUrl={DesktopFernandoSantana}
-                img={MobileFernandoSantana}
-                vercel={""}
-                github={
-                  "https://github.com/HelcioAnicio/website-FernandoSantanaLawyers"
-                }
-                nameProject="Fernando Advogados"
-                descriptionProject="Um grupo de advocacia, mostrando um designer intuitivo, objetivo. Foco na demonstração dos serviços e também de conquistas da empresa."
                 techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
               />
             </CarouselItem>
@@ -205,25 +194,16 @@ export const ListProjects = () => {
                 techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
               />
             </CarouselItem>
-            {/* <CarouselItem className='lg:basis-1/3'>
-                <Project
-                  backgroundUrl={DesktopWebSite}
-                  img={MobileWebSiteDigital}
-                  vercel={'https://web-site-digitalnew.vercel.app/'}
-                  github={'https://github.com/HelcioAnicio/WebSite-Digital'}
-                  nameProject='Web site  Digital'
-                  descriptionProject='Web site que mostra planos para assinatura, informações sobre a empresa e tambem icons que levara você diretamente para as redes sociais.'
-                  techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
-                />
-              </CarouselItem> */}
             <CarouselItem className="lg:basis-1/3">
               <Project
-                backgroundUrl={DesktopCarSeller}
-                img={MobileCarSeller}
-                vercel={"https://car-seller-eta.vercel.app/"}
-                github={"https://github.com/HelcioAnicio/Car-seller"}
-                nameProject="Vendas de veiculos"
-                descriptionProject="Aqui você conseguirá ver uma concessionária de carros, com preços, fotos, preços e outras coisas sobre os carros."
+                backgroundUrl={DesktopUrl}
+                img={MobileUrl}
+                vercel={"https://url-shortener-seven-delta.vercel.app/"}
+                github={"https://github.com/HelcioAnicio/url-shortener"}
+                nameProject="Encurtador de Links"
+                descriptionProject="O Encurtador de URL é uma ferramenta grátis para encurtar links
+                de redes sociais do Instagram, Facebook, YouTube, Twitter,
+                Linked In, Pinterest e sites com autoridade na Internet."
                 techIcons={[TbBrandJavascript, FaHtml5, IoLogoCss3]}
               />
             </CarouselItem>
