@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export const CardImage = () => {
   return (
-    <Card className="flex min-h-max h-full w-full flex-col items-center justify-center border-none bg-transparent py-0 shadow-none sm:justify-evenly sm:gap-16 sm:px-0 lg:flex-row lg:justify-between">
+    <Card className="flex min-h-max h-full w-full flex-col items-center justify-start border-none bg-transparent py-0 shadow-none sm:justify-evenly sm:gap-16 sm:px-0 lg:flex-row lg:justify-between">
       <CardHeader>
         <CardTitle className="flex w-full flex-col gap-2 text-primary-foreground lg:items-start">
           <Image
