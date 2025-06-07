@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="mx-auto flex max-w-5xl flex-col gap-20 overflow-hidden sm:items-center">
-        <section id="home" className="h-[calc(100vh-64px)] w-full max-w-5xl">
+      <main className="mx-auto flex h-full max-w-5xl flex-col gap-20 overflow-hidden sm:items-center">
+        <section id="home" className="h-[calc(100vh-144px)] w-full max-w-5xl">
           <CardImage />
         </section>
         {/* <section id="aboutMe" className="w-full max-w-3xl pt-20">

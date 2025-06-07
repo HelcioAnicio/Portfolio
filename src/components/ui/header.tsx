@@ -20,18 +20,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
 import { Card } from "./card";
+import Logo from "../../../public/logo.svg";
+
 import Link from "next/link";
+import Image from "next/image";
 
 export const Header = () => {
   const { setTheme } = useTheme();
 
   return (
-    <header className="h-20 border-none bg-background shadow-none">
-      <Card className="h-16 rounded-t-none border-none bg-background p-5 shadow-none">
+    <header className="h-max border-none bg-background shadow-none">
+      <Card className="h-full rounded-t-none border-none bg-background px-5 py-10 shadow-none">
         <div className="m-auto flex max-w-5xl items-center justify-between">
-          <h1>
-            <span className="text-primary-foreground">DEV</span> Helcio Anicio
-          </h1>
+          <div className="flex items-center gap-2">
+            <Image className="h-16 w-16" src={Logo} alt="Logo" />
+            <h1>
+              <span className="text-primary-foreground">DEV</span> Helcio Anicio
+            </h1>
+          </div>
 
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-7">
@@ -40,11 +46,11 @@ export const Header = () => {
                   Home
                 </li>
               </Link>
-              <Link href="#aboutMe">
+              {/* <Link href="#aboutMe">
                 <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
                   Sobre mim
                 </li>
-              </Link>
+              </Link> */}
               <Link href="#projects">
                 <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
                   Projetos
@@ -111,13 +117,13 @@ export const Header = () => {
                           </li>
                         </Link>
                       </SheetClose>
-                      <SheetClose asChild>
+                      {/* <SheetClose asChild>
                         <Link href="#aboutMe">
                           <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
                             Sobre mim
                           </li>
                         </Link>
-                      </SheetClose>
+                      </SheetClose> */}
                       <SheetClose asChild>
                         <Link href="#projects">
                           <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">

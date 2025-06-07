@@ -101,7 +101,7 @@ export const ListProjects = () => {
                 img={MobileLessaDiplomas}
                 vercel={"https://www.advogadolessa-diplomas.com.br"}
                 github={"https://github.com/HelcioAnicio/Fl-AdvogadosDiplomas"}
-                nameProject="Advogado Lessa Diplomas"
+                nameProject="Revalidação de Diplomas"
                 descriptionProject="Apresentação de um propósito de ajudar pessoas com diplomas no exterior a validar no Brasil e exercer a profissão. O site é uma vitrine para mostrar os serviços prestados."
                 techIcons={[FaReact, SiTypescript, SiTailwindcss]}
               />
@@ -125,20 +125,6 @@ export const ListProjects = () => {
                   SiTailwindcss,
                   BsStripe,
                 ]}
-              />
-            </CarouselItem>
-
-            <CarouselItem className="lg:basis-1/3">
-              <Project
-                backgroundUrl={DesktopLessaDiplomas}
-                img={MobileLessaDiplomas}
-                vercel={
-                  "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/"
-                }
-                github={"https://github.com/HelcioAnicio/Ecommerce-FSW"}
-                nameProject="Revalidação de Diplomas"
-                descriptionProject="Apresentação de um propósito de ajudar pessoas com diplomas no exterior a validar no Brasil e exercer a profissão. O site é uma vitrine para mostrar os serviços prestados."
-                techIcons={[FaReact, SiTypescript, SiTailwindcss]}
               />
             </CarouselItem>
 
