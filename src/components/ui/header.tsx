@@ -33,7 +33,7 @@ export const Header = () => {
       <Card className="h-full rounded-t-none border-none bg-background px-5 py-10 shadow-none">
         <div className="m-auto flex max-w-5xl items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image className="h-16 w-16" src={Logo} alt="Logo" />
+            <Image className="w-12 lg:w-16" src={Logo} alt="Logo" />
             <h1>
               <span className="text-primary-foreground">DEV</span> Helcio Anicio
             </h1>
