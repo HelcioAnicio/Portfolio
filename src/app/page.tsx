@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       <main className="mx-auto flex h-full max-w-5xl flex-col gap-20 overflow-hidden sm:items-center">
-        <section id="home" className="h-[calc(100vh-144px)] min-h-max w-full max-w-5xl">
+        <section id="home" className="lg:h-[calc(100vh-144px)] h-100vh min-h-max w-full max-w-5xl">
           <CardImage />
         </section>
         {/* <section id="aboutMe" className="w-full max-w-3xl pt-20">
