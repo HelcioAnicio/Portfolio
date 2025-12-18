@@ -30,7 +30,7 @@ export const WhyDevLab = () => {
       </h2>
       <div
         ref={containerRef}
-        className="relative flex w-full gap-40 overflow-auto scroll-smooth px-6 pb-5"
+        className="relative flex w-full gap-40 overflow-auto scroll-smooth px-2 pb-5 md:p-6"
       >
         <div className="flex flex-col gap-10">
           <CardReason

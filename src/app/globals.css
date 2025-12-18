@@ -70,6 +70,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .listOfProject .item:nth-child(even) {
+    align-self: flex-end;
+  }
 }
 
 @layer utilities {

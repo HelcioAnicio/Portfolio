@@ -1,9 +1,4 @@
 import { IconType } from "react-icons";
-// import {
-//   HoverCard,
-//   HoverCardContent,
-//   HoverCardTrigger,
-// } from '@/components/ui/hover-card';
 import {
   Dialog,
   DialogContent,
@@ -11,108 +6,81 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import { Button } from "./button";
 import Link from "next/link";
 import { Github, Globe } from "lucide-react";
 
-interface Project {
-  style?: string; // Mantido caso você queira passar estilos adicionais
-  img: StaticImageData;
-  vercel: string;
-  github: string;
+interface ProjectProps {
   nameProject: string;
   descriptionProject: string;
-  techIcons: IconType[];
+  vercel: string;
+  github: string;
   backgroundUrl: StaticImageData;
+  techIcons: IconType[];
+  align?: "left" | "right";
 }
 
-export const Project: React.FC<Project> = ({
-  style = "",
-  img,
-  vercel,
-  github,
+export const Project = ({
   nameProject,
   descriptionProject,
-  techIcons,
+  vercel,
+  github,
   backgroundUrl,
-}) => {
+  techIcons,
+  align = "left",
+}: ProjectProps) => {
   return (
     <Dialog>
       <div
-        className={`m-auto flex min-w-48 max-w-sm flex-col gap-6 ${style} w-full rounded-lg border border-primary-foreground p-7`}
+        className={`flex h-[500px] w-full max-w-sm flex-wrap gap-6 p-2 ${
+          align === "right" ? "ml-auto" : "mr-auto"
+        }`}
       >
-        <div
-          style={{
-            backgroundImage: `url(${backgroundUrl.src})`,
-            backgroundPosition: "center center",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-          }}
-          className={`relative m-auto h-48 w-full max-w-96 overflow-hidden rounded-lg`}
-        >
-          <Image
-            src={img}
-            alt="Mobile"
-            className="absolute bottom-1 right-1 h-24 w-12 sm:h-32 sm:w-16"
-          />
-        </div>
-        <div className="mt-4 flex flex-col gap-2 px-1">
-          <h3
-            className="text-3xl font-bold text-primary-foreground"
-            title={nameProject}
-          >
+        <DialogTrigger className="flex w-full flex-col items-start gap-4">
+          <h3 className="text-lg font-bold text-primary-foreground">
             {nameProject}
           </h3>
-          <p
-            className="line-clamp-4 overflow-hidden text-ellipsis"
-            title="Description of Project"
-          >
-            {descriptionProject}
-          </p>
-        </div>
-        <DialogTrigger className="mr-auto mt-4 rounded-md bg-primary px-3 py-2 text-primary-foreground hover:bg-secondary">
-          Mais detalhes
+
+          <div
+            style={{
+              backgroundImage: `url(${backgroundUrl.src})`,
+              backgroundPosition: "center",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="h-60 w-full min-w-72 rounded-lg"
+          />
         </DialogTrigger>
-        <DialogContent className="min-h-1/2 flex h-max flex-col items-start justify-evenly gap-10">
+
+        <DialogContent className="flex flex-col gap-6 border-none">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-bold text-primary-foreground">
+            <DialogTitle className="text-3xl font-bold">
               {nameProject}
             </DialogTitle>
           </DialogHeader>
-          <p className="text-xl">{descriptionProject}</p>
-          <div>
-            <div className="mt-2 flex gap-3">
-              {techIcons.map((Icon, index) => (
-                <Icon
-                  key={index}
-                  title={`${Icon.name}= Tecnologie's name`}
-                  className="text-lg"
-                />
-              ))}
-            </div>
-            <div className="mt-4 flex">
-              {vercel !== "" && (
-                <>
-                  <Link
-                    href={vercel}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-4"
-                  >
-                    <Button title="Ver site" className="hover:bg-card">
-                      Ver Site <Globe />
-                    </Button>
-                  </Link>
-                </>
-              )}
-              <Link href={github} target="_blank" rel="noopener noreferrer">
-                <Button title="Ver código fonte" className="hover:bg-card">
-                  Ver Código <Github />
+
+          <p className="text-lg">{descriptionProject}</p>
+
+          <div className="flex gap-3">
+            {techIcons.map((Icon, index) => (
+              <Icon key={index} className="text-lg" />
+            ))}
+          </div>
+
+          <div className="flex gap-4">
+            {vercel && (
+              <Link href={vercel} target="_blank">
+                <Button>
+                  Ver Site <Globe />
                 </Button>
               </Link>
-            </div>
+            )}
+            <Link href={github} target="_blank">
+              <Button>
+                Ver Código <Github />
+              </Button>
+            </Link>
           </div>
         </DialogContent>
       </div>
