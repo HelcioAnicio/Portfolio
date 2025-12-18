@@ -68,7 +68,7 @@ export const Header = () => {
               </Link>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="icon">
+                  <Button variant="outline" size="icon" className="border-none">
                     <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                     <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                     <span className="sr-only">Toggle theme</span>
@@ -91,7 +91,12 @@ export const Header = () => {
           <div className="flex items-center gap-4 lg:hidden">
             <Sheet>
               <SheetTrigger>
-                <Button asChild variant="outline" size="icon">
+                <Button
+                  asChild
+                  variant="outline"
+                  size="icon"
+                  className="border-none"
+                >
                   <Menu size={16} />
                 </Button>
               </SheetTrigger>
@@ -147,7 +152,11 @@ export const Header = () => {
                       </SheetClose>
                       <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                          <Button variant="outline" size="icon">
+                          <Button
+                            variant="outline"
+                            size="icon"
+                            className="border-none"
+                          >
                             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                             <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                             <span className="sr-only">Toggle theme</span>
