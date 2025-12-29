@@ -13,12 +13,12 @@ export const ListProjects = () => {
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex flex-wrap gap-4">
+      <CardContent className="flex w-full flex-col items-center justify-around gap-1 md:flex-row md:flex-wrap md:items-start">
         {projects.map((project, index) => (
           <Project
             key={project.nameProject}
             {...project}
-            align={index % 2 === 0 ? "left" : "right"}
+            align={index % 2 === 0 ? "top" : "bottom"}
           />
         ))}
       </CardContent>

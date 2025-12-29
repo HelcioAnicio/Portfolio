@@ -80,13 +80,32 @@ body {
   .paused {
     animation-play-state: paused;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari e Chrome */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE e Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @layer components {
-  @media (min-width: 1250px) {
-    /* :root {
-      --scale-factor: 1.8;
-    } */
+  @media (min-width: 750px) {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    li,
+    a {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 1550px) {
     p,
     h1,
     h2,
@@ -99,9 +118,5 @@ body {
     a {
       font-size: 25px;
     }
-    /* body,
-    html {
-      font-size: 20px;
-    } */
   }
 }

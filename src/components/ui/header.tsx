@@ -30,12 +30,12 @@ export const Header = () => {
 
   return (
     <header className="h-max border-none bg-background shadow-none">
-      <Card className="h-full rounded-t-none border-none bg-background px-5 py-10 shadow-none">
+      <Card className="h-full rounded-t-none border-none bg-background px-5 py-2 shadow-none">
         <div className="m-auto flex max-w-5xl items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image className="w-12 lg:w-16" src={Logo} alt="Logo" />
+            <Image className="w-6 lg:w-10" src={Logo} alt="Logo" />
             <h1>
-              <span className="text-primary-foreground">DEV</span> Helcio Anicio
+              <span className="text-popover-foreground">Codando</span> ideias
             </h1>
           </div>
 
@@ -46,11 +46,6 @@ export const Header = () => {
                   Home
                 </li>
               </Link>
-              {/* <Link href="#aboutMe">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
-                  Sobre mim
-                </li>
-              </Link> */}
               <Link href="#projects">
                 <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
                   Projetos
@@ -68,8 +63,12 @@ export const Header = () => {
               </Link>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="icon" className="border-none">
-                    <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="border-none text-foreground"
+                  >
+                    <Sun className="scale-100transition-all h-[1.2rem] w-[1.2rem] rotate-0 dark:-rotate-90 dark:scale-0" />
                     <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                     <span className="sr-only">Toggle theme</span>
                   </Button>
@@ -102,7 +101,7 @@ export const Header = () => {
               </SheetTrigger>
               <SheetContent
                 side={"right"}
-                className="flex flex-col gap-10 pt-16"
+                className="flex flex-col gap-10 border-none pt-16"
               >
                 <SheetHeader>
                   <SheetTitle>
@@ -122,13 +121,6 @@ export const Header = () => {
                           </li>
                         </Link>
                       </SheetClose>
-                      {/* <SheetClose asChild>
-                        <Link href="#aboutMe">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
-                            Sobre mim
-                          </li>
-                        </Link>
-                      </SheetClose> */}
                       <SheetClose asChild>
                         <Link href="#projects">
                           <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
@@ -155,7 +147,7 @@ export const Header = () => {
                           <Button
                             variant="outline"
                             size="icon"
-                            className="border-none"
+                            className="border-none text-foreground"
                           >
                             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                             <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
