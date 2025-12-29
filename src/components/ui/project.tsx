@@ -7,6 +7,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Button } from "./button";
 import Link from "next/link";
 import { Github, Globe } from "lucide-react";
@@ -16,9 +17,9 @@ interface ProjectProps {
   descriptionProject: string;
   vercel: string;
   github: string;
-  backgroundUrl: StaticImageData;
+  imageSrc: StaticImageData;
   techIcons: IconType[];
-  align?: "left" | "right";
+  align?: "top" | "bottom";
 }
 
 export const Project = ({
@@ -26,31 +27,31 @@ export const Project = ({
   descriptionProject,
   vercel,
   github,
-  backgroundUrl,
+  imageSrc,
   techIcons,
-  align = "left",
+  align = "bottom",
 }: ProjectProps) => {
   return (
     <Dialog>
       <div
-        className={`flex h-[500px] w-full max-w-sm flex-wrap gap-6 p-2 ${
-          align === "right" ? "ml-auto" : "mr-auto"
+        className={`flex h-[290px] w-max max-w-sm flex-wrap gap-6 p-2 ${
+          align === "bottom" && "md:mt-20"
         }`}
       >
-        <DialogTrigger className="flex w-full flex-col items-start gap-4">
+        <DialogTrigger className="flex h-max w-full flex-col items-start gap-4">
           <h3 className="text-lg font-bold text-primary-foreground">
             {nameProject}
           </h3>
 
-          <div
-            style={{
-              backgroundImage: `url(${backgroundUrl.src})`,
-              backgroundPosition: "center",
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-            }}
-            className="h-60 w-full min-w-72 rounded-lg"
-          />
+          <div className="w-72 rounded-lg">
+            <Image
+              src={imageSrc}
+              alt={`Imagem da tela inicial do site ${nameProject}`}
+              width={0}
+              height={0}
+              className="w-full rounded-xl"
+            />
+          </div>
         </DialogTrigger>
 
         <DialogContent className="flex flex-col gap-6 border-none">

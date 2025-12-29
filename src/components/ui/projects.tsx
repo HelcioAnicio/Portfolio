@@ -26,7 +26,7 @@ export interface ProjectData {
   descriptionProject: string;
   vercel: string;
   github: string;
-  backgroundUrl: StaticImageData;
+  imageSrc: StaticImageData;
   techIcons: IconType[];
 }
 
@@ -37,7 +37,7 @@ export const projects: ProjectData[] = [
       "Sistema SAAS para controle total da fazenda, com gestão de animais, financeiro, notificações e reprodução.",
     vercel: "https://agro-finance-real.vercel.app/",
     github: "https://github.com/HelcioAnicio/AgroFinance",
-    backgroundUrl: DesktopAgroFinance,
+    imageSrc: DesktopAgroFinance,
     techIcons: [
       TbBrandNextjs,
       FaReact,
@@ -56,7 +56,7 @@ export const projects: ProjectData[] = [
       "Site vitrine para auxiliar pessoas com diplomas do exterior a validar no Brasil.",
     vercel: "https://www.advogadolessa-diplomas.com.br",
     github: "https://github.com/HelcioAnicio/Fl-AdvogadosDiplomas",
-    backgroundUrl: MuckupDiplomas,
+    imageSrc: MuckupDiplomas,
     techIcons: [FaReact, SiTypescript, SiTailwindcss],
   },
 
@@ -66,7 +66,7 @@ export const projects: ProjectData[] = [
       "Site institucional com formulário integrado a CRM e automação via WhatsApp.",
     vercel: "https://unipromotora-helcioanicios-projects.vercel.app/",
     github: "https://github.com/HelcioAnicio/Unipromotora",
-    backgroundUrl: MuckupUnipromotora,
+    imageSrc: MuckupUnipromotora,
     techIcons: [FaReact, SiTypescript, SiTailwindcss, SiAxios],
   },
   {
@@ -75,7 +75,7 @@ export const projects: ProjectData[] = [
       "Ecommerce com login Google, carrinho de compras e pagamentos via Stripe.",
     vercel: "https://ecommerce-fsw-git-main-helcioanicios-projects.vercel.app/",
     github: "https://github.com/HelcioAnicio/Ecommerce-FSW",
-    backgroundUrl: DesktopEcommerce,
+    imageSrc: DesktopEcommerce,
     techIcons: [
       FaReact,
       SiTypescript,
@@ -92,7 +92,7 @@ export const projects: ProjectData[] = [
       "Site institucional para clínica odontológica com serviços e informações.",
     vercel: "https://monguilho-dental.vercel.app/",
     github: "https://github.com/HelcioAnicio/MonguilhoDental",
-    backgroundUrl: MuckupDentista,
+    imageSrc: MuckupDentista,
     techIcons: [TbBrandJavascript, FaHtml5, IoLogoCss3],
   },
   {
@@ -101,7 +101,7 @@ export const projects: ProjectData[] = [
       "Ferramenta gratuita para encurtar links de redes sociais e sites.",
     vercel: "https://url-shortener-seven-delta.vercel.app/",
     github: "https://github.com/HelcioAnicio/url-shortener",
-    backgroundUrl: MuckupEncurtador,
+    imageSrc: MuckupEncurtador,
     techIcons: [TbBrandJavascript, FaHtml5, IoLogoCss3],
   },
 ];

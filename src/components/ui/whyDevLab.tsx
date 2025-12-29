@@ -13,7 +13,6 @@ import { useRef } from "react";
 
 export const WhyDevLab = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  // const [scrollPosition, setScrollPosition] = useState(0);
 
   const scrollScreen = (direction: string) => {
     if (direction === "right" && containerRef.current) {
@@ -26,11 +25,12 @@ export const WhyDevLab = () => {
   return (
     <>
       <h2 className="text-lg text-black">
-        Porquê a <span className="text-popover-foreground">HA</span>DevLab?{" "}
+        Porquê a <span className="text-popover-foreground">Codando </span>
+        ideias?
       </h2>
       <div
         ref={containerRef}
-        className="relative flex w-full gap-40 overflow-auto scroll-smooth px-2 pb-5 md:p-6"
+        className="no-scrollbar relative flex w-full gap-40 overflow-auto scroll-smooth px-2 pb-5 md:p-6"
       >
         <div className="flex flex-col gap-10">
           <CardReason
