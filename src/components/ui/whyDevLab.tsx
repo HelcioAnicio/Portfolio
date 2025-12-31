@@ -23,8 +23,8 @@ export const WhyDevLab = () => {
     }
   };
   return (
-    <>
-      <h2 className="text-lg text-black">
+    <section className="relative flex w-full flex-col gap-5 rounded-md bg-foreground px-1 pb-10 pt-6 md:p-6">
+      <h2 className="text-lg text-background">
         Porquê a <span className="text-popover-foreground">Codando </span>
         ideias?
       </h2>
@@ -95,6 +95,6 @@ export const WhyDevLab = () => {
       >
         <FaArrowCircleRight className="size-7 text-primary" />
       </Button>
-    </>
+    </section>
   );
 };

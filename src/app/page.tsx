@@ -6,21 +6,15 @@ import { Footer } from "@/components/ui/footer";
 import { WhyDevLab } from "@/components/ui/whyDevLab";
 import Link from "next/link";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { Steps } from "@/components/ui/steps";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main className="mx-auto mt-10 flex h-full max-w-5xl flex-col gap-20 overflow-hidden sm:items-center">
-        <section
-          id="home"
-          className="flex h-full w-full max-w-5xl flex-col gap-10 px-2 md:gap-10 md:px-6 lg:gap-16"
-        >
-          <CardImage />
-        </section>
-        <section className="relative flex w-full flex-col gap-5 bg-white px-1 pb-10 pt-6 md:p-6">
-          <WhyDevLab />
-        </section>
+        <CardImage />
+        <WhyDevLab />
         <section className="w-full max-w-5xl" id="projects">
           <ListProjects />
           <Link
@@ -32,6 +26,7 @@ export default function Home() {
             </p>
           </Link>
         </section>
+        <Steps />
       </main>
       <Footer />
     </>

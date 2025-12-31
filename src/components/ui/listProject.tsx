@@ -5,7 +5,7 @@ import { Project } from "./project";
 
 export const ListProjects = () => {
   return (
-    <Card className="mx-auto w-full max-w-5xl border-none bg-inherit">
+    <Card className="mx-auto w-full max-w-5xl border-none bg-inherit shadow-none">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 py-6 text-2xl">
           <FaRegWindowRestore />
@@ -13,7 +13,7 @@ export const ListProjects = () => {
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex w-full flex-col items-center justify-around gap-1 md:flex-row md:flex-wrap md:items-start">
+      <CardContent className="flex w-full max-w-4xl flex-col items-center justify-around gap-1 md:flex-row md:flex-wrap md:items-start">
         {projects.map((project, index) => (
           <Project
             key={project.nameProject}
