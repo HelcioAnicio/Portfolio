@@ -1,77 +1,39 @@
 import Link from "next/link";
-import {
-  FaWhatsapp,
-  FaLinkedinIn,
-  FaInstagram,
-  FaGithub,
-  FaRegWindowRestore,
-  // FaDiscord,
-} from "react-icons/fa";
+import Image from "next/image";
+import Logo from "../../../public/logo.svg";
+
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import { Button } from "./button";
+import { Separator } from "./separator";
 
 export const Footer = () => {
   return (
-    <footer className="m-auto w-full max-w-5xl py-20" id="footer">
-      <div>
-        <div className="flex w-full items-center gap-1 py-5 pl-10 text-2xl text-primary-foreground sm:py-10">
-          <FaRegWindowRestore className="text-foreground" />
-          <h2 className="min-w-max text-2xl font-bold text-foreground">
-            {" "}
-            Fale comigo
-          </h2>
-        </div>
-
-        <ul className="mb-5 flex h-44 flex-wrap items-center justify-center gap-2">
-          <Link target="_blank" href={"https://wa.me/message/B6KSMFVGOIKTI1"}>
-            <li>
-              <Button className="hover:bg-popover">
-                <p>WhatsApp</p>
-                <FaWhatsapp size={20} className="group-hover:size-6" />
-              </Button>
-            </li>
-          </Link>
-          <Link
-            target="_blank"
-            href={"https://www.linkedin.com/in/helcio-anicio/"}
-          >
-            <li>
-              <Button className="hover:bg-popover">
-                <p>Linkedin</p>
-                <FaLinkedinIn size={20} className="group-hover:size-6" />
-              </Button>
-            </li>
-          </Link>
-          <Link
-            target="_blank"
-            href={"https://www.instagram.com/dev.helcioanicio/"}
-          >
-            <li>
-              <Button className="hover:bg-popover">
-                <p>Instagram</p>
-                <FaInstagram size={20} className="group-hover:size-6" />
-              </Button>
-            </li>
-          </Link>
-          <Link target="_blank" href={"https://github.com/HelcioAnicio"}>
-            <li>
-              <Button className="hover:bg-popover">
-                <p>GitHub</p>
-                <FaGithub size={20} className="group-hover:size-6" />
-              </Button>
-            </li>
-          </Link>
-          {/* <Link target='_blank' href={''}>
-            <li>
-              <Button className='hover:bg-popover'>
-                <p>Discord</p>
-                <FaDiscord
-                  size={20}
-                  className='group-hover:size-6'
-                />
-              </Button>
-            </li>
-          </Link> */}
-        </ul>
+    <footer className="m-auto w-full max-w-5xl space-y-5 py-20" id="footer">
+      <section
+        id="home"
+        className="flex w-full flex-col gap-5 px-2 pb-20 md:px-6"
+      >
+        <h2 className="text-2xl font-extrabold md:text-3xl md:leading-relaxed lg:leading-snug">
+          Transforme sua ideia em realidade digital
+        </h2>
+        <p className="max-w-2xl text-sm">
+          Mais agilidade, mais identidade, mais
+          <span className="text-popover-foreground md:text-lg"> resultado</span>
+          .
+        </p>
+        <Link href="https://wa.me/5531991973835?text=Olá+gostaria+sobre+o+desenvolvimento+de+sites/sistemas">
+          <Button className="flex items-center gap-2 bg-popover-foreground text-background">
+            Fale conosco <FaArrowRightLong />
+          </Button>
+        </Link>
+      </section>
+      <Separator />
+      <div className="flex items-center gap-2">
+        <Image className="w-6 lg:w-10" src={Logo} alt="Logo" />
+        <h1>
+          <span className="text-popover-foreground">Codando</span> ideias
+        </h1>
       </div>
     </footer>
   );

@@ -42,22 +42,22 @@ export const Header = () => {
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-7">
               <Link href="#home">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                   Home
                 </li>
               </Link>
               <Link href="#projects">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                   Projetos
                 </li>
               </Link>
               <Link href="#technology">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                   Tecnologias
                 </li>
               </Link>
               <Link href="#footer">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                   Fale comigo
                 </li>
               </Link>
@@ -106,8 +106,8 @@ export const Header = () => {
                 <SheetHeader>
                   <SheetTitle>
                     <h1>
-                      <span className="text-primary-foreground">DEV</span>{" "}
-                      Helcio Anicio
+                      <span className="text-popover-foreground">Codando</span>{" "}
+                      ideias
                     </h1>
                   </SheetTitle>
                 </SheetHeader>
@@ -116,28 +116,28 @@ export const Header = () => {
                     <ul className="flex flex-col gap-6">
                       <SheetClose asChild>
                         <Link href="#home">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                             Home
                           </li>
                         </Link>
                       </SheetClose>
                       <SheetClose asChild>
                         <Link href="#projects">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                             Projetos
                           </li>
                         </Link>
                       </SheetClose>
                       <SheetClose asChild>
                         <Link href="#technology">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                             Tecnologias
                           </li>
                         </Link>
                       </SheetClose>
                       <SheetClose asChild>
                         <Link href="#footer">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-foreground hover:text-foreground">
+                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
                             Fale comigo
                           </li>
                         </Link>
