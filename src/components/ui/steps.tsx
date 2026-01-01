@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 import { FaDiamond } from "react-icons/fa6";
 export const Steps = () => {
   return (
