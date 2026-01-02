@@ -1,15 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../../public/logo.svg";
+import Logo3 from "../../../public/logo3.svg";
+import Logo2 from "../../../public/logo2.svg";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Button } from "./button";
 import { Separator } from "./separator";
 
+import { useTheme } from "next-themes";
+
 export const Footer = () => {
+  const { theme } = useTheme();
+
   return (
-    <footer className="m-auto w-full max-w-5xl space-y-5 py-20" id="footer">
+    <footer
+      className="m-auto w-full max-w-5xl space-y-5 px-5 py-20"
+      id="footer"
+    >
       <section
         id="home"
         className="flex w-full flex-col gap-5 px-2 pb-20 md:px-6"
@@ -30,10 +38,11 @@ export const Footer = () => {
       </section>
       <Separator />
       <div className="flex items-center gap-2">
-        <Image className="w-6 lg:w-10" src={Logo} alt="Logo" />
-        <h1>
-          <span className="text-popover-foreground">Codando</span> ideias
-        </h1>
+        {theme === "light" ? (
+          <Image className="w-40 lg:w-52" src={Logo3} alt="Logo" />
+        ) : (
+          <Image className="w-40 lg:w-52" src={Logo2} alt="Logo" />
+        )}
       </div>
     </footer>
   );
