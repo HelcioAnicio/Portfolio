@@ -10,16 +10,27 @@ import { BsShieldLockFill } from "react-icons/bs";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
+import DataUp from "../../../public/dataUp.png";
+import MenAndWomen from "../../../public/menAndWomen.png";
+import Engine from "../../../public/engine.png";
+
+import Image from "next/image";
 
 export const WhyDevLab = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const scrollScreen = (direction: string) => {
     if (direction === "right" && containerRef.current) {
-      containerRef.current.scrollLeft += 600;
+      containerRef.current.scrollLeft += 500;
     }
     if (direction === "left" && containerRef.current) {
-      containerRef.current.scrollLeft -= 600;
+      containerRef.current.scrollLeft -= 500;
+    }
+    if (direction === "rightMd" && containerRef.current) {
+      containerRef.current.scrollLeft += 650;
+    }
+    if (direction === "leftMd" && containerRef.current) {
+      containerRef.current.scrollLeft -= 650;
     }
   };
   return (
@@ -32,7 +43,7 @@ export const WhyDevLab = () => {
         ref={containerRef}
         className="no-scrollbar relative flex w-full gap-40 overflow-auto scroll-smooth px-2 pb-5 md:p-6"
       >
-        <div className="flex flex-col gap-10">
+        <div className="relative flex flex-col gap-10">
           <CardReason
             icon={<BsGraphUpArrow />}
             title="Alto desempenho e velocidade"
@@ -44,10 +55,15 @@ export const WhyDevLab = () => {
             title="Design sob medida"
             text="O site é desenvolvido com exclusividade, respeitando a identidade da marca e oferecendo uma experiência única para o público, sem limitações de layout ou estrutura."
           />
+          <Image
+            className="absolute -right-[25%] top-0 w-64 md:-right-[8%]"
+            src={DataUp}
+            alt="Logo"
+          />
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="relative flex flex-col gap-10">
           <CardReason
-            newClassName="-ml-32"
+            newClassName="-ml-20"
             icon={<IoGlobeSharp />}
             title="Navegação inteligente"
             text="O fluxo do site é pensado para guiar o usuário de forma intuitica até a ação desejada, seja um contato, uma compra ou um agendamento. Isso aumenta o engajamento e gera melhores resultados."
@@ -57,10 +73,15 @@ export const WhyDevLab = () => {
             title="Atendimento direto e continuo"
             text="Você fala com quem desenvolve. Isso significa mais agilidade para ajustes, melhorias e suporte sempre que precisar, sem depender de terceiros ou burocracias."
           />
+          <Image
+            className="absolute -right-[80%] bottom-0 w-64 md:-right-[60%]"
+            src={MenAndWomen}
+            alt="Logo"
+          />
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="ml-16 flex flex-col gap-10 md:ml-24">
           <CardReason
-            newClassName="-ml-32"
+            newClassName="-ml-20"
             icon={<MdOutlineTrendingUp />}
             title="Pronto para crescer"
             text="O código e a estrutura são pensados para o futuro. À medida que o negócio cresce, o site pode ser expandido com novos recursos, páginas ou sistemas, sem complicações."
@@ -71,27 +92,46 @@ export const WhyDevLab = () => {
             text="Não existem limitações: o site é modelado conforme a real necessidade do negócio. Seja uma área de login, painel administrativo, integração com sistemas ou qualquer recurso estratégico."
           />
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="relative flex flex-col">
           <CardReason
-            newClassName="-ml-32"
+            newClassName="-ml-20"
             icon={<BsShieldLockFill />}
             title="Segurança reforçada"
             text="O projeto é contruído com atenção à segurança desde a bade, usando boas práticas e recursos personalizados para proteger dados e evitar vulnerabilidades."
           />
+          <Image
+            className="absolute bottom-0 right-0 w-72"
+            src={Engine}
+            alt="Logo"
+          />
         </div>
       </div>
       <Button
-        className={`absolute bottom-2 left-10 z-50 w-max items-end transition-all duration-150`}
+        className={`absolute bottom-2 left-10 z-50 w-max items-end transition-all duration-150 md:hidden`}
         variant="ghost"
         onClick={() => scrollScreen("left")}
       >
         <FaArrowCircleLeft className="size-7 text-primary" />
       </Button>
+      <Button
+        className={`absolute bottom-2 left-10 z-50 hidden w-max items-end transition-all duration-150 md:block`}
+        variant="ghost"
+        onClick={() => scrollScreen("leftMd")}
+      >
+        <FaArrowCircleLeft className="size-7 text-primary" />
+      </Button>
 
       <Button
-        className="absolute bottom-2 right-10 z-50 w-max items-end"
+        className="absolute bottom-2 right-10 z-50 w-max items-end transition-all duration-150 md:hidden"
         variant="ghost"
         onClick={() => scrollScreen("right")}
+      >
+        <FaArrowCircleRight className="size-7 text-primary" />
+      </Button>
+      <Button
+        className="absolute bottom-2 right-10 z-50 hidden w-max items-end transition-all duration-150 md:block"
+        variant="ghost"
+        onClick={() => scrollScreen("rightMd")}
       >
         <FaArrowCircleRight className="size-7 text-primary" />
       </Button>
