@@ -20,24 +20,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
 import { Card } from "./card";
-import Logo from "../../../public/logo.svg";
+import Logo3 from "../../../public/logo3.svg";
+import Logo2 from "../../../public/logo2.svg";
 
 import Link from "next/link";
 import Image from "next/image";
 
 export const Header = () => {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
     <header className="h-max border-none bg-background shadow-none">
       <Card className="h-full rounded-t-none border-none bg-background px-5 py-2 shadow-none">
         <div className="m-auto flex max-w-5xl items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Image className="w-6 lg:w-10" src={Logo} alt="Logo" />
-            <h1>
-              <span className="text-popover-foreground">Codando</span> ideias
-            </h1>
-          </div>
+          {theme === "light" ? (
+            <Image className="w-40 lg:w-52" src={Logo3} alt="Logo" />
+          ) : (
+            <Image className="w-40 lg:w-52" src={Logo2} alt="Logo" />
+          )}
 
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-7">
@@ -51,9 +51,9 @@ export const Header = () => {
                   Projetos
                 </li>
               </Link>
-              <Link href="#technology">
+              <Link href="#whyCodandoIdeias">
                 <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                  Tecnologias
+                  Nosso trabalho
                 </li>
               </Link>
               <Link href="#footer">
@@ -129,9 +129,9 @@ export const Header = () => {
                         </Link>
                       </SheetClose>
                       <SheetClose asChild>
-                        <Link href="#technology">
+                        <Link href="#whyCodandoIdeias">
                           <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                            Tecnologias
+                            Nosso trabalho
                           </li>
                         </Link>
                       </SheetClose>
