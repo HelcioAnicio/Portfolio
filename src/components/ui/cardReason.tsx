@@ -16,12 +16,12 @@ export const CardReason = ({
 }: CardReasonProps) => {
   return (
     <Card
-      className={`flex w-max max-w-sm flex-col items-start gap-5 px-4 py-8 ${newClassName}`}
+      className={`relative z-20 flex w-max max-w-sm flex-col items-start gap-5 px-4 py-8 ${newClassName}`}
     >
       <CardTitle className="flex items-center gap-2 md:text-lg">
         {icon} {title}
       </CardTitle>
-      <CardContent className="pr-13 p-0 text-xs font-extralight">
+      <CardContent className="pr-13 max-w-64 p-0 text-xs font-extralight md:max-w-max">
         {text}
       </CardContent>
     </Card>

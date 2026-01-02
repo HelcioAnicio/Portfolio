@@ -5,8 +5,8 @@ import { Project } from "./project";
 
 export const ListProjects = () => {
   return (
-    <Card className="mx-auto w-full max-w-5xl border-none bg-inherit shadow-none">
-      <CardHeader>
+    <Card className="mx-auto flex w-full max-w-5xl flex-col items-center border-none bg-inherit shadow-none">
+      <CardHeader className="self-start">
         <CardTitle className="flex items-center gap-2 py-6 text-2xl">
           <FaRegWindowRestore />
           <span>Nossos projetos</span>

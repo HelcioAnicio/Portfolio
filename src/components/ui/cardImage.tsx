@@ -8,7 +8,7 @@ export const CardImage = () => {
       id="home"
       className="flex h-full w-full max-w-5xl flex-col gap-10 px-2 md:gap-10 md:px-6 lg:gap-16"
     >
-      <h1 className="text-3xl font-extrabold md:max-w-2xl md:text-4xl md:leading-relaxed lg:leading-snug">
+      <h1 className="text-2xl font-extrabold md:max-w-2xl md:text-3xl md:leading-relaxed lg:leading-snug">
         Ao seu lado modernizando seus produtos digitais e impulsionando a
         evolução do seu negócio
       </h1>
