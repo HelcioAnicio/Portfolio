@@ -2,11 +2,18 @@ import Link from "next/link";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
+// import BackgroundImage from "../../../public/background.png";
+
 export const CardImage = () => {
   return (
     <section
       id="home"
-      className="flex h-dvh w-full max-w-5xl flex-col justify-center gap-16 px-2 md:gap-10 md:px-6 lg:gap-24"
+      // style={{
+      //   backgroundImage: `url(${BackgroundImage.src})`,
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundPosition: "bottom right",
+      // }}
+      className="m-auto flex h-[calc(100vh-120px)] w-full max-w-5xl flex-col justify-center gap-16 bg-contain px-2 md:px-6 lg:gap-24"
     >
       <h1 className="text-2xl font-extrabold md:max-w-2xl md:text-3xl md:leading-relaxed lg:leading-snug xl:max-w-3xl xl:text-5xl">
         Ao seu lado profissionalizando e impulsionando a evolução do seu negócio
