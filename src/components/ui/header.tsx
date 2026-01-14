@@ -31,7 +31,7 @@ export const Header = () => {
 
   return (
     <header className="h-max border-none bg-background shadow-none">
-      <Card className="h-full rounded-t-none border-none bg-background px-5 py-2 shadow-none">
+      <Card className="h-full rounded-t-none border-none bg-background px-5 py-5 shadow-none">
         <div className="m-auto flex max-w-5xl items-center justify-between">
           {theme === "light" ? (
             <Image className="w-40 lg:w-52" src={Logo3} alt="Logo" />
@@ -41,26 +41,18 @@ export const Header = () => {
 
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-7">
-              <Link href="#home">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                  Home
-                </li>
-              </Link>
-              <Link href="#projects">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                  Projetos
-                </li>
-              </Link>
-              <Link href="#whyCodandoIdeias">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                  Nosso trabalho
-                </li>
-              </Link>
-              <Link href="#footer">
-                <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                  Fale comigo
-                </li>
-              </Link>
+              <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                <Link href="#home">Home</Link>
+              </li>
+              <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                <Link href="#projects">Projetos</Link>
+              </li>
+              <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                <Link href="#whyCodandoIdeias">Nosso trabalho</Link>
+              </li>
+              <li className="flex items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                <Link href="#footer">Fale comigo</Link>
+              </li>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button
@@ -115,32 +107,24 @@ export const Header = () => {
                   <nav>
                     <ul className="flex flex-col gap-6">
                       <SheetClose asChild>
-                        <Link href="#home">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                            Home
-                          </li>
-                        </Link>
+                        <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                          <Link href="#home">Home</Link>
+                        </li>
                       </SheetClose>
                       <SheetClose asChild>
-                        <Link href="#projects">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                            Projetos
-                          </li>
-                        </Link>
+                        <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                          <Link href="#projects">Projetos</Link>
+                        </li>
                       </SheetClose>
                       <SheetClose asChild>
-                        <Link href="#whyCodandoIdeias">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                            Nosso trabalho
-                          </li>
-                        </Link>
+                        <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                          <Link href="#whyCodandoIdeias">Nosso trabalho</Link>
+                        </li>
                       </SheetClose>
                       <SheetClose asChild>
-                        <Link href="#footer">
-                          <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
-                            Fale comigo
-                          </li>
-                        </Link>
+                        <li className="flex w-max items-center gap-1 text-primary-foreground transition-all duration-300 hover:border-b hover:border-b-popover-foreground hover:text-popover-foreground">
+                          <Link href="#footer">Fale comigo</Link>
+                        </li>
                       </SheetClose>
                       <DropdownMenu>
                         <DropdownMenuTrigger asChild>

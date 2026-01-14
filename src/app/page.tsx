@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="mx-auto mt-10 flex h-full max-w-5xl flex-col gap-20 overflow-hidden sm:items-center">
+      <main className="mx-auto mt-5 flex flex-wrap gap-20 overflow-hidden sm:items-center">
         <CardImage />
         <WhyDevLab />
-        <section className="w-full max-w-5xl" id="projects">
+        <section className="mx-auto w-full max-w-5xl" id="projects">
           <ListProjects />
           <Link
             href="google.com"

@@ -35,7 +35,7 @@ export const WhyDevLab = () => {
   return (
     <section
       id="whyCodandoIdeias"
-      className="relative flex w-full flex-col gap-5 rounded-md bg-foreground px-1 pb-10 pt-6 md:p-6"
+      className="relative m-auto flex w-full max-w-5xl flex-col gap-5 rounded-md bg-foreground px-1 pb-10 pt-6 md:p-6"
     >
       <h2 className="text-lg text-background">
         Porquê a <span className="text-popover-foreground">Codando </span>
